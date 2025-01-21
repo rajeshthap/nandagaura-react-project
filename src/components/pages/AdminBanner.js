@@ -138,9 +138,10 @@ function AdminBanner() {
             </div>
           </Form>
         );
+       
 
       case 6: // Sector Login
-      default:
+     
         return (
           <Form>
          <Form.Group className="mb-3 mt-3" controlId="loginType">
@@ -172,6 +173,42 @@ function AdminBanner() {
                
               </Form.Select>
             </Form.Group>
+            <Form.Group className="mb-3" controlId="password">
+              <Form.Label className="nd-form-label">Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                className="nd-form-control"
+              />
+            </Form.Group>
+            <div className="nd-admin-btn">
+              <Button className="nd-primary">Login</Button>
+            </div>
+          </Form>
+        );
+        case 7: 
+        default:
+        return (
+          <Form>
+            <Form.Group className="mb-3 mt-3" controlId="loginType">
+              <Form.Label className="nd-form-label"> Login Type</Form.Label>
+              <Form.Control
+                type="text"
+               value="Block Login"
+                className="nd-form-control" 
+              />
+            </Form.Group>
+            {/* <Form.Group className="mb-3 mt-3" controlId="block">
+              <Form.Label className="nd-form-label">Choose Block Login:</Form.Label>
+              <Form.Select
+                aria-label="Choose block"
+                className="nd-steps-drop"
+              >
+                <option value="">Choose Block</option>
+                <option value="Block A">Chakrata</option>
+                
+              </Form.Select>
+            </Form.Group> */}
             <Form.Group className="mb-3" controlId="password">
               <Form.Label className="nd-form-label">Password</Form.Label>
               <Form.Control
@@ -302,6 +339,22 @@ function AdminBanner() {
                       </label>
                     </div>
                   </Col>
+                  <Col lg={4} md={6} sm={3} className="mt-3 m-t-0">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="radio6"
+                        value={7}
+                        onChange={handleChange}
+                        checked={isRadio === 7}
+                      />
+                      <label className="form-check-label" htmlFor="radio6">
+                        AWC Login
+                      </label>
+                    </div>
+                  </Col>
                 </Row>
 
                 <div className="nd-login-title">
@@ -316,7 +369,10 @@ function AdminBanner() {
                       ? "District Login (DPO)"
                       : isRadio === 5
                       ? "Project Login"
-                      : "Sector Login"}
+                      : isRadio === 6
+                      ? "Sector Login"
+                      : "AWC Login"
+                    }
                   </h1>
                 </div>
 

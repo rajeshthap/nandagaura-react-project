@@ -72,6 +72,21 @@ const NandaStepOne = () => {
                     controlId="exampleForm.ControlInput1"
                   >
                     <Form.Label>
+                    माता का आधार नंबर <span className="alert-txt">*</span>
+                    </Form.Label>
+                    <Form.Control
+                      type="number"
+                      placeholder=" माता का आधार नंबर"
+                      className="shadow1"
+                    />
+                  </Form.Group>
+                </Col>
+                <Col lg={4} md={4} sm={12}>
+                  <Form.Group
+                    className="mb-3 nd-req-text"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label>
                       {" "}
                       पिता का नाम <span className="alert-txt">*</span>
                     </Form.Label>
@@ -88,7 +103,23 @@ const NandaStepOne = () => {
                     controlId="exampleForm.ControlInput1"
                   >
                     <Form.Label>
-                      अभिभावक का नाम <span className="alert-txt">*</span>{" "}
+                      {" "}
+                      पिता  का आधार नंबर  
+                    </Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="पिता  का आधार नंबर"
+                      className="shadow1"
+                    />
+                  </Form.Group>
+                </Col>
+                <Col lg={4} md={4} sm={12}>
+                  <Form.Group
+                    className="mb-3 nd-req-text"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label>
+                      अभिभावक का नाम {" "}
                     </Form.Label>
                     <Form.Control
                       type="text"
