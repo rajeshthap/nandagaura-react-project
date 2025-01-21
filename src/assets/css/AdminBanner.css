@@ -1,7 +1,7 @@
 .nd-login-banner {
     background-image: url("../images//AdminBanner.png");
     background-color: var(--nd-blue);
-    height: 692px;
+    height: auto;
 }
 
 .nd-admin-login label {
