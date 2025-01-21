@@ -1,27 +1,40 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { RiDashboard3Line } from "react-icons/ri";
 import {
   MdOutlinePublishedWithChanges,
   MdOutlineFormatAlignRight,
+  MdLibraryBooks,
 } from "react-icons/md";
+import { FaChevronDown, FaChevronRight } from "react-icons/fa"; // Add Chevron icons
+import { LuLogOut } from "react-icons/lu";
+import { ImFilePdf } from "react-icons/im";
+import { FaRegFileAlt, FaChalkboardTeacher, FaAlignLeft } from "react-icons/fa";
+import { HiOutlineUser } from "react-icons/hi";
 import UKLogon from "../../../assets/images/UKLogo.png";
 import MenuIcon from "../../../assets/images/menu_icon.png";
-import { LuLogOut } from "react-icons/lu";
-import { MdLibraryBooks } from "react-icons/md";
 import "../../techassets/techcss/TechLeft.css";
-import { HiOutlineUser } from "react-icons/hi";
-import { ImFilePdf } from "react-icons/im";
-import React, { useState } from "react";
-import { FaRegFileAlt, FaChalkboardTeacher, FaAlignLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaBuildingUser } from "react-icons/fa6";
+import { MdSupervisorAccount,MdPendingActions,MdOutlineDone } from "react-icons/md";
+import { TbActivityHeartbeat } from "react-icons/tb";
+import { PiUsersFourFill } from "react-icons/pi";
+
 
 function TechLeftnav() {
   const [isNavClosed, setIsNavClosed] = useState(false);
+  const [expandedItems, setExpandedItems] = useState({}); // Track which dropdowns are expanded
 
   const toggleNav = () => {
     setIsNavClosed(!isNavClosed);
   };
 
-  // Download handler
+  const toggleDropdown = (index) => {
+    setExpandedItems((prev) => ({
+      ...prev,
+      [index]: !prev[index], // Toggle the specific dropdown
+    }));
+  };
+
   const handleDownload = (fileUrl, fileName) => {
     const link = document.createElement("a");
     link.href = fileUrl;
@@ -38,32 +51,67 @@ function TechLeftnav() {
       label: "Check Form Status",
       path: "/CheckFormstatus",
     },
-    { icon: <FaRegFileAlt />, label: "Our Staff", path: "/SubmitRequest" },
+    {
+      icon: <FaRegFileAlt />,
+      label: "Our Staff",
+      path: "/SubmitRequest",
+      subRoutes: [
+        {
+          icon: <FaBuildingUser />,
+          label: "Our CDPO",
+          path: "/OurCDPO",
+        },
+        {
+          icon: <MdSupervisorAccount />,
+          label: "Our Supervisore",
+          path: "/OurSuper",
+        },
+       
+      ],
+    },
     {
       icon: <MdOutlineFormatAlignRight />,
       label: "Logs",
       path: "/FormStatus",
+      subRoutes: [
+        {
+          icon: <TbActivityHeartbeat />,
+          label: "Activity Log",
+          path: "/ActivityLog",
+        },
+        {
+          icon: <MdPendingActions />,
+          label: "Request Log (Pending)",
+          path: "/RequestPending",
+        },
+        {
+          icon: <MdOutlineDone />,
+          label: "Request Log (Done)",
+          path: "/RequestDone",
+        },
+        {
+          icon: <PiUsersFourFill />,
+          label: "Request Log (All)",
+          path: "/RequestAll",
+        },
+       
+      ],
     },
     {
       icon: <ImFilePdf />,
       label: "Repparing step2",
-      download: true,
-      fileUrl: "/praroop1_tutorial.pdf", // Secure file location
-      fileName: "praroop1_tutorial.pdf",
+      path:"/ReparingstepTwo",
+      
     },
     {
       icon: <MdLibraryBooks />,
       label: "Nanda Registration",
-      download: true,
-      fileUrl: "/shashandesh_new.pdf", // Secure file location
-      fileName: "shashandesh_new.pdf",
+      path:"/NandaRegistration",
     },
     {
       icon: <FaChalkboardTeacher />,
       label: "Final submit List",
-      download: true,
-      fileUrl: "/praroop2_tutorial.pdf", // Secure file location
-      fileName: "praroop2_tutorial.pdf",
+      path:"/FinalSubmit",
     },
     {
       icon: <HiOutlineUser />,
@@ -77,7 +125,7 @@ function TechLeftnav() {
       <header>
         <div className="logosec">
           <img
-           src={MenuIcon} 
+            src={MenuIcon}
             className="icn menuicn"
             id="menuicn"
             alt="menu-icon"
@@ -123,7 +171,7 @@ function TechLeftnav() {
                       onClick={toggleNav}
                     />
                   </div>
-                  <div className="nd-user">User: Deepika chauhan</div>
+                  <div className="nd-user">User: Deepika Chauhan</div>
                   <div className="nd-log-icon-mob">
                     <LuLogOut
                       className=" "
@@ -150,6 +198,53 @@ function TechLeftnav() {
                           </div>
                         </div>
                       </div>
+                    ) : option.subRoutes ? (
+                      <>
+                        <div
+                          className={`nav-option option${index + 1}`}
+                          onClick={() => toggleDropdown(index)}
+                          style={{ cursor: "pointer" }}
+                        >
+                          <div className="nav-item tech-drop-menu">
+                            
+                            <div className="d-flex">
+                              
+                              <span className="nav-icon">{option.icon}</span>
+                              <span className="nav-label">{option.label}</span>
+                             
+                             
+                            </div>
+                            <span className="nav-arrow ">
+            {expandedItems[index] ? <FaChevronDown /> : <FaChevronRight />}
+          </span>
+                           
+                          </div>
+                          
+                        </div>
+
+                        {expandedItems[index] && (
+                          <div className="subroutes">
+                            {option.subRoutes.map((subRoute, subIndex) => (
+                              <Link
+                                to={subRoute.path}
+                                key={subIndex}
+                                className="nav-suboption"
+                              >
+                                <div className="nav-subitem">
+                                  <div className="d-flex">
+                                    <span className="nav-icon">
+                                      {subRoute.icon}
+                                    </span>
+                                    <span className="nav-label">
+                                      {subRoute.label}
+                                    </span>
+                                  </div>
+                                </div>
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </>
                     ) : (
                       <Link
                         to={option.path}

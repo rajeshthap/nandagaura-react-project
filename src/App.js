@@ -41,15 +41,24 @@ import TechLeftnav from "./AdminPannel/technicalcomponents/leftnavbar/TechLeftna
 import TechnicaldashBoard from "./AdminPannel/technicalcomponents/dashboard/TechnicaldashBoard";
 import CheckFormstatus from "./AdminPannel/technicalcomponents/dashboard/CheckFormstatus";
 import NandaTech from "./AdminPannel/technicalcomponents/dashboard/NandaTech";
+import OurCDPO from "./AdminPannel/technicalcomponents/dashboard/ourstaff/OurCDPO";
+import OurSuper from "./AdminPannel/technicalcomponents/dashboard/ourstaff/OurSuper";
+import ActivityLog from "./AdminPannel/technicalcomponents/dashboard/Logs/ActivityLog";
+import RequestPending from "./AdminPannel/technicalcomponents/dashboard/Logs/RequestPending";
+import RequestDone from "./AdminPannel/technicalcomponents/dashboard/Logs/RequestDone";
+import RequestAll from "./AdminPannel/technicalcomponents/dashboard/Logs/RequestAll";
+import ReparingstepTwo from "./AdminPannel/technicalcomponents/dashboard/ReparingstepTwo";
+import FinalSubmit from "./AdminPannel/technicalcomponents/dashboard/FinalSubmit";
+import NandaRegistration from "./AdminPannel/technicalcomponents/dashboard/NandaRegistration";
 
 function App() {
   const location = useLocation();
-
-  const hiddenPaths = new Set(["/UserDashboard", "/DashBoard", "/Change","/NandaStepOne","/NandaStepTwo","/NandaStepThree","/NandaStep4th","/Change","/DepartmentContact","/FormStatus","/SubmitRequest","/TechLeftnav","/TechnicaldashBoard","/CheckFormstatus"]); // Correct absolute paths
-  const hiddenFooter1 = new Set(["/UserDashboard", "/DashBoard", "/Change","/NandaStepOne","/NandaStepTwo","/NandaStepThree","/NandaStep4th","/Change","/DepartmentContact","/FormStatus","/SubmitRequest","/TechLeftnav","/TechnicaldashBoard","/CheckFormstatus"]); // Correct absolute paths
+  const hiddenPaths = new Set(["/UserDashboard", "/DashBoard", "/Change","/NandaStepOne","/NandaStepTwo","/NandaStepThree","/NandaStep4th","/Change","/DepartmentContact","/FormStatus","/SubmitRequest","/TechLeftnav","/TechnicaldashBoard","/CheckFormstatus","/OurCDPO","/OurSuper",
+    "/RequestAll","/RequestPending","/RequestDone","/ActivityLog","/NandaRegistration","/ReparingstepTwo","/FinalSubmit"]); // Correct absolute paths
+  const hiddenFooter1 = new Set(["/UserDashboard", "/DashBoard", "/Change","/NandaStepOne","/NandaStepTwo","/NandaStepThree","/NandaStep4th","/Change","/DepartmentContact","/FormStatus","/SubmitRequest","/TechLeftnav","/TechnicaldashBoard","/CheckFormstatus","/OurCDPO","/OurSuper",
+    "/RequestAll","/RequestPending","/RequestDone","/ActivityLog","/NandaRegistration","/ReparingstepTwo","/FinalSubmit"]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 =  hiddenFooter1.has(location.pathname);
-
   const buttons = [
     "UserDashboard",
   ]
@@ -95,6 +104,16 @@ function App() {
       <Route path="/TechnicaldashBoard" element={<TechnicaldashBoard />} />
       <Route path="/CheckFormstatus" element={<CheckFormstatus/>} />
       <Route path="/NandaTech" element={<NandaTech />} />
+      <Route path="/OurCDPO" element={<OurCDPO />} />
+      <Route path="/OurSuper" element={<OurSuper/>} />
+      <Route path="/RequestPending" element={<RequestPending/>} />
+      <Route path="/RequestDone" element={<RequestDone/>} />
+      <Route path="/ActivityLog" element={<ActivityLog/>} />
+      <Route path="/RequestAll" element={<RequestAll/>} />
+      <Route path="/ReparingstepTwo" element={<ReparingstepTwo/>} />
+      <Route path="/FinalSubmit" element={<FinalSubmit/>} />
+      <Route path="/NandaRegistration" element={<NandaRegistration/>} />
+
        
       </Routes>
 

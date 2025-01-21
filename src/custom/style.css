@@ -542,9 +542,16 @@ body {
   display: block;
 }
 
+.nav-arrow{
+  color: var(--nd-white);
+     
 
+  }
+  .tech-drop-menu{
 
-
+    display: flex;
+    justify-content: space-between;
+  }
 
 
 @media (max-width: 575.98px) {
