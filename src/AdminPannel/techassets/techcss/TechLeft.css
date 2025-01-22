@@ -200,7 +200,7 @@ header {
   padding: 12px 16px 30px 16px;
 }
 
-.nav {
+.nav11 {
   min-height: 100vh;
   width: 250px;
   background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x;
@@ -216,12 +216,12 @@ header {
   padding: 0px 0 20px 0px;
 }
 
-.navcontainer,
+.nav1container,
 .main {
   min-height: 100vh;
 }
 
-.navcontainer {
+.nav1container {
   height: calc(100vh - 70px);
   width: 250px;
   position: relative;
@@ -230,15 +230,15 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
-.navcontainer::-webkit-scrollbar {
+.nav1container::-webkit-scrollbar {
   display: none;
 }
 
-.navclose {
+.nav1close {
   width: 72px;
 }
 
-.nav-option {
+.nav1-option {
   width: 250px;
   height: 60px;
 
@@ -252,11 +252,11 @@ header {
   background-color: #248afd;
   min-height: auto;
 }
-.nav-subitem:hover{
+.nav1-subitem:hover{
   background-color: #084fa0;
 }
 
-.nav-option:hover {
+.nav1-option:hover {
   border-left: 5px solid var(--nd-white);
   color: #fff;
   background: #23272b linear-gradient(180deg, #44474b, #23272b) repeat-x;
@@ -264,18 +264,18 @@ header {
   cursor: pointer;
 }
 
-.nav-img {
+.nav1-img {
   height: 30px;
 }
 
-.nav-upper-options {
+.nav1-upper-options {
   display: flex;
   flex-direction: column;
   gap: 0px;
 
 }
 
-.option1 {
+ .option1_tech  {
   border-left: 5px solid var(--nd-primary);
   background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x;
   border-color: #343a40;
@@ -284,7 +284,7 @@ header {
   margin-top: 7%;
 }
 
-.option1:hover {
+ .option1_tech :hover {
   border-left: 5px solid var(--nd-white);
   background-color: var(--nd-blue-hover);
 }
@@ -420,27 +420,27 @@ header {
   border-radius: 4px;
 }
 
-.nav h3 {
+.nav1 h3 {
   font-size: var(--nd-space-300) !important;
 }
 
-.nav-upper-options a {
+.nav1-upper-options a {
   color: white;
   text-decoration: none;
 }
 
-.nav-icon {
+.nav1-icon {
   padding: 16px;
   font-size: 24px;
   padding-top: 0px !important;
   color: var(--nd-white);
 }
 
-.nav-item {
+.nav1-item {
   margin-left: -3px;
 }
 
-span.nav-label {
+span.nav1-label {
   padding-top: var(--nd-space-200);
   font-size: var(--nd-space-350);
   color: var(--nd-white);
@@ -450,7 +450,10 @@ span.nav-label {
   margin-left: var(--nd-space-200);
 }
 
-
+.navcontainer{
+  background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x;
+  z-index: 999;
+}
 /* Responsive CSS Here */
 @media only screen and (min-width: 992px) {
   .nd-accordion {
@@ -503,17 +506,17 @@ span.nav-label {
 @media screen and (max-width: 950px) {
 
 
-  .nav-img {
+  .nav1-img {
     height: 25px;
   }
 
 
 
-  .nav-option {
+  .nav1-option {
     gap: 30px;
   }
 
-  .nav-option h3 {
+  .nav1-option h3 {
     font-size: 15px;
   }
 
@@ -560,7 +563,7 @@ span.nav-label {
 }
 
 @media screen and (max-width: 850px) {
-  .nav-img {
+  .nav1-img {
     height: 30px;
   }
 
@@ -578,16 +581,16 @@ span.nav-label {
   }
 
 
-  .option1 {
+   .option1_tech _tech {
     margin-top: 1% !important;
   }
 
-  .nav-option {
+  .nav1-option {
     gap: 30px;
     width: 100%;
   }
 
-  .nav-option h3 {
+  .nav1-option h3 {
     font-size: 20px;
   }
 
@@ -597,7 +600,7 @@ span.nav-label {
     width: 700px;
   }
 
-  .navcontainer {
+  .nav1container {
     width: 100vw;
     position: absolute;
     transition: all 0.6s ease-in-out;
@@ -605,13 +608,13 @@ span.nav-label {
     left: -100vw;
   }
 
-  .nav {
+  .nav1 {
     width: 100%;
     position: absolute;
     z-index: 999;
   }
 
-  .navclose {
+  .nav1close {
     left: 00px;
   }
 
@@ -763,11 +766,11 @@ span.nav-label {
     margin-right: var(--nd-space-150);
   }
 
-  span.nav-label {
+  span.nav1-label {
     font-size: var(--nd-space-400);
   }
 
-  .option1 {
+   .option1_tech  {
     margin-top: 1% !important;
   }
 
@@ -815,16 +818,16 @@ span.nav-label {
     height: 25px;
   }
 
-  .nav-img {
+  .nav1-img {
     height: 25px;
   }
 
-  .nav-option {
+  .nav1-option {
     gap: 25px;
     width: 100%;
   }
 
-  .nav-option h3 {
+  .nav1-option h3 {
     font-size: 12px;
   }
 
@@ -840,7 +843,7 @@ span.nav-label {
   }
 }
 
-/* a.nav-option.option1::before {
+/* a.nav1-option .option1_tech ::before {
   content: "\f04b";
   
 } */
