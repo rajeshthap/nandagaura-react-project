@@ -160,7 +160,7 @@ function TechLeftnav() {
       <div>
         <div>
           <div className={`navcontainer ${isNavClosed ? "navclose" : ""}`}>
-            <nav className="nav1">
+            <nav className="nav">
               <div className="nav-upper-options">
                 <div className="nd-menu">
                   <div>
