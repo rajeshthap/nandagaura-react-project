@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-
+import TwelthStepOne from "./TwelthStepOne";
 import "../../../assets/css/ModalOne.css";
 import { Link } from "react-router-dom";
 

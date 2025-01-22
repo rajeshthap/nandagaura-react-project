@@ -13,6 +13,7 @@ import HomePage from "../src/components/pages/HomePage";
 import UserLogin from "./components/pages/UserLogin";
 import OfficialWebsite from "../src/components/pages/OfficialWebsite";
 import ModalOne from "./components/modal/ModalOne";
+import TwelthdetailPopup from "./components/leftnav/twelfthpass/TwelthdetailPopup";
 import AdminBanner from "./components/pages/AdminBanner";
 import ContactUs from "./components/pages/ContactUs";
 import UserOtp from "./components/pages/UserOtp";
@@ -70,6 +71,7 @@ function App() {
     "/FormStatus",
     "/SubmitRequest",
     "/TwelthStepOne",
+    "/TwelthdetailPopup",
     "/TwelthStepTwo",
     "/TwelthStepThree",
     "/TechLeftnav",
@@ -99,6 +101,7 @@ function App() {
     "/SubmitRequest",
     "/TwelthStepOne",
     "/TwelthStepTwo",
+    "/TwelthdetailPopup",
     "/TwelthStepThree",
     "/TechLeftnav",
     "/TechnicaldashBoard",
@@ -148,6 +151,7 @@ function App() {
         <Route path="/TwelthStepOne" element={<TwelthStepOne />} />
         <Route path="/TwelthStepTwo" element={<TwelthStepTwo />} />
         <Route path="/TwelthStepThree" element={<TwelthStepThree />} />
+        <Route path="/TwelthdetailPopup" element={<TwelthdetailPopup />} />
         <Route path="/TwelthPass" element={<TwelthPass />} />
         <Route path="/DashBoard" element={<DashBoard />} /> {/* Correct path */}
         <Route path="/UserDashboard" element={<UserDashboard />} />{" "}

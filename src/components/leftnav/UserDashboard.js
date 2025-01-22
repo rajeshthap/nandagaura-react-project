@@ -740,7 +740,7 @@ const UserDashboard = () => {
                     </div>
                     <div className="nd-check-btn">
                       <div className="nd-chek-box mb-3">
-                        <TwelthdetailPopup/>
+                        <TwelthCheckbox />
                       </div>
                     </div>
                   </Card>
