@@ -16,6 +16,8 @@ import BirthCheckbox from "./BirthCheckbox";
 import InnerNavigation from "./InnerNavigation";
 import DashHeader from "./DashHeader";
 import { PiDownloadSimpleBold } from "react-icons/pi";
+import TwelthCheckbox from "./twelfthpass/TwelthCheckbox";
+import TwelthdetailPopup from "./twelfthpass/TwelthdetailPopup";
 
 const UserDashboard = () => {
   const [isNavClosed, setIsNavClosed] = useState(false);
@@ -366,7 +368,7 @@ const UserDashboard = () => {
                     </div>
                     <div className="nd-check-btn">
                       <div className="nd-chek-box mb-3">
-                        <BirthCheckbox />
+                        <TwelthdetailPopup />
                       </div>
                     </div>
 
@@ -738,7 +740,7 @@ const UserDashboard = () => {
                     </div>
                     <div className="nd-check-btn">
                       <div className="nd-chek-box mb-3">
-                        <BirthCheckbox />
+                        <TwelthdetailPopup/>
                       </div>
                     </div>
                   </Card>

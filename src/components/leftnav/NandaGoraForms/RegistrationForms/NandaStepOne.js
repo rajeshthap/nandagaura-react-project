@@ -72,7 +72,7 @@ const NandaStepOne = () => {
                     controlId="exampleForm.ControlInput1"
                   >
                     <Form.Label>
-                    माता का आधार नंबर <span className="alert-txt">*</span>
+                      माता का आधार नंबर <span className="alert-txt">*</span>
                     </Form.Label>
                     <Form.Control
                       type="number"
@@ -102,10 +102,7 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
-                      {" "}
-                      पिता  का आधार नंबर  
-                    </Form.Label>
+                    <Form.Label> पिता का आधार नंबर</Form.Label>
                     <Form.Control
                       type="text"
                       placeholder="पिता  का आधार नंबर"
@@ -118,9 +115,7 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
-                      अभिभावक का नाम {" "}
-                    </Form.Label>
+                    <Form.Label>अभिभावक का नाम </Form.Label>
                     <Form.Control
                       type="text"
                       placeholder="अभिभावक का नाम "
@@ -259,24 +254,8 @@ const NandaStepOne = () => {
                     />
                   </Form.Group>
                 </Col>
-                <Col lg={6} md={6} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <Form.Label>
-                      {" "}
-                      माता/कन्या का आधार नंबर{" "}
-                      <span className="alert-txt">*</span>
-                    </Form.Label>
-                    <Form.Control
-                      type="number"
-                      placeholder=" माता/कन्या का आधार नंबर"
-                      className="shadow1"
-                    />
-                  </Form.Group>
-                </Col>
-                <Col lg={6} md={6} sm={12}>
+
+                <Col lg={4} md={4} sm={12}>
                   <Form.Group
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
@@ -301,8 +280,8 @@ const NandaStepOne = () => {
                         controlId="exampleForm.ControlInput1"
                       >
                         <Form.Label>
-                          माता/पिता/संरक्षक एवं कन्या शिशु के संयुक्त खता संख्या{" "}
-                          <span className="alert-txt">*</span>
+                          माता/पिता/संरक्षक एवं कन्या शिशु के संयुक्त खाता
+                          संख्या <span className="alert-txt">*</span>
                         </Form.Label>
                         <Form.Control
                           type="number"

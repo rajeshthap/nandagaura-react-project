@@ -3,29 +3,25 @@ import Form from "react-bootstrap/Form";
 import "../../../../assets/css/LeftNav.css";
 import Table from "react-bootstrap/Table";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-
+import { RiDeleteBin6Line } from "react-icons/ri";
 import DashHeader from "../../DashHeader";
 import "../../../../assets/css/NandaStepOne.css";
 import "../../../../assets/css/HomePage.css";
-
+import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../../../footer/Footer";
+import UploadFile from "../../../../assets/images/upload-icon.png";
 
 import InnerNavigation from "../../InnerNavigation";
 
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button, Card } from "react-bootstrap";
 import GirlsBornStep from "./GirlsBornStep";
 import { Link } from "react-router-dom";
 import { FaCheck } from "react-icons/fa6";
 import { LuHeading1 } from "react-icons/lu";
-import SteponeView from "../../../modal/SteponeView";
+import StepthreeView from "../../../modal/StepthreeView";
 import SteptwoView from "../../../modal/SteptwoView";
-const NandaStepThree = ({ buttons }) => {
-  const [isNavClosed, setIsNavClosed] = useState(false);
-
-  const toggleNav = () => {
-    setIsNavClosed(!isNavClosed);
-  };
-
+import SteponeView from "../../../modal/SteponeView";
+const NandaStepThree = () => {
   return (
     <>
       <div>
@@ -45,196 +41,657 @@ const NandaStepThree = ({ buttons }) => {
                 <div className="nd-step2">
                   <SteptwoView />
                 </div>
+                
+
                 <div className="nd-step1">
                   <h3>Step 3 : चल / अचल सम्पत्ति का विवरण</h3>
                 </div>
                 <span className="nd-step3-note">
-                  नोट- यदि आवेदक उत्तराखण्ड के किसी अन्य जनपद से हो तो वहाँ की
-                  भी समस्त अचल सम्मपत्ति का पूर्ण विवरण{" "}
+                  आवेदन पत्र के साथ संलग्न किये जाने वाले प्रमाणित अभिलेखों की
+                  प्रतिलिपि का विवरण इस प्रकार है।{" "}
+                </span>
+                <span className="nd-step-note">
+                  if document are not showing after uploading, please remove and
+                  reupload till yours documents are not uploaded properly!{" "}
                 </span>
               </Row>
-              <div className="nd-step1">
-                <h3>
-                  1. परिवार के सदस्यों का विवरण{" "}
-                  <span className="alert-txt">*</span>{" "}
-                </h3>
-              </div>
-              <Row className="nd-stepform-box">
-                <Col lg={4} md={4} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text nd-step-heading"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <h1>
-                      1. सामाजिक आर्थिक जाति जनगणना में परिवार की स्थिति का
-                      विवरण <span className="alert-txt">*</span>
-                    </h1>
-                    <Form.Select
-                      aria-label="Default select example"
-                      className="nd-steps-drop"
-                    >
-                      <option>प्रकार चुने </option>
-                      <option value="स्वयं का व्यवसाय">स्वतः सम्मिलित</option>
-                      <option value="अन्य कार्य">सम्मिलित नही</option>
-                    </Form.Select>
-                  </Form.Group>
-                </Col>
-                <Col lg={4} md={4} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text nd-step-heading"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <h1 className="nd-step-heading">
-                      2. बालिका के परिवार के पास उपलब्ध भूमि का प्रकार{" "}
-                      <span className="alert-txt">*</span>
-                    </h1>
-                    <Form.Select
-                      aria-label="Default select example"
-                      className="nd-steps-drop"
-                    >
-                      <option>भूमि प्रकार चुने </option>
-                      <option value="निजी क्षेत्र में सेवा">पैतृक भूमि</option>
-                      <option value="कृषि कार्य">क्रय भूमि</option>
-                      <option value="स्वयं का व्यवसाय">पट्टा/Lease</option>
-                      <option value="अन्य कार्य">भूमिहीन</option>
-                    </Form.Select>
-                  </Form.Group>
-                </Col>
-                <Col lg={4} md={4} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text nd-step-heading"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <h1 className="nd-step-heading">
-                      3. बालिका के परिवार के पास आवासीय उपलब्ध भूमि का प्रकार{" "}
-                      <span className="alert-txt">*</span>
-                    </h1>
-                    <Form.Select
-                      aria-label="Default select example"
-                      className="nd-steps-drop"
-                    >
-                      <option>आवासीय भूमि प्रकार चुने </option>
-                      <option value="निजी क्षेत्र में सेवा">रजिस्ट्री</option>
-                      <option value="कृषि कार्य">पट्टे की भूमि</option>
-                      <option value="स्वयं का व्यवसाय">किराया</option>
-                    </Form.Select>
-                  </Form.Group>
-                </Col>
-              </Row>
-              <Row className="nd-stepform-box">
-                <div className="nd-step-heading">
-                  <h1>
-                    4.सामाजिक आर्थिक जाति जनगणना में परिवार की स्थिति का विवरण{" "}
-                  </h1>
-                </div>
-                <Col lg={4} md={4} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <Form.Label>
-                      1. भूमि का क्षेत्रफल (हेक्टेयर में){" "}
-                      <span className="alert-txt">*</span>
-                    </Form.Label>
-                    <Form.Control
-                      type="text"
-                      placeholder="भूमि का क्षेत्रफल"
-                      className="shadow1"
-                    />
-                  </Form.Group>
-                </Col>
-                <Col lg={4} md={4} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <Form.Label>
-                      2. वर्तमान मूल्य () <span className="alert-txt">*</span>
-                    </Form.Label>
-                    <Form.Control
-                      type="text"
-                      placeholder="र्तमान मूल्य"
-                      className="shadow1"
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
-              <Row className="nd-stepform-box">
-                <div className="nd-step-heading">
-                  <h1>5.आवास का विवरण </h1>
-                </div>
-                <Col lg={3} md={3} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <Form.Label>
-                      1. आवासीय भूमि <span className="alert-txt">*</span>
-                    </Form.Label>
-                    <Form.Select
-                      aria-label="Default select example"
-                      className="nd-steps-drop"
-                    >
-                      <option>आवासीय भूमि प्रकार चुने </option>
-                      <option value="स्वयं का व्यवसाय">कच्चा</option>
-                      <option value="अन्य कार्य">पक्का</option>
-                    </Form.Select>
-                  </Form.Group>
-                </Col>
-                <Col lg={3} md={3} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <Form.Label>
-                      2. कक्षों की संख्या (){" "}
-                      <span className="alert-txt">*</span>
-                    </Form.Label>
-                    <Form.Control
-                      type="text"
-                      placeholder="कक्षों की संख्या"
-                      className="shadow1"
-                    />
-                  </Form.Group>
-                </Col>
-                <Col lg={3} md={3} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <Form.Label>
-                      3. क्षेत्रफल- <span>(हेक्टेयर में)</span> (){" "}
-                      <span className="alert-txt">*</span>
-                    </Form.Label>
-                    <Form.Control
-                      type="text"
-                      placeholder="कक्षों की संख्या"
-                      className="shadow1"
-                    />
-                  </Form.Group>
-                </Col>
-                <Col lg={3} md={3} sm={12}>
-                  <Form.Group
-                    className="mb-3 nd-req-text"
-                    controlId="exampleForm.ControlInput1"
-                  >
-                    <Form.Label>
-                      2. वर्तमान मूल्य <span>₹</span> (){" "}
-                      <span className="alert-txt">*</span>
-                    </Form.Label>
-                    <Form.Control
-                      type="text"
-                      placeholder="वर्तमान मूल्य"
-                      className="shadow1"
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
-              
+              <div className="p-2 nd-data-doc">
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="nd-p-12">
+                    <Row className="nd-stepform-box">
+                      <Col lg={5} md={5} sm={5}>
+                        <form>
+                          <fieldset class="upload_dropZone text-center ">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
 
-              
-             
-              
+                            <img src={UploadFile} alt="upload-file" />
+
+                            <p class="nd-drop-txt my-2">
+                              Drag &amp; drop files
+                              <br />
+                              <i>or</i>
+                            </p>
+
+                            <input
+                              id="upload_image_logo"
+                              data-post-name="image_logo"
+                              data-post-url="https://someplace.com/image/uploads/logos/"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
+
+                            <label
+                              class="btn nd-primary-btn mb-1"
+                              for="upload_image_logo"
+                            >
+                              Choose file(s)
+                            </label>
+                            <p className="nd-upload-file">
+                              Upload size up to 10KB to 100KB (File Format: jpg,
+                              png)
+                            </p>
+
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                          </fieldset>
+                        </form>
+                      </Col>
+                      <Col lg={7} md={7} sm={7} className="nd-doc-subinfo mt-2">
+                        <h3>
+                          कन्या शिशु की नवीनतम पासपोर्ट साइज फोटो{" "}
+                          <span className="alert-txt">*</span>
+                        </h3>
+                        <div className="d-flex nd-doc-info">
+                          <Col lg={3} md={3} sm={3}>
+                            03.01.2025
+                          </Col>
+                          <Col
+                            lg={9}
+                            md={9}
+                            sm={9}
+                            className="px-4 nd-success-doc"
+                          >
+                            <FaCheckCircle /> Uploaded Successfully{" "}
+                          </Col>
+                        </div>
+                        <div className="col nd-delete-icon">
+                          <h3>
+                            <RiDeleteBin6Line />
+                            Click here to Remove
+                          </h3>{" "}
+                        </div>
+                      </Col>
+                    </Row>
+                  </Col>
+                  <Col lg={6} md={12} sm={12} className="nd-p-12">
+                    <Row className="nd-stepform-box">
+                      <Col lg={5} md={5} sm={5}>
+                        <form>
+                          <fieldset class="upload_dropZone text-center ">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
+
+                            <img src={UploadFile} alt="upload-file" />
+
+                            <p class="nd-drop-txt my-2">
+                              Drag &amp; drop files
+                              <br />
+                              <i>or</i>
+                            </p>
+
+                            <input
+                              id="upload_image_logo"
+                              data-post-name="image_logo"
+                              data-post-url="https://someplace.com/image/uploads/logos/"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
+
+                            <label
+                              class="btn nd-primary-btn mb-1"
+                              for="upload_image_logo"
+                            >
+                              Choose file(s)
+                            </label>
+                            <p className="nd-upload-file">
+                              Upload size up to 10KB to 100KB (File Format: jpg,
+                              png)
+                            </p>
+
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                          </fieldset>
+                        </form>
+                      </Col>
+                      <Col lg={7} md={7} sm={7} className="nd-doc-subinfo mt-2">
+                        <h3>
+                          माता / पिता / अभिभावक के हस्ताक्षर जमा करें{" "}
+                          <span className="alert-txt">*</span>
+                        </h3>
+                        <div className="d-flex nd-doc-info">
+                          <Col lg={3} md={3} sm={3}>
+                            03.01.2025
+                          </Col>
+                          <Col
+                            lg={9}
+                            md={9}
+                            sm={9}
+                            className="px-4 nd-success-doc"
+                          >
+                            <FaCheckCircle /> Uploaded Successfully{" "}
+                          </Col>
+                        </div>
+                        <div className="col nd-delete-icon">
+                          <h3>
+                            <RiDeleteBin6Line />
+                            Click here to Remove
+                          </h3>{" "}
+                        </div>
+                      </Col>
+                    </Row>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="nd-p-12">
+                    <Row className="nd-stepform-box">
+                      <Col lg={5} md={5} sm={5}>
+                        <form>
+                          <fieldset class="upload_dropZone text-center ">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
+
+                            <img src={UploadFile} alt="upload-file" />
+
+                            <p class="nd-drop-txt my-2">
+                              Drag &amp; drop files
+                              <br />
+                              <i>or</i>
+                            </p>
+
+                            <input
+                              id="upload_image_logo"
+                              data-post-name="image_logo"
+                              data-post-url="https://someplace.com/image/uploads/logos/"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
+
+                            <label
+                              class="btn nd-primary-btn mb-1"
+                              for="upload_image_logo"
+                            >
+                              Choose file(s)
+                            </label>
+                            <p className="nd-upload-file">
+                              Upload size up to 100KB to 1MB (File Format: PDF,
+                              JPG, PNG)
+                            </p>
+
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                          </fieldset>
+                        </form>
+                      </Col>
+                      <Col lg={7} md={7} sm={7} className="nd-doc-subinfo mt-2">
+                        <h3>
+                          {" "}
+                          स्थाई निवास प्रमाण पत्र{" "}
+                          <span className="alert-txt">*</span>
+                        </h3>
+                        <div className="d-flex nd-doc-info">
+                          <Col lg={3} md={3} sm={3}>
+                            03.01.2025
+                          </Col>
+                          <Col
+                            lg={9}
+                            md={9}
+                            sm={9}
+                            className="px-4 nd-success-doc"
+                          >
+                            <FaCheckCircle /> Uploaded Successfully{" "}
+                          </Col>
+                        </div>
+                        <div className="col nd-delete-icon">
+                          <h3>
+                            <RiDeleteBin6Line />
+                            Click here to Remove
+                          </h3>{" "}
+                        </div>
+                      </Col>
+                    </Row>
+                  </Col>
+                  <Col lg={6} md={12} sm={12} className="nd-p-12">
+                    <Row className="nd-stepform-box">
+                      <Col lg={5} md={5} sm={5}>
+                        <form>
+                          <fieldset class="upload_dropZone text-center ">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
+
+                            <img src={UploadFile} alt="upload-file" />
+
+                            <p class="nd-drop-txt my-2">
+                              Drag &amp; drop files
+                              <br />
+                              <i>or</i>
+                            </p>
+
+                            <input
+                              id="upload_image_logo"
+                              data-post-name="image_logo"
+                              data-post-url="https://someplace.com/image/uploads/logos/"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
+
+                            <label
+                              class="btn nd-primary-btn mb-1"
+                              for="upload_image_logo"
+                            >
+                              Choose file(s)
+                            </label>
+                            <p className="nd-upload-file">
+                              Upload size up to 100KB to 1MB (File Format: PDF,
+                              JPG, PNG)
+                            </p>
+
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                          </fieldset>
+                        </form>
+                      </Col>
+                      <Col lg={7} md={7} sm={7} className="nd-doc-subinfo mt-2">
+                        <h3>
+                          परिवार रजिस्टर की नकल या सभासद/पार्षद द्वारा दिया गया
+                          प्रमाण पत्र <span className="alert-txt">*</span>
+                        </h3>
+                        <div className="d-flex nd-doc-info">
+                          <Col lg={3} md={3} sm={3}>
+                            03.01.2025
+                          </Col>
+                          <Col
+                            lg={9}
+                            md={9}
+                            sm={9}
+                            className="px-4 nd-success-doc"
+                          >
+                            <FaCheckCircle /> Uploaded Successfully{" "}
+                          </Col>
+                        </div>
+                        <div className="col nd-delete-icon">
+                          <h3>
+                            <RiDeleteBin6Line />
+                            Click here to Remove
+                          </h3>{" "}
+                        </div>
+                      </Col>
+                    </Row>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="nd-p-12">
+                    <Row className="nd-stepform-box">
+                      <Col lg={5} md={5} sm={5}>
+                        <form>
+                          <fieldset class="upload_dropZone text-center ">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
+
+                            <img src={UploadFile} alt="upload-file" />
+
+                            <p class="nd-drop-txt my-2">
+                              Drag &amp; drop files
+                              <br />
+                              <i>or</i>
+                            </p>
+
+                            <input
+                              id="upload_image_logo"
+                              data-post-name="image_logo"
+                              data-post-url="https://someplace.com/image/uploads/logos/"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
+
+                            <label
+                              class="btn nd-primary-btn mb-1"
+                              for="upload_image_logo"
+                            >
+                              Choose file(s)
+                            </label>
+                            <p className="nd-upload-file">
+                              Upload size up to 100KB to 1MB (File Format: PDF,
+                              JPG, PNG)
+                            </p>
+
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                          </fieldset>
+                        </form>
+                      </Col>
+                      <Col lg={7} md={7} sm={7} className="nd-doc-subinfo mt-2">
+                        <h3>
+                          राशन कार्ड की प्रति{" "}
+                          <span className="alert-txt">*</span>
+                        </h3>
+                        <div className="d-flex nd-doc-info">
+                          <Col lg={3} md={3} sm={3}>
+                            03.01.2025
+                          </Col>
+                          <Col
+                            lg={9}
+                            md={9}
+                            sm={9}
+                            className="px-4 nd-success-doc"
+                          >
+                            <FaCheckCircle /> Uploaded Successfully{" "}
+                          </Col>
+                        </div>
+                        <div className="col nd-delete-icon">
+                          <h3>
+                            <RiDeleteBin6Line />
+                            Click here to Remove
+                          </h3>{" "}
+                        </div>
+                      </Col>
+                    </Row>
+                  </Col>
+
+                  <Col lg={6} md={12} sm={12} className="nd-p-12">
+                    <Row className="nd-stepform-box">
+                      <Col lg={5} md={5} sm={5}>
+                        <form>
+                          <fieldset class="upload_dropZone text-center ">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
+
+                            <img src={UploadFile} alt="upload-file" />
+
+                            <p class="nd-drop-txt my-2">
+                              Drag &amp; drop files
+                              <br />
+                              <i>or</i>
+                            </p>
+
+                            <input
+                              id="upload_image_logo"
+                              data-post-name="image_logo"
+                              data-post-url="https://someplace.com/image/uploads/logos/"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
+
+                            <label
+                              class="btn nd-primary-btn mb-1"
+                              for="upload_image_logo"
+                            >
+                              Choose file(s)
+                            </label>
+                            <p className="nd-upload-file">
+                              Upload size up to 100KB to 1MB (File Format: PDF,
+                              JPG, PNG)
+                            </p>
+
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                          </fieldset>
+                        </form>
+                      </Col>
+                      <Col lg={7} md={7} sm={7} className="nd-doc-subinfo mt-2">
+                        <h3>
+                          जन्म पंजीकरण का प्रमाण पत्र{" "}
+                          <span className="alert-txt">*</span>
+                        </h3>
+                        <div className="d-flex nd-doc-info">
+                          <Col lg={3} md={3} sm={3}>
+                            03.01.2025
+                          </Col>
+                          <Col
+                            lg={9}
+                            md={9}
+                            sm={9}
+                            className="px-4 nd-success-doc"
+                          >
+                            <FaCheckCircle /> Uploaded Successfully{" "}
+                          </Col>
+                        </div>
+                        <div className="col nd-delete-icon">
+                          <h3>
+                            <RiDeleteBin6Line />
+                            Click here to Remove
+                          </h3>{" "}
+                        </div>
+                      </Col>
+                    </Row>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="nd-p-12">
+                    <Row className="nd-stepform-box">
+                      <Col lg={5} md={5} sm={5}>
+                        <form>
+                          <fieldset class="upload_dropZone text-center ">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
+
+                            <img src={UploadFile} alt="upload-file" />
+
+                            <p class="nd-drop-txt my-2">
+                              Drag &amp; drop files
+                              <br />
+                              <i>or</i>
+                            </p>
+
+                            <input
+                              id="upload_image_logo"
+                              data-post-name="image_logo"
+                              data-post-url="https://someplace.com/image/uploads/logos/"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
+
+                            <label
+                              class="btn nd-primary-btn mb-1"
+                              for="upload_image_logo"
+                            >
+                              Choose file(s)
+                            </label>
+                            <p className="nd-upload-file">
+                              Upload size up to 100KB to 1MB (File Format: PDF,
+                              JPG, PNG)
+                            </p>
+
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                          </fieldset>
+                        </form>
+                      </Col>
+                      <Col lg={7} md={7} sm={7} className="nd-doc-subinfo mt-2">
+                        <h3>
+                          आय प्रमाण पत्र<span className="alert-txt">*</span>
+                        </h3>
+                        <div className="d-flex nd-doc-info">
+                          <Col lg={3} md={3} sm={3}>
+                            03.01.2025
+                          </Col>
+                          <Col
+                            lg={9}
+                            md={9}
+                            sm={9}
+                            className="px-4 nd-success-doc"
+                          >
+                            <FaCheckCircle /> Uploaded Successfully{" "}
+                          </Col>
+                        </div>
+                        <div className="col nd-delete-icon">
+                          <h3>
+                            <RiDeleteBin6Line />
+                            Click here to Remove
+                          </h3>{" "}
+                        </div>
+                      </Col>
+                    </Row>
+                  </Col>
+                  <Col lg={6} md={12} sm={12} className="nd-p-12">
+                    <Row className="nd-stepform-box">
+                      <Col lg={5} md={5} sm={5}>
+                        <form>
+                          <fieldset class="upload_dropZone text-center ">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
+
+                            <img src={UploadFile} alt="upload-file" />
+
+                            <p class="nd-drop-txt my-2">
+                              Drag &amp; drop files
+                              <br />
+                              <i>or</i>
+                            </p>
+
+                            <input
+                              id="upload_image_logo"
+                              data-post-name="image_logo"
+                              data-post-url="https://someplace.com/image/uploads/logos/"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
+
+                            <label
+                              class="btn nd-primary-btn mb-1"
+                              for="upload_image_logo"
+                            >
+                              Choose file(s)
+                            </label>
+                            <p className="nd-upload-file">
+                              Upload size up to 100KB to 1MB (File Format: PDF,
+                              JPG, PNG)
+                            </p>
+
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                          </fieldset>
+                        </form>
+                      </Col>
+                      <Col lg={7} md={7} sm={7} className="nd-doc-subinfo mt-2">
+                        <h3>
+                          {" "}
+                          माता और पिता / अभिभावक का आधार कार्ड
+                          <span className="alert-txt">*</span>
+                        </h3>
+                        <div className="d-flex nd-doc-info">
+                          <Col lg={3} md={3} sm={3}>
+                            03.01.2025
+                          </Col>
+                          <Col
+                            lg={9}
+                            md={9}
+                            sm={9}
+                            className="px-4 nd-success-doc"
+                          >
+                            <FaCheckCircle /> Uploaded Successfully{" "}
+                          </Col>
+                        </div>
+                        <div className="col nd-delete-icon">
+                          <h3>
+                            <RiDeleteBin6Line />
+                            Click here to Remove
+                          </h3>{" "}
+                        </div>
+                      </Col>
+                    </Row>
+                  </Col>
+                </Row>
+                <Row></Row>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="nd-p-12">
+                    <Row className="nd-stepform-box">
+                      <Col lg={5} md={5} sm={5}>
+                        <form>
+                          <fieldset class="upload_dropZone text-center ">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
+
+                            <img src={UploadFile} alt="upload-file" />
+
+                            <p class="nd-drop-txt my-2">
+                              Drag &amp; drop files
+                              <br />
+                              <i>or</i>
+                            </p>
+
+                            <input
+                              id="upload_image_logo"
+                              data-post-name="image_logo"
+                              data-post-url="https://someplace.com/image/uploads/logos/"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
+
+                            <label
+                              class="btn nd-primary-btn mb-1"
+                              for="upload_image_logo"
+                            >
+                              Choose file(s)
+                            </label>
+                            <p className="nd-upload-file">
+                              Upload size up to 100KB to 1MB (File Format: PDF,
+                              JPG, PNG)
+                            </p>
+
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                          </fieldset>
+                        </form>
+                      </Col>
+                      <Col lg={7} md={7} sm={7} className="nd-doc-subinfo mt-2">
+                        <h3>
+                          मातृशिशु प्रतिरक्षण / एम०सी० पी० (टीकाकरण) कार्ड{" "}
+                          <span className="alert-txt">*</span>
+                        </h3>
+                        <div className="d-flex nd-doc-info">
+                          <Col lg={3} md={3} sm={3}>
+                            03.01.2025
+                          </Col>
+                          <Col
+                            lg={9}
+                            md={9}
+                            sm={9}
+                            className="px-4 nd-success-doc"
+                          >
+                            <FaCheckCircle /> Uploaded Successfully{" "}
+                          </Col>
+                        </div>
+                        <div className="col nd-delete-icon">
+                          <h3>
+                            <RiDeleteBin6Line />
+                            Click here to Remove
+                          </h3>{" "}
+                        </div>
+                      </Col>
+                    </Row>
+                  </Col>
+                </Row>
+              </div>
+
               <div className="nd-btnn text-center">
                 <Link to="/NandaStep4th">
                   <Button className="mt-3 nd-primary-btn"> सबमिट करे </Button>

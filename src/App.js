@@ -28,7 +28,11 @@ import SubmitRequest from "../src/components/leftnav/NandaGoraForms/Registration
 import FormStatuspending from "./components/leftnav/FormStatuspending";
 import SteponeView from "./components/modal/SteponeView";
 import SteptwoView from "./components/modal/SteptwoView";
-import StepthreeView from "./components/modal/StepthreeView"
+import StepthreeView from "./components/modal/StepthreeView";
+import TwelthStepOne from "./components/leftnav/twelfthpass/TwelthStepOne";
+import TwelthStepTwo from "./components/leftnav/twelfthpass/TwelthStepTwo";
+import TwelthStepThree from "./components/leftnav/twelfthpass/TwelthStepThree";
+import TwelthPass from "./components/leftnav/twelfthpass/TwelthPass";
 // import FormStatus from "../src/components/leftnav/NandaGoraForms/RegistrationForms/FormStatus";
 // import Girl12thtutorial from "./components/leftnav/Girl12thtutorial";
 import LoginFooter from "./components/footer/LoginFooter";
@@ -53,15 +57,65 @@ import NandaRegistration from "./AdminPannel/technicalcomponents/dashboard/Nanda
 
 function App() {
   const location = useLocation();
-  const hiddenPaths = new Set(["/UserDashboard", "/DashBoard", "/Change","/NandaStepOne","/NandaStepTwo","/NandaStepThree","/NandaStep4th","/Change","/DepartmentContact","/FormStatus","/SubmitRequest","/TechLeftnav","/TechnicaldashBoard","/CheckFormstatus","/OurCDPO","/OurSuper",
-    "/RequestAll","/RequestPending","/RequestDone","/ActivityLog","/NandaRegistration","/ReparingstepTwo","/FinalSubmit"]); // Correct absolute paths
-  const hiddenFooter1 = new Set(["/UserDashboard", "/DashBoard", "/Change","/NandaStepOne","/NandaStepTwo","/NandaStepThree","/NandaStep4th","/Change","/DepartmentContact","/FormStatus","/SubmitRequest","/TechLeftnav","/TechnicaldashBoard","/CheckFormstatus","/OurCDPO","/OurSuper",
-    "/RequestAll","/RequestPending","/RequestDone","/ActivityLog","/NandaRegistration","/ReparingstepTwo","/FinalSubmit"]); // Correct absolute paths
+  const hiddenPaths = new Set([
+    "/UserDashboard",
+    "/DashBoard",
+    "/Change",
+    "/NandaStepOne",
+    "/NandaStepTwo",
+    "/NandaStepThree",
+    "/NandaStep4th",
+    "/Change",
+    "/DepartmentContact",
+    "/FormStatus",
+    "/SubmitRequest",
+    "/TwelthStepOne",
+    "/TwelthStepTwo",
+    "/TwelthStepThree",
+    "/TechLeftnav",
+    "/TechnicaldashBoard",
+    "/CheckFormstatus",
+    "/OurCDPO",
+    "/OurSuper",
+    "/RequestAll",
+    "/RequestPending",
+    "/RequestDone",
+    "/ActivityLog",
+    "/NandaRegistration",
+    "/ReparingstepTwo",
+    "/FinalSubmit",
+  ]); // Correct absolute paths
+  const hiddenFooter1 = new Set([
+    "/UserDashboard",
+    "/DashBoard",
+    "/Change",
+    "/NandaStepOne",
+    "/NandaStepTwo",
+    "/NandaStepThree",
+    "/NandaStep4th",
+    "/Change",
+    "/DepartmentContact",
+    "/FormStatus",
+    "/SubmitRequest",
+    "/TwelthStepOne",
+    "/TwelthStepTwo",
+    "/TwelthStepThree",
+    "/TechLeftnav",
+    "/TechnicaldashBoard",
+    "/CheckFormstatus",
+    "/OurCDPO",
+    "/OurSuper",
+    "/RequestAll",
+    "/RequestPending",
+    "/RequestDone",
+    "/ActivityLog",
+    "/NandaRegistration",
+    "/ReparingstepTwo",
+    "/FinalSubmit",
+  ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
-  const shouldHideFooter1 =  hiddenFooter1.has(location.pathname);
-  const buttons = [
-    "UserDashboard",
-  ]
+  const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
+  const buttons = ["UserDashboard"];
   return (
     <div>
       {/* Conditionally render NavBar */}
@@ -79,9 +133,8 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/NandaStepOne" element={<NandaStepOne />} />
         <Route path="/NandaStepTwo" element={<NandaStepTwo />} />
-        <Route path="/NandaYojana" element={<NandaYojana/>} />
+        <Route path="/NandaYojana" element={<NandaYojana />} />
         {/* <Route path="/Deepika" element={<Deepika/>} /> */}
-        
         <Route path="/NandaStepTwo" element={<NandaStepTwo />} />
         <Route path="/NandaStepThree" element={<NandaStepThree />} />
         <Route path="/NandaStep4th" element={<NandaStep4th />} />
@@ -92,32 +145,35 @@ function App() {
         <Route path="/StepthreeView" element={<StepthreeView />} />
         <Route path="/SubmitRequest" element={<SubmitRequest />} />
         <Route path="/FormStatus" element={<FormStatus />} />
-    
+        <Route path="/TwelthStepOne" element={<TwelthStepOne />} />
+        <Route path="/TwelthStepTwo" element={<TwelthStepTwo />} />
+        <Route path="/TwelthStepThree" element={<TwelthStepThree />} />
+        <Route path="/TwelthPass" element={<TwelthPass />} />
         <Route path="/DashBoard" element={<DashBoard />} /> {/* Correct path */}
-        <Route path="/UserDashboard" element={<UserDashboard />} /> {/* Correct path */}
+        <Route path="/UserDashboard" element={<UserDashboard />} />{" "}
+        {/* Correct path */}
         <Route path="/Change" element={<Change />} /> {/* Correct path */}
-        <Route path="/InnerNavigation" element={<InnerNavigation/>} /> {/* Correct path */}
-        <Route path="/GirlsBornStep" element={<GirlsBornStep/>} /> {/* Correct path */}
+        <Route path="/InnerNavigation" element={<InnerNavigation />} />{" "}
+        {/* Correct path */}
+        <Route path="/GirlsBornStep" element={<GirlsBornStep />} />{" "}
+        {/* Correct path */}
         <Route path="/ModalOne" element={<ModalOne />} />
-      {/* Technical dashboard*/}
-      <Route path="/TechLeftnav" element={<TechLeftnav />} />
-      <Route path="/TechnicaldashBoard" element={<TechnicaldashBoard />} />
-      <Route path="/CheckFormstatus" element={<CheckFormstatus/>} />
-      <Route path="/NandaTech" element={<NandaTech />} />
-      <Route path="/OurCDPO" element={<OurCDPO />} />
-      <Route path="/OurSuper" element={<OurSuper/>} />
-      <Route path="/RequestPending" element={<RequestPending/>} />
-      <Route path="/RequestDone" element={<RequestDone/>} />
-      <Route path="/ActivityLog" element={<ActivityLog/>} />
-      <Route path="/RequestAll" element={<RequestAll/>} />
-      <Route path="/ReparingstepTwo" element={<ReparingstepTwo/>} />
-      <Route path="/FinalSubmit" element={<FinalSubmit/>} />
-      <Route path="/NandaRegistration" element={<NandaRegistration/>} />
-
-       
+        {/* Technical dashboard*/}
+        <Route path="/TechLeftnav" element={<TechLeftnav />} />
+        <Route path="/TechnicaldashBoard" element={<TechnicaldashBoard />} />
+        <Route path="/CheckFormstatus" element={<CheckFormstatus />} />
+        <Route path="/NandaTech" element={<NandaTech />} />
+        <Route path="/OurCDPO" element={<OurCDPO />} />
+        <Route path="/OurSuper" element={<OurSuper />} />
+        <Route path="/RequestPending" element={<RequestPending />} />
+        <Route path="/RequestDone" element={<RequestDone />} />
+        <Route path="/ActivityLog" element={<ActivityLog />} />
+        <Route path="/RequestAll" element={<RequestAll />} />
+        <Route path="/ReparingstepTwo" element={<ReparingstepTwo />} />
+        <Route path="/FinalSubmit" element={<FinalSubmit />} />
+        <Route path="/NandaRegistration" element={<NandaRegistration />} />
       </Routes>
 
-     
       {!shouldHideFooter1 && <LoginFooter />}
     </div>
   );

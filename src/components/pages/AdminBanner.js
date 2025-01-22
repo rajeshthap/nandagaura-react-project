@@ -304,17 +304,17 @@ function AdminBanner() {
             </Form.Group>
 
             <Form.Group className="mb-3 mt-3" controlId="block">
-              <Form.Label className="nd-form-label">Anganwadi Name:</Form.Label>
+              <Form.Label className="nd-form-label">Anganwadi Kendra:</Form.Label>
               <Form.Select
                 aria-label="Choose block"
                 className="nd-steps-drop"
               >
                 
-                <option selected="" disabled="">Choose Anganwadi Name</option>
-                                  <option value="Anganwadi-01">Anganwadi-01</option>
-                                  <option value="Anganwadi-02">Anganwadi-02</option>
-                                  <option value="Anganwadi-03">Anganwadi-03</option>
-                                  <option value="Anganwadi-04">Anganwadi-04</option>
+                <option selected="" disabled="">Choose Anganwadi Kendra</option>
+                                  <option value="Anganwadi-01">Center-01</option>
+                                  <option value="Anganwadi-02">Center-02</option>
+                                  <option value="Anganwadi-03">Center-03</option>
+                                  <option value="Anganwadi-04">Center-04</option>
                                   
                               
                 
