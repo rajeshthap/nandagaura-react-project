@@ -6,9 +6,11 @@ import {
   MdOutlineFormatAlignRight,
   MdLibraryBooks,
 } from "react-icons/md";
+import { GrDatabase } from "react-icons/gr";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa"; // Add Chevron icons
 import { LuLogOut } from "react-icons/lu";
 import { ImFilePdf } from "react-icons/im";
+import { BsDatabaseCheck } from "react-icons/bs";
 import { FaRegFileAlt, FaChalkboardTeacher, FaAlignLeft } from "react-icons/fa";
 import { HiOutlineUser } from "react-icons/hi";
 import UKLogon from "../../../assets/images/UKLogo.png";
@@ -115,13 +117,13 @@ function TechLeftnav() {
 
       subRoutes: [
         {
-          icon: <TbActivityHeartbeat />,
-          label: "Final Born",
+          icon: <BsDatabaseCheck />,
+          label: "New Born Final",
           path: "/FinalBorn",
         },
         {
-          icon: <MdPendingActions />,
-          label: "Final",
+          icon: <GrDatabase />,
+          label: "12th Final",
           path: "/Final",
         },
        
@@ -133,7 +135,7 @@ function TechLeftnav() {
 
   return (
     <>
-      <header>
+      <header className="tech-header">
         <div className="logosec">
           <img
             src={MenuIcon}
@@ -160,7 +162,7 @@ function TechLeftnav() {
           <div className="nd-msg">
             <span>Department:</span> Technical Login
           </div>
-          <div className="dp" alt="logout" title="Click to logout">
+          <div className="tech-dp" alt="logout" title="Click to logout">
             <div className="nd-log-icon">
               <LuLogOut />
             </div>
@@ -171,8 +173,8 @@ function TechLeftnav() {
       <div>
         <div>
           <div className={`navcontainer ${isNavClosed ? "navclose" : ""}`}>
-            <nav className="nav">
-              <div className="nav-upper-options">
+            <nav className="nav-tech">
+              <div className="nav-upper-options tech-options ">
                 <div className="nd-menu">
                   <div>
                     <FaAlignLeft
@@ -183,7 +185,7 @@ function TechLeftnav() {
                     />
                   </div>
                   <div className="nd-user">User: Deepika Chauhan</div>
-                  <div className="nd-log-icon-mob">
+                  <div className="tech-log-icon-mob">
                     <LuLogOut
                       className=" "
                       alt="logout"
@@ -196,7 +198,7 @@ function TechLeftnav() {
                   <React.Fragment key={index}>
                     {option.download ? (
                       <div
-                        className={`nav-option option${index + 1}`}
+                        className={`tech-nav-option option${index + 1}`}
                         onClick={() =>
                           handleDownload(option.fileUrl, option.fileName)
                         }

@@ -149,8 +149,7 @@ header {
 .dp {
   font-size: var(--nd-space-500);
   background-color: var(--nd-blue-hover);
-  width: 32px;
-  height: 32px;
+  
   border-radius: 50%;
   color: var(--nd-white);
 
