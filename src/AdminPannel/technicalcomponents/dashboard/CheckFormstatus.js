@@ -54,8 +54,11 @@ const CheckFormstatus = () => {
                
               </Row>
               <Row className=" mt-3">
+              
                 <Col lg={6} md={6} sm={12}>
+             
                <Row className="tech-nd-status-data">
+              
                 <Col lg={6} md={6} sm={6} className="nd-tech-status">
                 <h1>Name </h1>
                 </Col>
@@ -80,8 +83,11 @@ const CheckFormstatus = () => {
                 <Col lg={6} md={6} sm={6} className="nd-tech-status">
                 <h2>2024-11-21 12:58:22</h2>
                 </Col>
-               </Row>               
+               
+               </Row>  
+              
                 </Col>
+              
                 <Col lg={6} md={6} sm={12}>
                 <Accordion className="nd-tech-accordion">
       <Accordion.Item eventKey="1" className="nd-tech-body">

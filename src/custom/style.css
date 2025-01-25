@@ -567,22 +567,31 @@ body {
   padding-bottom: var(--nd-space-300);
   padding-top: var(--nd-space-300);
 }
-.nd-table-p{
+
+.nd-table-p {
   padding: 0px !important;
 }
-.nd-table-title{
+
+.nd-table-title {
   padding: 8px 8px 8px 8px;
 }
-.nd-table-style{
+
+.nd-table-style {
   border-bottom: 1px solid #fff;
   padding-top: 6px;
   padding-bottom: 6px;
 }
-.nd-table-row{
+
+.nd-table-row {
   background: none !important;
 }
-.nd-pr-4{
+
+.nd-pr-4 {
   padding-right: 4px;
+}
+
+.page-link {
+  font-size: var(--nd-space-300);
 }
 
 @media (max-width: 575.98px) {
