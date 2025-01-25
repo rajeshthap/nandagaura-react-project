@@ -127,6 +127,24 @@
     background-color: var(--nd-orange-border);
     color: var(--nd-white);
 }
+.table-container {
+    max-width: 100%; 
+    max-height: 400px; 
+    overflow-x: auto; 
+    overflow-y: auto; 
+}
+.tech-table-w{
+    min-width: 200px;
+}
+.tech-tbl-min-w{
+    min-width: 139px;
+}
+.tech-tbl-w{
+    min-width: 159px;
+}
+.tech-tbl{
+    min-width: 198px;
+}
 
 @media (max-width: 575.98px) {
     .nd-staff-print {
@@ -140,4 +158,11 @@
         width: 332px;
         padding: var(--nd-space-0) var(--nd-space-400);
     }
+    .tech-request-mob {
+        max-width: 100%; 
+        overflow-x: auto; 
+       
+      
+       
+      }
 }

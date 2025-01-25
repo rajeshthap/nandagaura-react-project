@@ -69,44 +69,46 @@ const OurSuper = () => {
                   </div>
                 </Col>
               </Row>
-              <Table striped bordered hover size="sm" className="nd-our-staff">
-                <thead>
-                  <tr>
-                    <th>S.no</th>
-                    <th>District</th>
-                    <th>Project</th>
-                    <th>Sector</th>
-                    <th>Supervisor.</th>
-                    <th>Mobile No.</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Dehradun</td>
-                    <td>Raipur</td>
-                    <td>NATHANPUR[07]</td>
-                    <td>Deepika</td>
-                    <td>9876543210</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Dehradun</td>
-                    <td>Raipur</td>
-                    <td>NATHANPUR[07]</td>
-                    <td>Deepika</td>
-                    <td>9876543210</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Dehradun</td>
-                    <td>Raipur</td>
-                    <td>NATHANPUR[07]</td>
-                    <td>Deepika</td>
-                    <td>9876543210</td>
-                  </tr>
-                </tbody>
-              </Table>
+              <div className="table-responsive-lg">
+                <Table className="nd-our-staff">
+                  <thead>
+                    <tr>
+                      <th>S.no</th>
+                      <th>District</th>
+                      <th>Project</th>
+                      <th>Sector</th>
+                      <th>Supervisor.</th>
+                      <th>Mobile No.</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Dehradun</td>
+                      <td>Raipur</td>
+                      <td>NATHANPUR[07]</td>
+                      <td>Deepika</td>
+                      <td>9876543210</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Dehradun</td>
+                      <td>Raipur</td>
+                      <td>NATHANPUR[07]</td>
+                      <td>Deepika</td>
+                      <td>9876543210</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Dehradun</td>
+                      <td>Raipur</td>
+                      <td>NATHANPUR[07]</td>
+                      <td>Deepika</td>
+                      <td>9876543210</td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
                   {" "}
@@ -127,11 +129,7 @@ const OurSuper = () => {
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-                      <Pagination.Item>{13}</Pagination.Item>
-                      <Pagination.Item disabled>{14}</Pagination.Item>
 
-                      <Pagination.Ellipsis />
-                      <Pagination.Item>{20}</Pagination.Item>
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>

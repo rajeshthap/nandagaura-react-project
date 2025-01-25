@@ -69,7 +69,8 @@ const OurCDPO = () => {
                   </div>
                 </Col>
               </Row>
-              <Table striped bordered hover size="sm" className="nd-our-staff">
+              <div className="table-responsive-lg">
+              <Table className="nd-our-staff">
                 <thead>
                   <tr>
                     <th>S.no</th>
@@ -143,6 +144,7 @@ const OurCDPO = () => {
                   </tr>
                 </tbody>
               </Table>
+              </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
                   {" "}
@@ -163,11 +165,7 @@ const OurCDPO = () => {
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-                      <Pagination.Item>{13}</Pagination.Item>
-                      <Pagination.Item disabled>{14}</Pagination.Item>
-
-                      <Pagination.Ellipsis />
-                      <Pagination.Item>{20}</Pagination.Item>
+                     
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>
