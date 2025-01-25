@@ -55,6 +55,8 @@ import RequestAll from "./AdminPannel/technicalcomponents/dashboard/Logs/Request
 import ReparingstepTwo from "./AdminPannel/technicalcomponents/dashboard/ReparingstepTwo";
 import FinalSubmit from "./AdminPannel/technicalcomponents/dashboard/FinalSubmit";
 import NandaRegistration from "./AdminPannel/technicalcomponents/dashboard/NandaRegistration";
+import Final from "./AdminPannel/technicalcomponents/dashboard/FinalsubmitList/Final";
+import FinalBorn from "./AdminPannel/technicalcomponents/dashboard/FinalsubmitList/FinalBorn";
 
 function App() {
   const location = useLocation();
@@ -86,6 +88,8 @@ function App() {
     "/NandaRegistration",
     "/ReparingstepTwo",
     "/FinalSubmit",
+    "/Final",
+    "/FinalBorn"
   ]); // Correct absolute paths
   const hiddenFooter1 = new Set([
     "/UserDashboard",
@@ -115,6 +119,8 @@ function App() {
     "/NandaRegistration",
     "/ReparingstepTwo",
     "/FinalSubmit",
+    "/Final",
+    "/FinalBorn"
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
@@ -176,6 +182,8 @@ function App() {
         <Route path="/ReparingstepTwo" element={<ReparingstepTwo />} />
         <Route path="/FinalSubmit" element={<FinalSubmit />} />
         <Route path="/NandaRegistration" element={<NandaRegistration />} />
+        <Route path="/FinalBorn" element={<FinalBorn />} />
+        <Route path="/Final" element={<Final />} />
       </Routes>
 
       {!shouldHideFooter1 && <LoginFooter />}

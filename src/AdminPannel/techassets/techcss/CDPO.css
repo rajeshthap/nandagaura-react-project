@@ -145,6 +145,19 @@
 .tech-tbl{
     min-width: 198px;
 }
+.tech-filtr-p{
+    
+    padding-top: var(--nd-space-300);
+}
+.tech-filtr-select{
+    font-size: var(--nd-space-300);
+}
+.text-color{
+    color: var(--nd-white);
+}
+.text-color:hover{
+    color: var(--nd-white);
+}
 
 @media (max-width: 575.98px) {
     .nd-staff-print {

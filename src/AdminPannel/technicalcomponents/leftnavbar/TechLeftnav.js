@@ -112,12 +112,23 @@ function TechLeftnav() {
       icon: <FaChalkboardTeacher />,
       label: "Final submit List",
       path:"/FinalSubmit",
+
+      subRoutes: [
+        {
+          icon: <TbActivityHeartbeat />,
+          label: "Final Born",
+          path: "/FinalBorn",
+        },
+        {
+          icon: <MdPendingActions />,
+          label: "Final",
+          path: "/Final",
+        },
+       
+       
+      ],
     },
-    {
-      icon: <HiOutlineUser />,
-      label: "Contact Us",
-      path: "/DepartmentContact",
-    },
+   
   ];
 
   return (
