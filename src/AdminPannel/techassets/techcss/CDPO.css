@@ -15,15 +15,12 @@
     user-select: none;
     border: none;
     border-radius: 50%;
-
 }
-
 .search-btn:hover {
     transition-duration: 0.4s;
     background-color: var(--nd-blue-hover);
     color: var(--nd-border);
 }
-
 .search-container {
     position: relative;
     display: inline-block;
@@ -31,7 +28,6 @@
     height: 50px;
     width: 50px;
 }
-
 .mglass {
     display: inline-block;
     pointer-events: none;
@@ -51,7 +47,6 @@
     background: none;
     border-radius: 50%;
 }
-
 .search {
     margin-top: var(--nd-space-100);
     position: absolute;
@@ -121,11 +116,13 @@
     padding: 4px 12px 4px 12px;
     background-color: var(--nd-orange);
     color: var(--nd-white);
+    border: none;
 }
 
 .nd-btn-copy:hover {
     background-color: var(--nd-orange-border);
     color: var(--nd-white);
+    border: none;
 }
 .table-container {
     max-width: 100%; 
