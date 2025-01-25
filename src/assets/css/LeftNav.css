@@ -427,7 +427,7 @@ header {
 }
 
 span.nav-label {
-  padding-top: var(--nd-space-200);
+  padding-top: var(--nd-space-250);
   font-size: var(--nd-space-350);
   color: var(--nd-white);
 }
