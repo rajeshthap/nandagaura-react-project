@@ -461,7 +461,9 @@ span.nav-tech-label {
 .nd-log-icon {
   margin-left: var(--nd-space-200);
 }
-
+.nav-subitem {
+  padding-left: 54px;
+}
 
 /* Responsive CSS Here */
 @media only screen and (min-width: 992px) {

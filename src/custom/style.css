@@ -549,6 +549,7 @@ body {
 
 .nav-arrow {
   color: var(--nd-white);
+  padding-top: 6px;
 
 
 }
