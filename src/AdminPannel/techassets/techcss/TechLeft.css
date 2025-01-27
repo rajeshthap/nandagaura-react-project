@@ -775,7 +775,8 @@ span.nav-tech-label {
     height: 30px;
     border-radius: 50%;
     padding-left: var(--nd-space-150);
-    margin-right: var(--nd-space-150);
+    margin-right: var(--nd-space-400);
+   
   }
 
   span.nav-tech-label {
