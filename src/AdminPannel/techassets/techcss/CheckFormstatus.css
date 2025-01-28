@@ -7,7 +7,7 @@
     top: 20px;
     left: 20px;
     color: #9ca3af;
-    top: -4px !important;
+    top: -8px !important;
 }
 
 .form span {
@@ -80,6 +80,9 @@
     border-color: var(--nd-orange-border);
     /* background: #73A839 linear-gradient(180deg, #88b557, #73A839) repeat-x;
     border-color: #73A839; */
+    font-size: 12px !important;
+    padding: 10px !important;
+    border-radius: 0px 12px 12px 0px !important;
 }
 
 .tech-nd-btn-success:active {
