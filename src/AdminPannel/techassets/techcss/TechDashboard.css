@@ -30,7 +30,7 @@ font-weight: 600;
 }
 .texh-nd-dashdata{
     background-color: #248afd;
-    border-radius: 8px;
+    border-radius: var(--nd-space-200);
     color: #fff;
 }
 .tech-nd-title{
@@ -46,9 +46,13 @@ font-weight: 600;
 }
 .texh-nd-dashdata1{
     background-color: #3fbbc0;
-    border-radius: 8px;
+    border-radius: var(--nd-space-200);
     color: #fff;
 }
 .tech-nd-sub{
-    padding-left: 16px;
+    padding-left: var(--nd-space-400);
+}
+.tech-select{
+    font-size: var(--nd-space-300);
+    padding: var(--nd-space-100) var(--nd-space-0) var(--nd-space-100) var(--nd-space-200);
 }
