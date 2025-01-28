@@ -8,22 +8,29 @@ import Table from "react-bootstrap/Table";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../../techassets/techcss/CDPO.css";
 
-import TechLeftnav from "../../leftnavbar/TechLeftnav";
-import NandaTech from "../NandaTech";
-import TechFooter from "../../footer/TechFooter";
+import BornICon from "../../../../assets/images/Born-Girl-icon.png";
+
+// import "../../assets/css/HomePage.css";
+// import Footer from "../footer/Footer";
+
+// import BirthCheckbox from "./BirthCheckbox";
+
+// import { PiDownloadSimpleBold } from "react-icons/pi";
+import TechLeftnav from "../../../technicalcomponents/leftnavbar/TechLeftnav";
+import NandaTech from "../../../technicalcomponents/dashboard/NandaTech";
+import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import DirectorateLeftnav from "../../leftnavigation/DirectorateLeftnav";
 
-const Final = () => {
-    
-    
+const DirecSupervisore = () => {
   return (
     <>
       <div>
         {/* Main Container */}
         <div className="main-container">
           {/* Navigation */}
-          <TechLeftnav />
+          <DirectorateLeftnav />
 
           {/* Main Content */}
 
@@ -32,9 +39,9 @@ const Final = () => {
 
             <div className="box-container">
               <div className="nd-tech-heading">
-                <h1>Nanda Gaura Phase 2 Submited Forms
-                </h1>
+                <h1>Our CDPO Registered on this Portal</h1>
               </div>
+
               <Row>
                 <Col lg={6} md={6} sm={12}>
                   <div class="search-container">
@@ -53,54 +60,32 @@ const Final = () => {
                     </form>
                   </div>
                 </Col>
-                <Col lg={6} md={6} sm={12} className="nd-staff-print">
-                <Form.Group controlId="districtFilter" className="mb-3 tech-filtr-p">
-       
-        <Form.Select
-          aria-label="Select District" className="tech-filtr-select"
-         
-        >
-          <option value="All">All</option>
-          <option value="Nanital">Nanital</option>
-          <option value="Dehradun">Dehradun</option>
-          <option value="Haridwar">Haridwar</option>
-        </Form.Select>
-       
-      </Form.Group>
-      <Button variant="info" className="nd-btn-prt text-color mx-2">Filter</Button>
-                  <div>
-                 
-                    <Button variant="secondary" className="nd-btn-prt">
-                      Print
-                    </Button>
-                    <Button variant="success" className="mx-2 nd-btn-copy">
-                      excel
-                    </Button>
-                  </div>
-                </Col>
+               
               </Row>
               <div className="table-responsive-lg">
               <Table className="nd-our-staff">
-              <thead className="tech-thead">
+              <thead className="direc-thead">
                   <tr>
                     <th>S.no</th>
-                    <th>Mobile No</th>
-                    <th>Candidate Name</th>
                     <th>District</th>
-                    
-                   
+                    <th>Project</th>
+                    <th>Sector</th>
+                    <th>Supervisor</th>
+                    <th>Mobile No.</th>
                     
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
+                    <td>Almora</td>
+                    <td>Bhaisiyachana</td>
+                    <td>Sunita pant</td>
+                    <td>Dimple Verma</td>
                     <td>9876543210</td>
-                    <td>Deepika</td>
-                    <td>Dehradun</td>
                    
                   </tr>
-                 
+                  
                 </tbody>
               </Table>
               </div>
@@ -124,7 +109,7 @@ const Final = () => {
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-
+                     
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>
@@ -142,4 +127,4 @@ const Final = () => {
   );
 };
 
-export default Final;
+export default DirecSupervisore;

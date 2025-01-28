@@ -1,0 +1,9 @@
+.direc-thead ,
+th
+ {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  background: #ef6236 !important;
+  color: var(--nd-white) !important;
+}

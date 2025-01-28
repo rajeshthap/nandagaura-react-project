@@ -1,39 +1,41 @@
 import React, { useState } from "react";
-import Pagination from "react-bootstrap/Pagination";
 // import { Link } from "react-router-dom";
-import "../../../techassets/techcss/TechLeft.css";
-import "../../../techassets/techcss/TechDashboard.css";
-import Table from "react-bootstrap/Table";
+import "../../techassets/techcss/TechLeft.css";
+import "../../techassets/techcss/TechDashboard.css";
+
 // import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-import "../../../techassets/techcss/CDPO.css";
+import { Row, Col, Pagination, Table} from "react-bootstrap";
+import { GrRestroomWomen } from "react-icons/gr";
+import GirlIcon from "../../../assets/images/girl_icon.svg"
+import dashICon from "../../../assets/images/girls-dash-icon.png"
+import BornICon from "../../../assets/images/Born-Girl-icon.png"
+import TechLeftnav from "../../technicalcomponents/leftnavbar/TechLeftnav"
+import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
+import TechFooter from "../../technicalcomponents/footer/TechFooter";
+import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 
-import TechLeftnav from "../../leftnavbar/TechLeftnav";
-import NandaTech from "../NandaTech";
-import TechFooter from "../../footer/TechFooter";
-import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
-const Final = () => {
-    
-    
+const ProjectWiseAppli = () => {
+ 
   return (
     <>
       <div>
+       
+      
+
         {/* Main Container */}
         <div className="main-container">
           {/* Navigation */}
-          <TechLeftnav />
+          <DirectorateLeftnav />
 
           {/* Main Content */}
 
           <div className="main">
-            <NandaTech />
+            <NandaTech/>
 
             <div className="box-container">
               <div className="nd-tech-heading">
-                <h1>Nanda Gaura Phase 2 Submited Forms
-                </h1>
+                <h1>Project wise received on this Portal</h1>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -53,54 +55,35 @@ const Final = () => {
                     </form>
                   </div>
                 </Col>
-                <Col lg={6} md={6} sm={12} className="nd-staff-print">
-                <Form.Group controlId="districtFilter" className="mb-3 tech-filtr-p">
-       
-        <Form.Select
-          aria-label="Select District" className="tech-filtr-select"
-         
-        >
-          <option value="All">All</option>
-          <option value="Nanital">Nanital</option>
-          <option value="Dehradun">Dehradun</option>
-          <option value="Haridwar">Haridwar</option>
-        </Form.Select>
-       
-      </Form.Group>
-      <Button variant="info" className="nd-btn-prt text-color mx-2">Filter</Button>
-                  <div>
-                 
-                    <Button variant="secondary" className="nd-btn-prt">
-                      Print
-                    </Button>
-                    <Button variant="success" className="mx-2 nd-btn-copy">
-                      excel
-                    </Button>
-                  </div>
-                </Col>
+                
               </Row>
               <div className="table-responsive-lg">
               <Table className="nd-our-staff">
-              <thead className="tech-thead">
+                <thead className="direc-thead">
                   <tr>
                     <th>S.no</th>
-                    <th>Mobile No</th>
-                    <th>Candidate Name</th>
-                    <th>District</th>
-                    
-                   
-                    
+                    <th>District Name</th>
+                    <th>Received</th>
+                    <th>Approved by CDPO</th>
+                    <th>Rejected by CDPO</th>
+                    <th>Pending</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>9876543210</td>
-                    <td>Deepika</td>
-                    <td>Dehradun</td>
+                    <td>Almora</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
                    
+                    <td>
+                     
+                        0
+                     
+                    </td>
                   </tr>
-                 
+                
                 </tbody>
               </Table>
               </div>
@@ -124,7 +107,7 @@ const Final = () => {
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-
+                     
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>
@@ -142,4 +125,4 @@ const Final = () => {
   );
 };
 
-export default Final;
+export default ProjectWiseAppli;

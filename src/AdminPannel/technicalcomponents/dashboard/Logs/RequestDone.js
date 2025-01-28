@@ -66,7 +66,7 @@ const RequestDone = () => {
               </Row>
               <div className="table-responsive-lg">
               <Table striped bordered hover size="sm" className="nd-our-staff">
-                <thead>
+              <thead className="tech-thead">
                   <tr>
                     <th>S.no</th>
                     <th>Candidate Name</th>

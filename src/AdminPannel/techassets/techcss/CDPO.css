@@ -1,7 +1,7 @@
 .search-btn {
     display: inline-block;
     margin: var(--nd-space-100) var(--nd-space-50);
-    background-color: var(--nd-blue);
+    background-color: #ff8863;
     font-size: var(--nd-space-700);
     padding: var(--nd-space-0) var(--nd-space-300);
     height: 35px;
@@ -118,7 +118,9 @@
     color: var(--nd-white);
     border: none;
 }
-
+.tech-thead th{
+    background-color: #595959 !important;
+}
 .nd-btn-copy:hover {
     background-color: var(--nd-orange-border);
     color: var(--nd-white);

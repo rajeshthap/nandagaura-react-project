@@ -356,7 +356,7 @@ function AdminBanner() {
                 <Row className="nd-p-18">
                   <Col lg={4} md={6} sm={3}>
                     <div className="form-check">
-                      <input
+                    <Link to="/DirectorateDashboard"> <input
                         className="form-check-input"
                         type="radio"
                         name="flexRadioDefault"
@@ -364,7 +364,7 @@ function AdminBanner() {
                         value={1}
                         onChange={handleChange}
                         checked={isRadio === 1}
-                      />
+                      /></Link> 
                       <label className="form-check-label" htmlFor="radio1">
                         Directorate Login
                       </label>

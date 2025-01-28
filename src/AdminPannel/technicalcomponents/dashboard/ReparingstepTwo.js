@@ -61,15 +61,15 @@ const ReparingstepTwo = () => {
               </Row>
               <div className="table-responsive-lg">
               <Table striped bordered hover size="sm" className="nd-our-staff">
-                <thead>
+                <thead className="tech-thead">
                   <tr>
-                    <th>S.no</th>
-                    <th>Candidate Name</th>
-                    <th>Mobile No</th>
-                    <th>Adhar No</th>
-                    <th>District</th>
-                    <th>Project</th>
-                    <th>Action</th>
+                    <th className="tech-thead">S.no</th>
+                    <th className="tech-thead">Candidate Name</th>
+                    <th className="tech-thead">Mobile No</th>
+                    <th className="tech-thead">Adhar No</th>
+                    <th className="tech-thead">District</th>
+                    <th className="tech-thead">Project</th>
+                    <th className="tech-thead">Action</th>
                     
                   </tr>
                 </thead>

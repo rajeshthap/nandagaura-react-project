@@ -61,7 +61,7 @@ const NandaRegistration = () => {
               </Row>
               <div className="table-responsive-lg">
               <Table className="nd-our-staff">
-                <thead>
+              <thead className="tech-thead">
                   <tr>
                     <th>S.no</th>
                     <th>Candidate Name</th>

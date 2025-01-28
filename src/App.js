@@ -57,6 +57,16 @@ import FinalSubmit from "./AdminPannel/technicalcomponents/dashboard/FinalSubmit
 import NandaRegistration from "./AdminPannel/technicalcomponents/dashboard/NandaRegistration";
 import Final from "./AdminPannel/technicalcomponents/dashboard/FinalsubmitList/Final";
 import FinalBorn from "./AdminPannel/technicalcomponents/dashboard/FinalsubmitList/FinalBorn";
+//-----------Directorate dashboard-----------//
+
+import DirectorateDashboard from "./AdminPannel/Directorate_login/dashboard/DirectorateDashboard";
+import DirecCDPO from "./AdminPannel/Directorate_login/dashboard/direct_ourstaff/DirecCDPO";
+import DirecSupervisore from "./AdminPannel/Directorate_login/dashboard/direct_ourstaff/DirecSupervisore";
+import TwelthAppli from "./AdminPannel/Directorate_login/dashboard/TwelthAppli";
+import DirecNewBorn from "./AdminPannel/Directorate_login/dashboard/DirecNewBorn";
+import ProjectWiseAppli from "./AdminPannel/Directorate_login/dashboard/ProjectWiseAppli";
+import DistrictWiseAppli from "./AdminPannel/Directorate_login/dashboard/DistrictWiseAppli";
+
 
 function App() {
   const location = useLocation();
@@ -89,7 +99,14 @@ function App() {
     "/ReparingstepTwo",
     "/FinalSubmit",
     "/Final",
-    "/FinalBorn"
+    "/FinalBorn", // Directorate
+    "/DirectorateDashboard",
+    "/DirecCDPO",
+    "/DirecSupervisore",
+    "/TwelthAppli",
+    "/DirecNewBorn",
+    "/ProjectWiseAppli",
+    "/DistrictWiseAppli"
   ]); // Correct absolute paths
   const hiddenFooter1 = new Set([
     "/UserDashboard",
@@ -120,7 +137,14 @@ function App() {
     "/ReparingstepTwo",
     "/FinalSubmit",
     "/Final",
-    "/FinalBorn"
+    "/FinalBorn",// Directorate
+    "/DirectorateDashboard",
+    "/DirecCDPO",
+    "/DirecSupervisore",
+    "/TwelthAppli",
+     "/DirecNewBorn",
+     "/ProjectWiseAppli",
+     "./DistrictWiseAppli"
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
@@ -184,6 +208,16 @@ function App() {
         <Route path="/NandaRegistration" element={<NandaRegistration />} />
         <Route path="/FinalBorn" element={<FinalBorn />} />
         <Route path="/Final" element={<Final />} />
+           {/* Directorate dashboard*/}
+
+         <Route path="/DirectorateDashboard" element={<DirectorateDashboard />} />
+         <Route path="/DirecCDPO" element={<DirecCDPO />} />
+         <Route path="/DirecSupervisore" element={<DirecSupervisore />} />
+         <Route path="/TwelthAppli" element={<TwelthAppli />} />
+         <Route path="/DirecNewBorn" element={<DirecNewBorn />} />
+         <Route path="/ProjectWiseAppli" element={<ProjectWiseAppli />} />
+         <Route path="/DistrictWiseAppli" element={<DistrictWiseAppli />} />
+
       </Routes>
 
       {!shouldHideFooter1 && <LoginFooter />}

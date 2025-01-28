@@ -63,7 +63,7 @@ const RequestPending = () => {
               </Row>
               <div className="table-container table-responsive-lg">
               <Table className="nd-our-staff ">
-                <thead>
+              <thead className="tech-thead">
                   <tr>
                     <th>S.no</th>
                     <th>Candidate Name</th>
