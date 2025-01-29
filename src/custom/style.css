@@ -595,6 +595,25 @@ body {
   font-size: var(--nd-space-300);
 }
 
+.direc-pending-data {
+  background-color: #0C7125;
+}
+
+.direc-pending-data {
+  padding: 2px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.direc-pending-data i {
+  margin-right: 4px;
+  font-size: 18px;
+  padding-left: 13px;
+  color: #fff !important;
+}
+
 @media (max-width: 575.98px) {
 
   .nd-stepform-box {
