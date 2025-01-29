@@ -7,8 +7,9 @@ import {
 } from "react-icons/md";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa"; // Add Chevron icons
 import { LuLogOut } from "react-icons/lu";
-import { ImFilePdf } from "react-icons/im";
-import { FaRegFileAlt, FaChalkboardTeacher, FaAlignLeft } from "react-icons/fa";
+import { FaHandsHoldingChild } from "react-icons/fa6";
+import { FaChalkboardTeacher, FaAlignLeft } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa";
 import UKLogon from "../../../assets/images/UKLogo.png";
 import MenuIcon from "../../../assets/images/menu_icon.png";
 import "../../Directorate_login/direc_assets/css/DirecCDPO.css";
@@ -45,7 +46,7 @@ function DirectorateLeftnav() {
     { icon: <RiDashboard3Line />, label: "Dashboard", path: "/DirectorateDashboard" },
     
     {
-      icon: <FaRegFileAlt />,
+      icon: <FaUsers />,
       label: "Our Staff",
       path: "/DirectorateDashboard",
       subRoutes: [
@@ -69,7 +70,7 @@ function DirectorateLeftnav() {
       
     },
     {
-      icon: <ImFilePdf />,
+      icon: <FaHandsHoldingChild />,
       label: "New Born  2024",
       path:"/DirecNewBorn",
       
@@ -88,12 +89,9 @@ function DirectorateLeftnav() {
     },
     {
         icon: <FaChalkboardTeacher />,
-        label:  "view",
+        label: "Praroop 3 final",
         path:"/DistrictWiseAppli",
-  
-        
       },
-   
   ];
 
   return (
@@ -123,7 +121,7 @@ function DirectorateLeftnav() {
 
         <div className="message">
           <div className="nd-msg">
-            <span>Department:</span> Technical Login
+            <span>Department:</span> Directorate Login
           </div>
           <div className="direc-dp" alt="logout" title="Click to logout">
             <div className="nd-log-icon">

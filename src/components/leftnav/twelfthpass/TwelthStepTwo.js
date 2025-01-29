@@ -136,29 +136,29 @@ const TwelthStepTwo = () => {
                         <Table bordered responsive="sm">
                           <thead>
                             <tr>
-                              <th className="nd-table-title">क्र0सं0</th>
-                              <th className="nd-table-title">भाई/बहन का नाम</th>
-                              <th className="nd-table-title">जन्म तिथि</th>
-                              <th className="text-center nd-table-p">
+                              <th className="nd-table-title nd-born-thead">क्र0सं0</th>
+                              <th className="nd-table-title nd-born-thead">भाई/बहन का नाम</th>
+                              <th className="nd-table-title nd-born-thead">जन्म तिथि</th>
+                              <th className="text-center nd-table-p nd-born-thead">
                                 <div className="table-border">
                                   <div className="p-b-3 nd-table-style">
                                     शैक्षिक अर्हता का विवरण
                                   </div>
                                 </div>
-                                <th className="nd-table-title">
+                                <th className="nd-table-title nd-born-thead">
                                   10वी तक के विद्यालय का नाम
                                 </th>
-                                <th className="nd-table-title">
+                                <th className="nd-table-title nd-born-thead">
                                   12वी तक के विद्यालय का नाम
                                 </th>
-                                <th className="nd-table-title">
+                                <th className="nd-table-title nd-born-thead">
                                   स्नातक के कॉलेज का नाम
                                 </th>
-                                <th className="nd-table-title">
+                                <th className="nd-table-title nd-born-thead">
                                   स्नातकोत्तर के कॉलेज का नाम
                                 </th>
                               </th>
-                              <th className="nd-table-title">
+                              <th className="nd-table-title nd-born-thead">
                                 यदि वर्त्तमान में नहीं पढ़ रह है, तो क्या कर रहे
                                 है। (पूर्ण विवरण)
                                 <span className="ruppees">₹</span>

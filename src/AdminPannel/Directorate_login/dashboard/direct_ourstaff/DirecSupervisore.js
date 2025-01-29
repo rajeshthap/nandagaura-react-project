@@ -39,9 +39,8 @@ const DirecSupervisore = () => {
 
             <div className="box-container">
               <div className="nd-tech-heading">
-                <h1>Our CDPO Registered on this Portal</h1>
+                <h1>Our Supervisor Registered on this Portal</h1>
               </div>
-
               <Row>
                 <Col lg={6} md={6} sm={12}>
                   <div class="search-container">

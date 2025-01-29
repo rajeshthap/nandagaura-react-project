@@ -144,7 +144,7 @@ function App() {
     "/TwelthAppli",
      "/DirecNewBorn",
      "/ProjectWiseAppli",
-     "./DistrictWiseAppli"
+     "/DistrictWiseAppli"
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);

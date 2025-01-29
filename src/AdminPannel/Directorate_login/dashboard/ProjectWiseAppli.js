@@ -2,40 +2,27 @@ import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
-import "../direc_assets/css/DirecCDPO.css";
 // import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-import { Row, Col, Pagination, Table} from "react-bootstrap";
-import { GrRestroomWomen } from "react-icons/gr";
-import GirlIcon from "../../../assets/images/girl_icon.svg"
-import dashICon from "../../../assets/images/girls-dash-icon.png"
-import BornICon from "../../../assets/images/Born-Girl-icon.png"
-import TechLeftnav from "../../technicalcomponents/leftnavbar/TechLeftnav"
+import { Row, Col, Table, Pagination } from "react-bootstrap";
 import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
-
+import "../../Directorate_login/direc_assets/css/DistrictWise.css";
 const ProjectWiseAppli = () => {
- 
   return (
     <>
       <div>
-       
-      
-
         {/* Main Container */}
         <div className="main-container">
           {/* Navigation */}
           <DirectorateLeftnav />
-
           {/* Main Content */}
-
           <div className="main">
-            <NandaTech/>
-
+            <NandaTech />
             <div className="box-container">
               <div className="nd-tech-heading">
-                <h1>Project wise received on this Portal</h1>
+                <h1>Project wise Application Received </h1>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -55,37 +42,47 @@ const ProjectWiseAppli = () => {
                     </form>
                   </div>
                 </Col>
-                
               </Row>
               <div className="table-responsive-lg">
-              <Table className="nd-our-staff">
-                <thead className="direc-thead">
-                  <tr>
-                    <th>S.no</th>
-                    <th>District Name</th>
-                    <th>Received</th>
-                    <th>Approved by CDPO</th>
-                    <th>Rejected by CDPO</th>
-                    <th>Pending</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Almora</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>1</td>
-                   
-                    <td>
-                     
-                        0
-                     
-                    </td>
-                  </tr>
-                
-                </tbody>
-              </Table>
+                <Table className="nd-our-staff">
+                  <thead>
+                    <tr>
+                      {/* <th rowSpan="2">S.no</th>
+                      <th rowSpan="2">District</th> */}
+                      <th colSpan="6" className="text-center direc-12th-heading direc-12th-border">
+                       12th Application Received
+                      </th>
+                      <th colSpan="3" className="text-center direc-12th-heading">
+                       Born Application Received
+                      </th>
+                      {/* <th rowSpan="2">Approved by CDPO</th> */}
+                    </tr>
+                    <tr>
+                      <th>S.no</th>
+                      <th>District Name</th>
+                      <th>Project Name</th>
+                      <th>Received</th>
+                      <th>Approved by CDPO</th>
+                      <th>Rejected by CDPO</th>
+                      <th>Received</th>
+                      <th>Approved by CDPO</th>
+                      <th>Rejected by CDPO</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Almora</td>
+                      <td>Dwarahat</td>
+                      <td>10</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>4</td>
+                      <td>5</td>
+                    </tr>
+                  </tbody>
+                </Table>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -103,11 +100,9 @@ const ProjectWiseAppli = () => {
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>
                       <Pagination.Ellipsis />
-
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-                     
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>

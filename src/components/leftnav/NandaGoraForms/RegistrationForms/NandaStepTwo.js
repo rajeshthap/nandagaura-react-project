@@ -3,7 +3,6 @@ import Form from "react-bootstrap/Form";
 import "../../../../assets/css/LeftNav.css";
 import Table from "react-bootstrap/Table";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-
 import DashHeader from "../../DashHeader";
 import "../../../../assets/css/NandaStepOne.css";
 import "../../../../assets/css/HomePage.css";
@@ -15,6 +14,7 @@ import InnerNavigation from "../../InnerNavigation";
 import { Row, Col, Button } from "react-bootstrap";
 import GirlsBornStep from "./GirlsBornStep";
 import { Link } from "react-router-dom";
+import "../../../../assets/css/NandaStepTwo.css";
 
 import SteponeView from "../../../modal/SteponeView";
 const NandaStepTwo = () => {
@@ -48,11 +48,11 @@ const NandaStepTwo = () => {
                 </div>
 
                 <Table responsive="sm">
-                  <thead>
+                <thead className="nd-born-thead">
                     <tr>
-                      <th>क्र0सं0</th>
-                      <th>सदस्यों का नाम</th>
-                      <th>कन्या से संबंध</th>
+                      <th className="nd-born-thead">क्र0सं0</th>
+                      <th className="nd-born-thead">सदस्यों का नाम</th>
+                      <th className="nd-born-thead">कन्या से संबंध</th>
                     </tr>
                   </thead>
                   <tbody>
