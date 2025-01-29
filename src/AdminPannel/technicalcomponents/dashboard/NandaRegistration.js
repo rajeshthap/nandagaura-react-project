@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Pagination from "react-bootstrap/Pagination";
-// import { Link } from "react-router-dom";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
 import Table from "react-bootstrap/Table";
-// import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../techassets/techcss/CDPO.css";
-
 import TechLeftnav from "../leftnavbar/TechLeftnav";
 import NandaTech from "./NandaTech";
 import TechFooter from "../footer/TechFooter";
-import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Col, Row } from "react-bootstrap";
 
 const NandaRegistration = () => {
   return (
@@ -22,12 +18,9 @@ const NandaRegistration = () => {
         <div className="main-container">
           {/* Navigation */}
           <TechLeftnav />
-
           {/* Main Content */}
-
           <div className="main">
             <NandaTech />
-
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>Nanda Gaura Registration Form</h1>
@@ -54,8 +47,7 @@ const NandaRegistration = () => {
                   <div>
                     <Button variant="secondary" className="nd-btn-prt">
                       Print
-                    </Button>
-                   
+                    </Button>                 
                   </div>
                 </Col>
               </Row>
@@ -70,8 +62,7 @@ const NandaRegistration = () => {
                     <th>District</th>
                     <th>Project</th>
                     <th>User IP</th>
-                    <th>Entry Time</th>
-                    
+                    <th>Entry Time</th>                
                   </tr>
                 </thead>
                 <tbody>
@@ -94,8 +85,7 @@ const NandaRegistration = () => {
                     <td>Roorkee02 [0506811]</td>
                     <td>152.09.8.</td>
                     <td>2024-12-24 19:03:08</td>
-                  </tr>
-                 
+                  </tr>                
                 </tbody>
               </Table>
               </div>
@@ -115,11 +105,9 @@ const NandaRegistration = () => {
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>
                       <Pagination.Ellipsis />
-
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>

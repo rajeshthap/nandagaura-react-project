@@ -1,26 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Pagination from "react-bootstrap/Pagination";
-// import { Link } from "react-router-dom";
 import "../../../techassets/techcss/TechLeft.css";
 import "../../../techassets/techcss/TechDashboard.css";
 import Table from "react-bootstrap/Table";
-// import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../../techassets/techcss/CDPO.css";
-
-import BornICon from "../../../../assets/images/Born-Girl-icon.png";
 import "../../direc_assets/css/DirecCDPO.css";
-// import "../../assets/css/HomePage.css";
-// import Footer from "../footer/Footer";
-
-// import BirthCheckbox from "./BirthCheckbox";
-
-// import { PiDownloadSimpleBold } from "react-icons/pi";
-import TechLeftnav from "../../../technicalcomponents/leftnavbar/TechLeftnav";
 import NandaTech from "../../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../../technicalcomponents/footer/TechFooter";
-import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Col, Row } from "react-bootstrap";
 import DirectorateLeftnav from "../../leftnavigation/DirectorateLeftnav";
 
 const DirecSupervisore = () => {
@@ -31,12 +19,9 @@ const DirecSupervisore = () => {
         <div className="main-container">
           {/* Navigation */}
           <DirectorateLeftnav />
-
           {/* Main Content */}
-
           <div className="main">
             <NandaTech />
-
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>Our Supervisor Registered on this Portal</h1>
@@ -59,34 +44,30 @@ const DirecSupervisore = () => {
                     </form>
                   </div>
                 </Col>
-               
               </Row>
               <div className="table-responsive-lg">
-              <Table className="nd-our-staff">
-              <thead className="direc-thead">
-                  <tr>
-                    <th>S.no</th>
-                    <th>District</th>
-                    <th>Project</th>
-                    <th>Sector</th>
-                    <th>Supervisor</th>
-                    <th>Mobile No.</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Almora</td>
-                    <td>Bhaisiyachana</td>
-                    <td>Sunita pant</td>
-                    <td>Dimple Verma</td>
-                    <td>9876543210</td>
-                   
-                  </tr>
-                  
-                </tbody>
-              </Table>
+                <Table className="nd-our-staff">
+                  <thead className="direc-thead">
+                    <tr>
+                      <th>S.no</th>
+                      <th>District</th>
+                      <th>Project</th>
+                      <th>Sector</th>
+                      <th>Supervisor</th>
+                      <th>Mobile No.</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Almora</td>
+                      <td>Bhaisiyachana</td>
+                      <td>Sunita pant</td>
+                      <td>Dimple Verma</td>
+                      <td>9876543210</td>
+                    </tr>
+                  </tbody>
+                </Table>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -104,11 +85,9 @@ const DirecSupervisore = () => {
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>
                       <Pagination.Ellipsis />
-
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-                     
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>

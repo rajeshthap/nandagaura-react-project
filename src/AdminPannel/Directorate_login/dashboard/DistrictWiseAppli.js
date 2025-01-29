@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import React from "react";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
+<<<<<<< HEAD
 // import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col, Table, Pagination } from "react-bootstrap";
@@ -10,6 +10,13 @@ import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 import "../../Directorate_login/direc_assets/css/DistrictWise.css";
 const TwelthAppli = () => {
+=======
+import "@fortawesome/fontawesome-free"; // Font Awesome library
+import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
+import TechFooter from "../../technicalcomponents/footer/TechFooter";
+import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
+const DistrictWiseAppli = () => {
+>>>>>>> bf80dbcca556159f6231be047086ed966126b35e
   return (
     <>
       <div>
@@ -22,6 +29,7 @@ const TwelthAppli = () => {
             <NandaTech />
             <div className="box-container">
               <div className="nd-tech-heading">
+<<<<<<< HEAD
                 <h1>District wise Application Received</h1>
               </div>
               <div className="nd-direc-heading">
@@ -105,6 +113,10 @@ const TwelthAppli = () => {
                 </Col>
               </Row>
             </div>
+=======
+                <h1>Dashboard-Directorate Department Login login</h1>
+              </div>12th pass Application</div>
+>>>>>>> bf80dbcca556159f6231be047086ed966126b35e
             <div>
               <TechFooter />
             </div>

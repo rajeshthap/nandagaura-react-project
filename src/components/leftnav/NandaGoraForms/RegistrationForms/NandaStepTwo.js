@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Form from "react-bootstrap/Form";
 import "../../../../assets/css/LeftNav.css";
 import Table from "react-bootstrap/Table";
@@ -11,7 +11,7 @@ import Footer from "../../../footer/Footer";
 
 import InnerNavigation from "../../InnerNavigation";
 
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Button } from "react-bootstrap";
 import GirlsBornStep from "./GirlsBornStep";
 import { Link } from "react-router-dom";
 import "../../../../assets/css/NandaStepTwo.css";

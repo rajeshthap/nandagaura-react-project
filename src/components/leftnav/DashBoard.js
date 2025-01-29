@@ -9,15 +9,11 @@ import { MdOutlinePublishedWithChanges,MdOutlineFormatAlignRight } from "react-i
 import { ImFilePdf } from "react-icons/im";
 import { HiOutlineUser } from "react-icons/hi";
 import {
-  FaAdjust,
   FaRegFileAlt,
   FaChalkboardTeacher ,
-  FaBuilding,
-  FaUser,
   FaCog,
-  FaSignOutAlt,
 } from "react-icons/fa"; // React Icons
-import NandaStepOne from "./NandaGoraForms/RegistrationForms/NandaStepOne";
+
 
 const DashBoard = () => {
   const [isNavClosed, setIsNavClosed] = useState(false);

@@ -12,7 +12,6 @@ import { LuLogOut } from "react-icons/lu";
 import { ImFilePdf } from "react-icons/im";
 import { BsDatabaseCheck } from "react-icons/bs";
 import { FaRegFileAlt, FaChalkboardTeacher, FaAlignLeft } from "react-icons/fa";
-import { HiOutlineUser } from "react-icons/hi";
 import UKLogon from "../../../assets/images/UKLogo.png";
 import MenuIcon from "../../../assets/images/menu_icon.png";
 import "../../techassets/techcss/TechLeft.css";
@@ -214,7 +213,7 @@ function TechLeftnav() {
                     ) : option.subRoutes ? (
                       <>
                         <div
-                          className={`nav-option nav-direc-op option${index + 1}`}
+                          className={`.box-container nav-direc-op option${index + 1}`}
                           onClick={() => toggleDropdown(index)}
                           style={{ cursor: "pointer" }}
                         >

@@ -1,26 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Pagination from "react-bootstrap/Pagination";
-// import { Link } from "react-router-dom";
 import "../../../techassets/techcss/TechLeft.css";
 import "../../../techassets/techcss/TechDashboard.css";
 import Table from "react-bootstrap/Table";
-// import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../../techassets/techcss/CDPO.css";
-
-import BornICon from "../../../../assets/images/Born-Girl-icon.png";
-
-// import "../../assets/css/HomePage.css";
-// import Footer from "../footer/Footer";
-
-// import BirthCheckbox from "./BirthCheckbox";
-
-// import { PiDownloadSimpleBold } from "react-icons/pi";
 import TechLeftnav from "../../leftnavbar/TechLeftnav";
 import NandaTech from "../NandaTech";
 import TechFooter from "../../footer/TechFooter";
-import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Col, Row } from "react-bootstrap";
 
 const OurSuper = () => {
   return (

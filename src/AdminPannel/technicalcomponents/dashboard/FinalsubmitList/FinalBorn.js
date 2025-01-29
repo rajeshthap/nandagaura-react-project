@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Pagination from "react-bootstrap/Pagination";
-// import { Link } from "react-router-dom";
 import "../../../techassets/techcss/TechLeft.css";
 import "../../../techassets/techcss/TechDashboard.css";
 import Table from "react-bootstrap/Table";
-// import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../../techassets/techcss/CDPO.css";
-
 import TechLeftnav from "../../leftnavbar/TechLeftnav";
 import NandaTech from "../NandaTech";
 import TechFooter from "../../footer/TechFooter";
-import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Col, Row } from "react-bootstrap";
 
 const FinalBorn = () => {
   return (
@@ -22,12 +18,9 @@ const FinalBorn = () => {
         <div className="main-container">
           {/* Navigation */}
           <TechLeftnav />
-
           {/* Main Content */}
-
           <div className="main">
             <NandaTech />
-
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>Nanda Gaura Phase 2 Submited Forms
@@ -63,27 +56,22 @@ const FinalBorn = () => {
                 </Col>
               </Row>
               <div className="table-responsive-lg">
-              <Table className="nd-our-staff">
-              <thead className="tech-thead">
-                  <tr>
-                    <th>S.no</th>
-                    <th>Mobile No</th>
-                    <th>Candidate Name</th>
-                    
-                   
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>9876543210</td>
-                    <td>Deepika</td>
-                   
-                  </tr>
-                 
-                </tbody>
-              </Table>
+                <Table className="nd-our-staff">
+                  <thead className="tech-thead">
+                    <tr>
+                      <th>S.no</th>
+                      <th>Mobile No</th>
+                      <th>Candidate Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>9876543210</td>
+                      <td>Deepika</td>
+                    </tr>
+                  </tbody>
+                </Table>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -101,11 +89,9 @@ const FinalBorn = () => {
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>
                       <Pagination.Ellipsis />
-
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>

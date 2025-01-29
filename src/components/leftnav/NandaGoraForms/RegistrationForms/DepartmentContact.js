@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../../../assets/css/DepartmentContact.css";
 import { RiAlertLine } from "react-icons/ri";
 import "@fortawesome/fontawesome-free"; // Font Awesome library

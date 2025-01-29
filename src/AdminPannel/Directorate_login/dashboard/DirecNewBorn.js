@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import React from "react";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
-
-// import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
+<<<<<<< HEAD
 import { Row, Col, Table, Pagination } from "react-bootstrap";
 import { GrRestroomWomen } from "react-icons/gr";
 import GirlIcon from "../../../assets/images/girl_icon.svg";
@@ -17,6 +15,11 @@ import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 import "../../Directorate_login/direc_assets/css/DistrictWise.css";
 import { FaCheck } from "react-icons/fa";
 
+=======
+import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
+import TechFooter from "../../technicalcomponents/footer/TechFooter";
+import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
+>>>>>>> bf80dbcca556159f6231be047086ed966126b35e
 const DirecNewBorn = () => {
   return (
     <>
@@ -25,11 +28,10 @@ const DirecNewBorn = () => {
         <div className="main-container">
           {/* Navigation */}
           <DirectorateLeftnav />
-
           {/* Main Content */}
-
           <div className="main">
             <NandaTech />
+<<<<<<< HEAD
 
             <div className="box-container">
               <div className="nd-tech-heading">
@@ -118,6 +120,12 @@ const DirecNewBorn = () => {
                 </Col>
               </Row>
             </div>
+=======
+            <div className="box-container">
+              <div className="nd-tech-heading">
+                <h1>Dashboard-Directorate Department Login login</h1>
+              </div>New Born Application</div>
+>>>>>>> bf80dbcca556159f6231be047086ed966126b35e
             <div>
               <TechFooter />
             </div>

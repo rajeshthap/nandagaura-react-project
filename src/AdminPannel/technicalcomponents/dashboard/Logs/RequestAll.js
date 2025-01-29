@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Pagination from "react-bootstrap/Pagination";
-// import { Link } from "react-router-dom";
 import "../../../techassets/techcss/TechLeft.css";
 import "../../../techassets/techcss/TechDashboard.css";
 import Table from "react-bootstrap/Table";
-// import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../../techassets/techcss/CDPO.css";
-
 import TechLeftnav from "../../leftnavbar/TechLeftnav";
 import NandaTech from "../NandaTech";
 import TechFooter from "../../footer/TechFooter";
-import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Col, Row } from "react-bootstrap";
 
 const RequestAll = () => {
   return (
@@ -22,12 +18,9 @@ const RequestAll = () => {
         <div className="main-container">
           {/* Navigation */}
           <TechLeftnav />
-
           {/* Main Content */}
-
           <div className="main">
             <NandaTech />
-
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>Request by Applicant</h1>
@@ -55,42 +48,40 @@ const RequestAll = () => {
                     <Button variant="secondary" className="nd-btn-prt">
                       Print
                     </Button>
-                   
                   </div>
                 </Col>
               </Row>
               <div className="table-responsive-lg">
-              <Table className="nd-our-staff">
-              <thead className="tech-thead">
-                  <tr>
-                    <th>S.no</th>
-                    <th>Candidate Name</th>
-                    <th>Mobile No</th>
-                    <th>Adhar No</th>
-                    <th>District</th>
-                    <th>Project</th>
-                    <th>Request Description</th>
-                    <th>Status</th>
-                    <th>Response</th>
-                    <th>Entry Time</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>PARIDHI</td>
-                    <td>9634930197</td>
-                    <td>867064032497</td>
-                    <td>Haridwar</td>
-                    <td>Roorkee02 [0506811]</td>
-                    <td>DATE OF BIRTH mismatch as per application form.</td>
-                    <td>Pending	</td>
-                    <td></td>
-                    <td>2024-12-24 19:03:08</td>
-                  </tr>
-                 
-                </tbody>
-              </Table>
+                <Table className="nd-our-staff">
+                  <thead className="tech-thead">
+                    <tr>
+                      <th>S.no</th>
+                      <th>Candidate Name</th>
+                      <th>Mobile No</th>
+                      <th>Adhar No</th>
+                      <th>District</th>
+                      <th>Project</th>
+                      <th>Request Description</th>
+                      <th>Status</th>
+                      <th>Response</th>
+                      <th>Entry Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>PARIDHI</td>
+                      <td>9634930197</td>
+                      <td>867064032497</td>
+                      <td>Haridwar</td>
+                      <td>Roorkee02 [0506811]</td>
+                      <td>DATE OF BIRTH mismatch as per application form.</td>
+                      <td>Pending	</td>
+                      <td></td>
+                      <td>2024-12-24 19:03:08</td>
+                    </tr>
+                  </tbody>
+                </Table>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -108,11 +99,9 @@ const RequestAll = () => {
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>
                       <Pagination.Ellipsis />
-
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>

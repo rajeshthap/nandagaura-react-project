@@ -9,7 +9,6 @@ import Footer from "../../footer/Footer";
 import Table from "react-bootstrap/Table";
 import InnerNavigation from "../../leftnav/InnerNavigation";
 import { Row, Col, Button } from "react-bootstrap";
-import GirlsBornStep from "../../leftnav/NandaGoraForms/RegistrationForms/GirlsBornStep";
 import { Link } from "react-router-dom";
 import TwelthPass from "./TwelthPass";
 

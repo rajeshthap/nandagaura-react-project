@@ -18,11 +18,9 @@ function DashboardIndex() {
                 target="_blank"
                 download
               > 
-                
-                  
             <h2>
               {" "}
-              <img src={Twelve} />
+              <img src={Twelve} alt="नंदा गौरा योजना विषयक शासनादेश" />
               नंदा गौरा योजना विषयक शासनादेश{" "}
             </h2></a>
           </div>
