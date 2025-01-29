@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import { Link } from "react-router-dom";
 import "../../assets/css/LeftNav.css";
 import Accordion from "react-bootstrap/Accordion";
@@ -20,12 +20,7 @@ import TwelthCheckbox from "./twelfthpass/TwelthCheckbox";
 import TwelthdetailPopup from "./twelfthpass/TwelthdetailPopup";
 
 const UserDashboard = () => {
-  const [isNavClosed, setIsNavClosed] = useState(false);
-
-  const toggleNav = () => {
-    setIsNavClosed(!isNavClosed);
-  };
-
+  
   return (
     <>
       <div>

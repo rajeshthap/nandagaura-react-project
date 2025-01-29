@@ -7,7 +7,6 @@ import "../src/custom/style.css";
 import UserDashboard from "./components/leftnav/UserDashboard";
 import NandaYojana from "./components/leftnav/NandaYojana";
 import NavBar from "../src/components/topnav/NavBar";
-import Footer from "../src/components/footer/Footer";
 import Home from "../src/components/pages/Home";
 import HomePage from "../src/components/pages/HomePage";
 import UserLogin from "./components/pages/UserLogin";
@@ -148,7 +147,6 @@ function App() {
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
-  const buttons = ["UserDashboard"];
   return (
     <div>
       {/* Conditionally render NavBar */}

@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Pagination from "react-bootstrap/Pagination";
-// import { Link } from "react-router-dom";
 import "../../../techassets/techcss/TechLeft.css";
 import "../../../techassets/techcss/TechDashboard.css";
 import Table from "react-bootstrap/Table";
-// import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../../techassets/techcss/CDPO.css";
-
 import TechLeftnav from "../../leftnavbar/TechLeftnav";
 import NandaTech from "../NandaTech";
 import TechFooter from "../../footer/TechFooter";
-import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Col, Row } from "react-bootstrap";
 
 const ActivityLog = () => {
   return (
@@ -22,12 +18,9 @@ const ActivityLog = () => {
         <div className="main-container">
           {/* Navigation */}
           <TechLeftnav />
-
           {/* Main Content */}
-
           <div className="main">
             <NandaTech />
-
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>Nanda Gaura :All Activity Log</h1>
@@ -62,33 +55,32 @@ const ActivityLog = () => {
                 </Col>
               </Row>
               <div className="table-responsive-lg">
-              <Table className="nd-our-staff">
-              <thead className="tech-thead">
-                  <tr>
-                    <th>S.no</th>
-                    <th>Candidate Name</th>
-                    <th>Adhar No</th>
-                    <th>Mobile No</th>
-                    <th>User IP</th>
-                    <th>Entry Time</th>
-                    <th>Remark</th>
-                    <th>Form ID</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Ankita</td>
-                    <td>9823-4723-1265</td>
-                    <td>9876543210</td>
-                    <td>192.168.0.9</td>
-                    <td>12:30 PM</td>
-                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry</td>
-                    <td>ND00025</td>
-                  </tr>
-                 
-                </tbody>
-              </Table>
+                <Table className="nd-our-staff">
+                  <thead className="tech-thead">
+                    <tr>
+                      <th>S.no</th>
+                      <th>Candidate Name</th>
+                      <th>Adhar No</th>
+                      <th>Mobile No</th>
+                      <th>User IP</th>
+                      <th>Entry Time</th>
+                      <th>Remark</th>
+                      <th>Form ID</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Ankita</td>
+                      <td>9823-4723-1265</td>
+                      <td>9876543210</td>
+                      <td>192.168.0.9</td>
+                      <td>12:30 PM</td>
+                      <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry</td>
+                      <td>ND00025</td>
+                    </tr>
+                  </tbody>
+                </Table>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -106,11 +98,9 @@ const ActivityLog = () => {
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>
                       <Pagination.Ellipsis />
-
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>

@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Pagination from "react-bootstrap/Pagination";
-// import { Link } from "react-router-dom";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
 import Table from "react-bootstrap/Table";
-// import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../techassets/techcss/CDPO.css";
-
 import TechLeftnav from "../leftnavbar/TechLeftnav";
 import NandaTech from "./NandaTech";
 import TechFooter from "../footer/TechFooter";
-import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button, Col, Row } from "react-bootstrap";
 
 const ReparingstepTwo = () => {
   return (
@@ -22,12 +18,9 @@ const ReparingstepTwo = () => {
         <div className="main-container">
           {/* Navigation */}
           <TechLeftnav />
-
           {/* Main Content */}
-
           <div className="main">
             <NandaTech />
-
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>Application form with  on STEP : 2</h1>
@@ -55,37 +48,34 @@ const ReparingstepTwo = () => {
                     <Button variant="secondary" className="nd-btn-prt">
                       Print
                     </Button>
-                   
                   </div>
                 </Col>
               </Row>
               <div className="table-responsive-lg">
-              <Table striped bordered hover size="sm" className="nd-our-staff">
-                <thead className="tech-thead">
-                  <tr>
-                    <th className="tech-thead">S.no</th>
-                    <th className="tech-thead">Candidate Name</th>
-                    <th className="tech-thead">Mobile No</th>
-                    <th className="tech-thead">Adhar No</th>
-                    <th className="tech-thead">District</th>
-                    <th className="tech-thead">Project</th>
-                    <th className="tech-thead">Action</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>PARIDHI</td>
-                    <td>9634930197</td>
-                    <td>867064032497</td>
-                    <td>Haridwar</td>
-                    <td>Roorkee02 [0506811]</td>
-                    <td>DATE OF BIRTH mismatch as per application form.</td>
-                  </tr>
-                 
-                </tbody>
-              </Table>
+                <Table striped bordered hover size="sm" className="nd-our-staff">
+                  <thead className="tech-thead">
+                    <tr>
+                      <th className="tech-thead">S.no</th>
+                      <th className="tech-thead">Candidate Name</th>
+                      <th className="tech-thead">Mobile No</th>
+                      <th className="tech-thead">Adhar No</th>
+                      <th className="tech-thead">District</th>
+                      <th className="tech-thead">Project</th>
+                      <th className="tech-thead">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>PARIDHI</td>
+                      <td>9634930197</td>
+                      <td>867064032497</td>
+                      <td>Haridwar</td>
+                      <td>Roorkee02 [0506811]</td>
+                      <td>DATE OF BIRTH mismatch as per application form.</td>
+                    </tr>
+                  </tbody>
+                </Table>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -103,11 +93,9 @@ const ReparingstepTwo = () => {
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>
                       <Pagination.Ellipsis />
-
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>

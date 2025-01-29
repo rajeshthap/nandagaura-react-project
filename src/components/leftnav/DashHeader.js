@@ -1,50 +1,10 @@
-
-
-
 import "../../assets/css/LeftNav.css";
-
-
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-import { RiDashboard3Line } from "react-icons/ri";
-import {
-  MdOutlinePublishedWithChanges,
-  MdOutlineFormatAlignRight,
-} from "react-icons/md";
-import { ImFilePdf } from "react-icons/im";
-import { HiOutlineUser } from "react-icons/hi";
-
-import { Row, Col, Card, Form } from "react-bootstrap";
-import Nandonline from "../../assets/images/onlinenanda.png";
-import OnlineImage from "../../assets/images/vig_2024.jpg";
-import KanyaBorn from "../../assets/images/kanyaborn.jpg";
-import Girls12th from "../../assets/images/girls12th.jpeg";
-import AnathAshrm from "../../assets/images/anathashrm.jpg";
-import PdfFile from "../../assets/images/12thpass.png";
 import "../../assets/css/HomePage.css";
-import ModalOne from "../modal/ModalOne";
-import BirthInfo from "../modal/BirthInfo";
-import Girls12thPass from "../modal/Girls12thPass";
-import Footer from "../footer/Footer";
-import Orphanage from "../modal/Orphanage";
-import {
-  FaAdjust,
-  FaRegFileAlt,
-  FaChalkboardTeacher,
-  FaBuilding,
-  FaUser,
-  FaCog,
-  FaSignOutAlt,
-  FaLongArrowAltUp,
-} from "react-icons/fa"; // React Icons
-import DashboardIndex from "./DashboardIndex";
-import React, { useState } from "react";
-import { LuLogOut } from "react-icons/lu";
+import React from "react";
+
 function DashHeader() {
-  const [isNavClosed, setIsNavClosed] = useState(false);
   
-    const toggleNav = () => {
-      setIsNavClosed(!isNavClosed);
-    };
   return (
     <div>
 

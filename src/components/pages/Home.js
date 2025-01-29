@@ -1,5 +1,4 @@
 import React from 'react';
-import MainHome from './UserLogin';
 import UserLogin from './UserLogin';
 import HomePage from "../pages/HomePage";
 

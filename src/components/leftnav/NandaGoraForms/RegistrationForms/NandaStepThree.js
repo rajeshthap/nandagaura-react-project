@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
+import React from "react";
 import "../../../../assets/css/LeftNav.css";
-import Table from "react-bootstrap/Table";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { RiDeleteBin6Line } from "react-icons/ri";
 import DashHeader from "../../DashHeader";
@@ -13,12 +11,9 @@ import UploadFile from "../../../../assets/images/upload-icon.png";
 
 import InnerNavigation from "../../InnerNavigation";
 
-import { Row, Col, Button, Card } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import GirlsBornStep from "./GirlsBornStep";
 import { Link } from "react-router-dom";
-import { FaCheck } from "react-icons/fa6";
-import { LuHeading1 } from "react-icons/lu";
-import StepthreeView from "../../../modal/StepthreeView";
 import SteptwoView from "../../../modal/SteptwoView";
 import SteponeView from "../../../modal/SteponeView";
 const NandaStepThree = () => {
