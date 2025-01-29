@@ -193,10 +193,11 @@ header {
 
 .box-container {
   flex-wrap: wrap;
-  border: 2px solid var(--nd-border);
+  border: 1px solid var(--nd-border);
   background-color: var(--nd-white);
   border-radius: var(--nd-space-200);
   padding: 12px 16px 30px 16px;
+  box-shadow: 1px 1px 15px rgba(161, 182, 253, 0.825);
 }
 
 .nav {
