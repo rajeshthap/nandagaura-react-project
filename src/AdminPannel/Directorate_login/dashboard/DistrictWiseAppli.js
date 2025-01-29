@@ -1,14 +1,14 @@
 import React from "react";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
-// import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col, Table, Pagination } from "react-bootstrap";
 import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 import "../../Directorate_login/direc_assets/css/DistrictWise.css";
-const TwelthAppli = () => {
+
+const DistrictWiseAppli = () => {
   return (
     <>
       <div>
@@ -21,13 +21,11 @@ const TwelthAppli = () => {
             <NandaTech />
             <div className="box-container">
               <div className="nd-tech-heading">
-                <h1>District wise Application Received</h1>
+                <h1>District wise Application Received on this Portal 2024</h1>
               </div>
               <div className="nd-direc-heading">
-                <h1>Nanda Gaura Real time Application Report </h1>
-                <h1>
-                  This List Show Number Received on and after 1 february 2024
-                </h1>
+                <h1>District Application Received on this Portal 2024</h1>
+                <h1>District Application Received on this Portal 2024</h1>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -52,13 +50,11 @@ const TwelthAppli = () => {
                 <Table className="nd-our-staff">
                   <thead>
                     <tr>
-                      {/* <th rowSpan="2">S.no</th>
-                      <th rowSpan="2">District</th> */}
                       <th
                         colSpan="6"
                         className="text-center direc-12th-heading"
                       >
-                        New Born Child Applications Received 2024
+                       New Born child Applications Received
                       </th>
                       {/* <th rowSpan="2">Approved by CDPO</th> */}
                     </tr>
@@ -109,16 +105,14 @@ const TwelthAppli = () => {
                 </Col>
               </Row>
             </div>
-            <h1>Dashboard-Directorate Department Login login</h1>
+            <div>
+              <TechFooter />
+            </div>
           </div>
-          12th pass Application
-        </div>
-        <div>
-          <TechFooter />
         </div>
       </div>
     </>
   );
 };
 
-export default TwelthAppli;
+export default DistrictWiseAppli;

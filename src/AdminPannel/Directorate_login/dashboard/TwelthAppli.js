@@ -3,17 +3,11 @@ import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col, Table, Pagination } from "react-bootstrap";
-import { GrRestroomWomen } from "react-icons/gr";
-import GirlIcon from "../../../assets/images/girl_icon.svg";
-import dashICon from "../../../assets/images/girls-dash-icon.png";
-import BornICon from "../../../assets/images/Born-Girl-icon.png";
-import TechLeftnav from "../../technicalcomponents/leftnavbar/TechLeftnav";
 import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 import "../../Directorate_login/direc_assets/css/DistrictWise.css";
-import { FaCheck } from "react-icons/fa";
-
+import { FcApprove } from "react-icons/fc";
 const TwelthAppli = () => {
   return (
     <>
@@ -73,15 +67,14 @@ const TwelthAppli = () => {
                     <tr>
                       <td>1</td>
                       <td>Almora</td>
-
                       <td>20</td>
-                      <td>10</td>
+                      <td>
+                        <div className=" direc-pending-data">
+                          <div><i><FcApprove /></i></div>
+                          <div>100</div>
+                        </div></td>
                       <td>1</td>
-                      <td>0</td>
-                      <td> 20</td>
-                      <td>10</td>
-                      <td>1</td>
-                      <td> 0</td>
+                      <td><div className="direc-pending-data">0</div></td>
                     </tr>
                   </tbody>
                 </Table>
