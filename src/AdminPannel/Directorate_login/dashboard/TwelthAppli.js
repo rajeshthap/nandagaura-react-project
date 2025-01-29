@@ -3,7 +3,6 @@ import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col, Table, Pagination } from "react-bootstrap";
-<<<<<<< HEAD
 import { GrRestroomWomen } from "react-icons/gr";
 import GirlIcon from "../../../assets/images/girl_icon.svg";
 import dashICon from "../../../assets/images/girls-dash-icon.png";
@@ -16,13 +15,6 @@ import "../../Directorate_login/direc_assets/css/DistrictWise.css";
 import { FaCheck } from "react-icons/fa";
 
 const TwelthAppli = () => {
-=======
-import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
-import TechFooter from "../../technicalcomponents/footer/TechFooter";
-import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
-const TwelthAppli = () => {
-
->>>>>>> bf80dbcca556159f6231be047086ed966126b35e
   return (
     <>
       <div>
@@ -33,10 +25,6 @@ const TwelthAppli = () => {
           {/* Main Content */}
           <div className="main">
             <NandaTech />
-<<<<<<< HEAD
-
-=======
->>>>>>> bf80dbcca556159f6231be047086ed966126b35e
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>12th pass Application Received on this Portal 2024</h1>
@@ -64,9 +52,6 @@ const TwelthAppli = () => {
                 <Table className="nd-our-staff">
                   <thead>
                     <tr>
-<<<<<<< HEAD
-                      {/* <th rowSpan="2">S.no</th>
-      <th rowSpan="2">District</th> */}
                       <th
                         colSpan="6"
                         className="text-center direc-12th-heading"
@@ -76,8 +61,6 @@ const TwelthAppli = () => {
                       {/* <th rowSpan="2">Approved by CDPO</th> */}
                     </tr>
                     <tr>
-=======
->>>>>>> bf80dbcca556159f6231be047086ed966126b35e
                       <th>S.no</th>
                       <th>District</th>
                       <th>Received</th>
@@ -90,17 +73,15 @@ const TwelthAppli = () => {
                     <tr>
                       <td>1</td>
                       <td>Almora</td>
-<<<<<<< HEAD
+
                       <td>20</td>
                       <td>10</td>
                       <td>1</td>
                       <td>0</td>
-=======
                       <td> 20</td>
                       <td>10</td>
                       <td>1</td>
                       <td> 0</td>
->>>>>>> bf80dbcca556159f6231be047086ed966126b35e
                     </tr>
                   </tbody>
                 </Table>
@@ -124,10 +105,6 @@ const TwelthAppli = () => {
                       <Pagination.Item>{10}</Pagination.Item>
                       <Pagination.Item>{11}</Pagination.Item>
                       <Pagination.Item active>{12}</Pagination.Item>
-<<<<<<< HEAD
-
-=======
->>>>>>> bf80dbcca556159f6231be047086ed966126b35e
                       <Pagination.Next />
                       <Pagination.Last />
                     </Pagination>

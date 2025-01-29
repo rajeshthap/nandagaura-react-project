@@ -1,7 +1,6 @@
 import React from "react";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
-<<<<<<< HEAD
 // import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col, Table, Pagination } from "react-bootstrap";
@@ -10,13 +9,6 @@ import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 import "../../Directorate_login/direc_assets/css/DistrictWise.css";
 const TwelthAppli = () => {
-=======
-import "@fortawesome/fontawesome-free"; // Font Awesome library
-import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
-import TechFooter from "../../technicalcomponents/footer/TechFooter";
-import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
-const DistrictWiseAppli = () => {
->>>>>>> bf80dbcca556159f6231be047086ed966126b35e
   return (
     <>
       <div>
@@ -29,12 +21,13 @@ const DistrictWiseAppli = () => {
             <NandaTech />
             <div className="box-container">
               <div className="nd-tech-heading">
-<<<<<<< HEAD
                 <h1>District wise Application Received</h1>
               </div>
               <div className="nd-direc-heading">
-                <h1>Nanda Gaura Real time Application Report  </h1>
-                <h1>This List Show Number Received on and after 1 february 2024</h1>
+                <h1>Nanda Gaura Real time Application Report </h1>
+                <h1>
+                  This List Show Number Received on and after 1 february 2024
+                </h1>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -61,7 +54,10 @@ const DistrictWiseAppli = () => {
                     <tr>
                       {/* <th rowSpan="2">S.no</th>
                       <th rowSpan="2">District</th> */}
-                      <th colSpan="6" className="text-center direc-12th-heading">
+                      <th
+                        colSpan="6"
+                        className="text-center direc-12th-heading"
+                      >
                         New Born Child Applications Received 2024
                       </th>
                       {/* <th rowSpan="2">Approved by CDPO</th> */}
@@ -113,14 +109,12 @@ const DistrictWiseAppli = () => {
                 </Col>
               </Row>
             </div>
-=======
-                <h1>Dashboard-Directorate Department Login login</h1>
-              </div>12th pass Application</div>
->>>>>>> bf80dbcca556159f6231be047086ed966126b35e
-            <div>
-              <TechFooter />
-            </div>
+            <h1>Dashboard-Directorate Department Login login</h1>
           </div>
+          12th pass Application
+        </div>
+        <div>
+          <TechFooter />
         </div>
       </div>
     </>

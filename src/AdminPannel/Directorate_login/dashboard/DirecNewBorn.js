@@ -2,7 +2,6 @@ import React from "react";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-<<<<<<< HEAD
 import { Row, Col, Table, Pagination } from "react-bootstrap";
 import { GrRestroomWomen } from "react-icons/gr";
 import GirlIcon from "../../../assets/images/girl_icon.svg";
@@ -12,14 +11,6 @@ import TechLeftnav from "../../technicalcomponents/leftnavbar/TechLeftnav";
 import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
-import "../../Directorate_login/direc_assets/css/DistrictWise.css";
-import { FaCheck } from "react-icons/fa";
-
-=======
-import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
-import TechFooter from "../../technicalcomponents/footer/TechFooter";
-import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
->>>>>>> bf80dbcca556159f6231be047086ed966126b35e
 const DirecNewBorn = () => {
   return (
     <>
@@ -31,8 +22,6 @@ const DirecNewBorn = () => {
           {/* Main Content */}
           <div className="main">
             <NandaTech />
-<<<<<<< HEAD
-
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>New Born Application Received on this Portal 2024</h1>
@@ -60,15 +49,12 @@ const DirecNewBorn = () => {
                 <Table className="nd-our-staff">
                   <thead>
                     <tr>
-                      {/* <th rowSpan="2">S.no</th>
-      <th rowSpan="2">District</th> */}
                       <th
                         colSpan="6"
                         className="text-center direc-12th-heading"
                       >
                         New Born Applications Received 2024
                       </th>
-                      {/* <th rowSpan="2">Approved by CDPO</th> */}
                     </tr>
                     <tr>
                       <th>S.no</th>
@@ -88,7 +74,6 @@ const DirecNewBorn = () => {
                       <td>1</td>
                       <td>0</td>
                     </tr>
-                    
                   </tbody>
                 </Table>
               </div>
@@ -120,12 +105,13 @@ const DirecNewBorn = () => {
                 </Col>
               </Row>
             </div>
-=======
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>Dashboard-Directorate Department Login login</h1>
-              </div>New Born Application</div>
->>>>>>> bf80dbcca556159f6231be047086ed966126b35e
+              </div>
+              New Born Application
+            </div>
+
             <div>
               <TechFooter />
             </div>
