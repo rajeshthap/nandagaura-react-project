@@ -16,9 +16,22 @@
     border: none;
     border-radius: 50%;
 }
+
+.tech-paging .active>.page-link, .page-link.active{
+    background-color: gray;
+    border: 1px solid gray;
+    color: var(--nd-white) !important;
+}
+.tech-paging .page-item:first-child .page-link{
+color: #000;
+}
+.tech-paging .page-item:not(:first-child) .page-link
+{
+    color: black;
+}
 .search-btn:hover {
     transition-duration: 0.4s;
-    background-color: var(--nd-blue-hover);
+    background-color:#ab492a;
     color: var(--nd-border);
 }
 .search-container {
@@ -110,6 +123,10 @@
 .nd-btn-prt {
     font-size: 12px;
     padding: 6px 12px 4px 12px;
+    color: var(--nd-white);
+}
+.nd-btn-prt:hover{
+    color: var(--nd-white) !important;
 }
 
 .nd-btn-copy {

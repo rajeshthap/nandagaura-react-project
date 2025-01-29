@@ -27,7 +27,10 @@ body {
   overflow-x: hidden;
 }
 .tech-nav-option:hover{
-  background-color: #084fa0 !important;
+  background-color: #084fa0;
+}
+.nav-direc-op:hover{
+  background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x !important;
 }
 
 .tech-header {
@@ -219,6 +222,9 @@ body {
   overflow: hidden;
   padding: 0px 0 20px 0px;
 }
+.nav-upper-options1 a:hover{
+  background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x;
+}
 
 .nav-techcontainer,
 .main {
@@ -237,7 +243,7 @@ body {
 .nav-techcontainer::-webkit-scrollbar {
   display: none;
 }
-.nav-subitem:hover{
+.nav-direc-subitem:hover{
   background-color:var(--nd-blue-hover);
 }
 .nav-techclose {
@@ -254,8 +260,8 @@ body {
   transition: all 0.1s ease-in-out;
 }
 
-.subroutes {
-  background-color: #248afd;
+.tech-suboption {
+  background-color: gray;
   min-height: auto;
 }
 
@@ -289,7 +295,7 @@ body {
 
 .tech-options .option1 {
   border-left: 5px solid var(--nd-primary);
-  background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x;
+  background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x;;
   border-color: #343a40;
   color: white;
   cursor: pointer;
@@ -461,10 +467,15 @@ span.nav-tech-label {
 .nd-log-icon {
   margin-left: var(--nd-space-200);
 }
-.nav-subitem {
+.nav-direc-subitem {
   padding-left: 54px;
 }
-
+.nav-direc-option .option3:hover{
+  background-color: #23272b !important;
+}
+.nav-direc-subitem:hover{
+background-color: #23272b;
+}
 /* Responsive CSS Here */
 @media only screen and (min-width: 992px) {
   .nd-accordion {

@@ -115,7 +115,7 @@ const Final = () => {
                   {" "}
                   <div className="tech-staff-table">
                     {" "}
-                    <Pagination>
+                    <Pagination className="tech-paging">
                       <Pagination.First />
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>

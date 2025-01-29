@@ -174,7 +174,7 @@ function TechLeftnav() {
         <div>
           <div className={`navcontainer ${isNavClosed ? "navclose" : ""}`}>
             <nav className="nav-tech">
-              <div className="nav-upper-options tech-options ">
+              <div className="nav-upper-options nav-upper-options1 tech-options ">
                 <div className="nd-menu">
                   <div>
                     <FaAlignLeft
@@ -214,7 +214,7 @@ function TechLeftnav() {
                     ) : option.subRoutes ? (
                       <>
                         <div
-                          className={`nav-option option${index + 1}`}
+                          className={`nav-option nav-direc-op option${index + 1}`}
                           onClick={() => toggleDropdown(index)}
                           style={{ cursor: "pointer" }}
                         >
@@ -236,14 +236,14 @@ function TechLeftnav() {
                         </div>
 
                         {expandedItems[index] && (
-                          <div className="subroutes">
+                          <div className=" tech-suboption">
                             {option.subRoutes.map((subRoute, subIndex) => (
                               <Link
                                 to={subRoute.path}
                                 key={subIndex}
                                 className="nav-suboption"
                               >
-                                <div className="nav-subitem">
+                                <div className=" nav-direc-subitem">
                                   <div className="d-flex">
                                     <span className="nav-icon">
                                       {subRoute.icon}
@@ -261,7 +261,7 @@ function TechLeftnav() {
                     ) : (
                       <Link
                         to={option.path}
-                        className={`nav-option option${index + 1}`}
+                        className={`nav-option nav-direc-option  option${index + 1}`}
                       >
                         <div className="nav-item">
                           <div className="d-flex">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
-
+import "../direc_assets/css/DirecCDPO.css";
 // import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col, Pagination, Table} from "react-bootstrap";
@@ -98,7 +98,7 @@ const ProjectWiseAppli = () => {
                   {" "}
                   <div className="tech-staff-table">
                     {" "}
-                    <Pagination>
+                    <Pagination className="direct-paging">
                       <Pagination.First />
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>

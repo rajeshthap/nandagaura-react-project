@@ -125,7 +125,7 @@ function DirectorateLeftnav() {
           <div className="nd-msg">
             <span>Department:</span> Technical Login
           </div>
-          <div className="tech-dp" alt="logout" title="Click to logout">
+          <div className="direc-dp" alt="logout" title="Click to logout">
             <div className="nd-log-icon">
               <LuLogOut />
             </div>
@@ -206,7 +206,7 @@ function DirectorateLeftnav() {
                                 key={subIndex}
                                 className="direc-suboption"
                               >
-                                <div className="nav-subitem">
+                                <div className="nav-subitem-direc ">
                                   <div className="d-flex">
                                     <span className="nav-icon">
                                       {subRoute.icon}

@@ -9,7 +9,7 @@ import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../../techassets/techcss/CDPO.css";
 
 import BornICon from "../../../../assets/images/Born-Girl-icon.png";
-
+import "../../direc_assets/css/DirecCDPO.css";
 // import "../../assets/css/HomePage.css";
 // import Footer from "../footer/Footer";
 
@@ -100,7 +100,7 @@ const DirecSupervisore = () => {
                   {" "}
                   <div className="tech-staff-table">
                     {" "}
-                    <Pagination>
+                    <Pagination className="direct-paging">
                       <Pagination.First />
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>

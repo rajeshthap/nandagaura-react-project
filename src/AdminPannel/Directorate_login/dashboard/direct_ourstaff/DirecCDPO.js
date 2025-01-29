@@ -7,9 +7,7 @@ import Table from "react-bootstrap/Table";
 // import UKLogon from "../../assets/images/UKLogo.png";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import "../../../techassets/techcss/CDPO.css";
-
-import BornICon from "../../../../assets/images/Born-Girl-icon.png";
-import TechLeftnav from "../../../technicalcomponents/leftnavbar/TechLeftnav";
+import "../../direc_assets/css/DirecCDPO.css";
 import NandaTech from "../../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import { Button, Col, Form, Row } from "react-bootstrap";
@@ -94,7 +92,7 @@ const DirecCDPO = () => {
                   {" "}
                   <div className="tech-staff-table">
                     {" "}
-                    <Pagination>
+                    <Pagination className="direct-paging">
                       <Pagination.First />
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>
