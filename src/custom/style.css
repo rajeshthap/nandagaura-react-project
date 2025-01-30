@@ -596,7 +596,10 @@ body {
 }
 
 .direc-pending-data {
-  background-color: #0C7125;
+  border-radius: 8px;
+  border: 1px gray solid;
+  color: #0C7125;
+  max-width: 150px;
 }
 
 .direc-pending-data {
@@ -607,12 +610,81 @@ body {
   align-items: center;
 }
 
-.direc-pending-data i {
-  margin-right: 4px;
-  font-size: 18px;
-  padding-left: 13px;
-  color: #fff !important;
+.nd-btn-approved svg {
+  font-size: 14px !important;
 }
+
+.nd-btn-approved {
+  border-radius: 16px !important;
+  font-size: 10px;
+  padding: 0px;
+  font-weight: 500 !important;
+  color: #198754;
+}
+
+.nd-data-approved {
+  font-weight: inherit;
+  background-color: #198754;
+  margin-left: var(--nd-space-100);
+  font-size: 10px;
+  border-radius: 13px;
+  padding: 4px;
+}
+.nd-btn-Received svg {
+  font-size: 14px !important;
+}
+.nd-btn-Received{
+  border-radius: 16px !important;
+  font-size: 10px;
+  padding: 0px;
+  font-weight: 500 !important;
+  color: #745af2;
+}
+.nd-data-Received{
+  font-weight: inherit;
+  background-color: #745af2;
+  margin-left: var(--nd-space-100);
+  font-size: 10px;
+  border-radius: 13px;
+  padding: 4px;
+}
+.nd-btn-rejected svg {
+  font-size: 16px !important;
+}
+.nd-btn-rejected{
+  border-radius: 16px !important;
+  font-size: 10px;
+  padding: 0px;
+  font-weight: 500 !important;
+  color: #ef5350;
+}
+.nd-data-rejected{
+  font-weight: inherit;
+  background-color: #ef5350;
+  margin-left: var(--nd-space-100);
+  font-size: 10px;
+  border-radius: 13px;
+  padding: 4px;
+}
+.nd-btn-pending svg {
+  font-size: 14px !important;
+}
+.nd-data-pending{
+  font-weight: inherit;
+  background-color: #077e8c;
+  margin-left: var(--nd-space-100);
+  font-size: 10px;
+  border-radius: 13px;
+  padding: 4px;
+}
+.nd-btn-pending{
+  border-radius: 16px !important;
+  font-size: 10px;
+  padding: 0px;
+  font-weight: 500 !important;
+  color: #077e8c;
+}
+
 
 @media (max-width: 575.98px) {
 

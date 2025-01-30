@@ -293,7 +293,6 @@ body {
   gap: 0px;
 
 }
-
 .tech-options .option1 {
   border-left: 5px solid var(--nd-primary);
   background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x;;
@@ -301,6 +300,9 @@ body {
   color: white;
   cursor: pointer;
   margin-top: 7%;
+}
+.tech-left-item{
+  margin-left: 18px;
 }
 
 .tech-options .option1:hover {

@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiDashboard3Line } from "react-icons/ri";
-import {
-  MdOutlineFormatAlignRight,
-  MdLibraryBooks,
-} from "react-icons/md";
+import { MdOutlineFormatAlignRight, MdLibraryBooks } from "react-icons/md";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa"; // Add Chevron icons
 import { LuLogOut } from "react-icons/lu";
 import { FaHandsHoldingChild } from "react-icons/fa6";
@@ -13,6 +10,7 @@ import { FaUsers } from "react-icons/fa";
 import UKLogon from "../../../assets/images/UKLogo.png";
 import MenuIcon from "../../../assets/images/menu_icon.png";
 import "../../Directorate_login/direc_assets/css/DirecCDPO.css";
+import { MdOutlineDone } from "react-icons/md";
 // import "../../techassets/techcss/TechLeft.css";
 import "../../Directorate_login/direc_assets/css/DirectorateLeftNav.css";
 import { FaBuildingUser } from "react-icons/fa6";
@@ -43,8 +41,12 @@ function DirectorateLeftnav() {
   };
 
   const navigationOptions = [
-    { icon: <RiDashboard3Line />, label: "Dashboard", path: "/DirectorateDashboard" },
-    
+    {
+      icon: <RiDashboard3Line />,
+      label: "Dashboard",
+      path: "/DirectorateDashboard",
+    },
+
     {
       icon: <FaUsers />,
       label: "Our Staff",
@@ -60,38 +62,50 @@ function DirectorateLeftnav() {
           label: "Our Supervisore",
           path: "/DirecSupervisore",
         },
-       
       ],
     },
     {
       icon: <MdOutlineFormatAlignRight />,
       label: "12th Pass Application 2024",
       path: "/TwelthAppli",
-      
     },
     {
       icon: <FaHandsHoldingChild />,
       label: "New Born  2024",
-      path:"/DirecNewBorn",
-      
+      path: "/DirecNewBorn",
     },
     {
       icon: <MdLibraryBooks />,
       label: "Project Wise Application view",
-      path:"/ProjectWiseAppli",
+      path: "/ProjectWiseAppli",
     },
     {
       icon: <FaChalkboardTeacher />,
-      label:  "District Wise Application view",
-      path:"/DistrictWiseAppli",
-
-      
+      label: "District Wise Application view",
+      path: "/DistrictWiseAppli",
     },
     {
-        icon: <FaChalkboardTeacher />,
-        label: "Praroop 3 final",
-        path:"/DistrictWiseAppli",
-      },
+      icon: <FaChalkboardTeacher />,
+      label: "Praroop 3 final",
+      path: "/DistrictWiseAppli",
+      subRoutes: [
+        {
+          icon: <MdOutlineDone />,
+          label: "Praroop final 2022",
+          path: "/DirecCDPO",
+        },
+        {
+          icon: <MdOutlineDone />,
+          label: "Praroop final 2023",
+          path: "/DirecSupervisore",
+        },
+        {
+          icon: <MdOutlineDone />,
+          label: "Praroop final 2024",
+          path: "/DirecSupervisore",
+        },
+      ],
+    },
   ];
 
   return (
@@ -133,7 +147,11 @@ function DirectorateLeftnav() {
 
       <div>
         <div>
-          <div className={`navcontainer ${isNavClosed ? "navclose direc-navclose" : ""}`}>
+          <div
+            className={`navcontainer ${
+              isNavClosed ? "navclose direc-navclose" : ""
+            }`}
+          >
             <nav className="nav-direc">
               <div className="nav-upper-options direc-options ">
                 <div className="nd-menu">
@@ -180,20 +198,18 @@ function DirectorateLeftnav() {
                           style={{ cursor: "pointer" }}
                         >
                           <div className="nav-item tech-drop-menu direc-nav-item">
-                            
                             <div className="d-flex">
-                              
                               <span className="nav-icon">{option.icon}</span>
                               <span className="nav-label">{option.label}</span>
-                             
-                             
                             </div>
                             <span className="nav-arrow nav-direc-arrow ">
-            {expandedItems[index] ? <FaChevronDown /> : <FaChevronRight />}
-          </span>
-                           
+                              {expandedItems[index] ? (
+                                <FaChevronDown />
+                              ) : (
+                                <FaChevronRight />
+                              )}
+                            </span>
                           </div>
-                          
                         </div>
 
                         {expandedItems[index] && (

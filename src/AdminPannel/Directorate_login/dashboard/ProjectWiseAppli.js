@@ -7,6 +7,9 @@ import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 import "../../Directorate_login/direc_assets/css/DistrictWise.css";
+import { FaCheckCircle } from "react-icons/fa";
+import { BsDatabaseFillGear } from "react-icons/bs";
+import { IoMdCloseCircle } from "react-icons/io";
 
 const ProjectWiseAppli = () => {
   return (
@@ -25,7 +28,6 @@ const ProjectWiseAppli = () => {
               </div>
               <div className="nd-direc-heading">
                 <h1>District Application Received on this Portal 2024</h1>
-              
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -81,12 +83,54 @@ const ProjectWiseAppli = () => {
                       <td>1</td>
                       <td>Almora</td>
                       <td>20</td>
-                      <td>10</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-Received ">
+                          <BsDatabaseFillGear /> Received{" "}
+                          <span className="badge nd-data-Received text-center">
+                            20
+                          </span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-approved">
+                          <FaCheckCircle /> Approved{" "}
+                          <span className="badge nd-data-approved text-center">
+                            100
+                          </span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-rejected">
+                          <IoMdCloseCircle /> Rejected{" "}
+                          <span className="badge nd-data-rejected text-center">
+                            01
+                          </span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-Received ">
+                          <BsDatabaseFillGear /> Received{" "}
+                          <span className="badge nd-data-Received text-center">
+                            20
+                          </span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-approved">
+                          <FaCheckCircle /> Approved{" "}
+                          <span className="badge nd-data-approved text-center">
+                            100
+                          </span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-rejected">
+                          <IoMdCloseCircle /> Rejected{" "}
+                          <span className="badge nd-data-rejected text-center">
+                            01
+                          </span>
+                        </span>
+                      </td>
                     </tr>
                   </tbody>
                 </Table>

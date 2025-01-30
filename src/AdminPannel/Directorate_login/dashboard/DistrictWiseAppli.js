@@ -7,6 +7,10 @@ import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 import "../../Directorate_login/direc_assets/css/DistrictWise.css";
+import { FaCheckCircle } from "react-icons/fa";
+import { BsDatabaseFillGear } from "react-icons/bs";
+import { IoMdCloseCircle } from "react-icons/io";
+import { FaClockRotateLeft } from "react-icons/fa6";
 
 const DistrictWiseAppli = () => {
   return (
@@ -71,10 +75,18 @@ const DistrictWiseAppli = () => {
                     <tr>
                       <td>1</td>
                       <td>Almora</td>
-                      <td>20</td>
-                      <td>10</td>
-                      <td>1</td>
-                      <td>0</td>
+                       <td>
+                                                                    <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-Received "><BsDatabaseFillGear /> Received <span className="badge nd-data-Received text-center">20</span></span>
+                                                                    </td>
+                                                                  <td>
+                                                                    <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-approved"><FaCheckCircle /> Approved <span className="badge nd-data-approved text-center">100</span></span>
+                                                                    </td>
+                                                                    <td>
+                                                                    <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-rejected"><IoMdCloseCircle /> Rejected <span className="badge nd-data-rejected text-center">01</span></span>
+                                                                    </td>
+                                                                    <td>
+                                                                    <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-pending"><FaClockRotateLeft /> Pending <span className="badge nd-data-pending text-center">10</span></span>
+                                                                    </td>
                     </tr>
                   </tbody>
                 </Table>

@@ -203,7 +203,7 @@ function TechLeftnav() {
                         }
                         style={{ cursor: "pointer" }}
                       >
-                        <div className="nav-item">
+                        <div className="nav-item tech-nav-item">
                           <div className="d-flex">
                             <span className="nav-icon">{option.icon}</span>
                             <span className="nav-label">{option.label}</span>
@@ -213,7 +213,7 @@ function TechLeftnav() {
                     ) : option.subRoutes ? (
                       <>
                         <div
-                          className={`.box-container nav-direc-op option${index + 1}`}
+                          className={`tech-left-item  option${index + 1}`}
                           onClick={() => toggleDropdown(index)}
                           style={{ cursor: "pointer" }}
                         >
@@ -226,7 +226,7 @@ function TechLeftnav() {
                              
                              
                             </div>
-                            <span className="nav-arrow ">
+                            <span className="nav-arrow nav-direc-arrow">
             {expandedItems[index] ? <FaChevronDown /> : <FaChevronRight />}
           </span>
                            

@@ -3,8 +3,8 @@ import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col } from "react-bootstrap";
-import dashICon from "../../../assets/images/girls-dash-icon.png"
-import BornICon from "../../../assets/images/Born-Girl-icon.png"
+import dashICon from "../../../assets/images/girls-dash-icon.png";
+import BornICon from "../../../assets/images/Born-Girl-icon.png";
 import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
