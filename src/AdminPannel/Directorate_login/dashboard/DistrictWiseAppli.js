@@ -28,8 +28,8 @@ const DistrictWiseAppli = () => {
                 <h1>District wise Application Received on this Portal 2024</h1>
               </div>
               <div className="nd-direc-heading">
-                <h1>District Application Received on this Portal 2024</h1>
-                <h1>District Application Received on this Portal 2024</h1>
+                <p className="pt-2">Nanda Gaura Real Time Application Report</p>
+                <p>This List Show Number received on and after 1 feb 2024</p>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>

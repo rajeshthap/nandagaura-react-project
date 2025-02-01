@@ -1,17 +1,17 @@
 import React from "react";
-import "../../techassets/techcss/TechLeft.css";
-import "../../techassets/techcss/TechDashboard.css";
+import "../../../techassets/techcss/TechLeft.css";
+import "../../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col, Table, Pagination } from "react-bootstrap";
-import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
-import TechFooter from "../../technicalcomponents/footer/TechFooter";
-import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
-import "../../Directorate_login/direc_assets/css/DistrictWise.css";
+import NandaTech from "../../../technicalcomponents/dashboard/NandaTech";
+import TechFooter from "../../../technicalcomponents/footer/TechFooter";
+import DirectorateLeftnav from "../../leftnavigation/DirectorateLeftnav";
+import "../../../Directorate_login/direc_assets/css/DistrictWise.css";
 import { FaCheckCircle } from "react-icons/fa";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { IoMdCloseCircle } from "react-icons/io";
 
-const ProjectWiseAppli = () => {
+const PraroopFinal2023 = () => {
   return (
     <>
       <div>
@@ -24,12 +24,7 @@ const ProjectWiseAppli = () => {
             <NandaTech />
             <div className="box-container">
               <div className="nd-tech-heading">
-                <h1>Project wise Application Received on this Portal 2024</h1>
-              </div>
-              <div className="nd-direc-heading">
-                <p className="pt-2">
-                  District Application Received on this Portal 2024
-                </p>
+                <h1>Praroop  Application Received on this Portal 2023</h1>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -58,15 +53,14 @@ const ProjectWiseAppli = () => {
                         colSpan="6"
                         className="text-center direc-12th-heading nd-direc-border"
                       >
-                        12th Applications Received 2024
+                        12th Applications Received 2023
                       </th>
                       <th
                         colSpan="3"
                         className="text-center direc-12th-heading"
                       >
-                        New born child Applications Received 2024
+                        New born child Applications Received 2023
                       </th>
-                      {/* <th rowSpan="2">Approved by CDPO</th> */}
                     </tr>
                     <tr>
                       <th>S.no</th>
@@ -173,4 +167,4 @@ const ProjectWiseAppli = () => {
   );
 };
 
-export default ProjectWiseAppli;
+export default PraroopFinal2023;

@@ -10,11 +10,11 @@ import { FaUsers } from "react-icons/fa";
 import UKLogon from "../../../assets/images/UKLogo.png";
 import MenuIcon from "../../../assets/images/menu_icon.png";
 import "../../Directorate_login/direc_assets/css/DirecCDPO.css";
-import { MdOutlineDone } from "react-icons/md";
 // import "../../techassets/techcss/TechLeft.css";
 import "../../Directorate_login/direc_assets/css/DirectorateLeftNav.css";
 import { FaBuildingUser } from "react-icons/fa6";
 import { MdSupervisorAccount } from "react-icons/md";
+import { LuCalendarClock } from "react-icons/lu";
 
 function DirectorateLeftnav() {
   const [isNavClosed, setIsNavClosed] = useState(false);
@@ -90,19 +90,19 @@ function DirectorateLeftnav() {
       path: "/DistrictWiseAppli",
       subRoutes: [
         {
-          icon: <MdOutlineDone />,
+          icon: <LuCalendarClock />,
           label: "Praroop final 2022",
-          path: "/DirecCDPO",
+          path: "/PraroopFinal2022",
         },
         {
-          icon: <MdOutlineDone />,
+          icon: <LuCalendarClock />,
           label: "Praroop final 2023",
-          path: "/DirecSupervisore",
+          path: "/PraroopFinal2023",
         },
         {
-          icon: <MdOutlineDone />,
+          icon: <LuCalendarClock />,
           label: "Praroop final 2024",
-          path: "/DirecSupervisore",
+          path: "/PraroopFinal2024",
         },
       ],
     },

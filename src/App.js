@@ -65,6 +65,9 @@ import TwelthAppli from "./AdminPannel/Directorate_login/dashboard/TwelthAppli";
 import DirecNewBorn from "./AdminPannel/Directorate_login/dashboard/DirecNewBorn";
 import ProjectWiseAppli from "./AdminPannel/Directorate_login/dashboard/ProjectWiseAppli";
 import DistrictWiseAppli from "./AdminPannel/Directorate_login/dashboard/DistrictWiseAppli";
+import PraroopFinal2022 from "./AdminPannel/Directorate_login/dashboard/praroopfinal/PraroopFinal2022";
+import PraroopFinal2023 from "./AdminPannel/Directorate_login/dashboard/praroopfinal/PraroopFinal2023";
+import PraroopFinal2024 from "./AdminPannel/Directorate_login/dashboard/praroopfinal/PraroopFinal2024";
 
 
 function App() {
@@ -105,7 +108,10 @@ function App() {
     "/TwelthAppli",
     "/DirecNewBorn",
     "/ProjectWiseAppli",
-    "/DistrictWiseAppli"
+    "/DistrictWiseAppli",
+    "/PraroopFinal2022",
+    "/PraroopFinal2023",
+    "/PraroopFinal2024"
   ]); // Correct absolute paths
   const hiddenFooter1 = new Set([
     "/UserDashboard",
@@ -143,7 +149,10 @@ function App() {
     "/TwelthAppli",
      "/DirecNewBorn",
      "/ProjectWiseAppli",
-     "/DistrictWiseAppli"
+     "/DistrictWiseAppli",
+     "/PraroopFinal2022",
+     "/PraroopFinal2023",
+     "/PraroopFinal2024",
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
@@ -215,6 +224,9 @@ function App() {
          <Route path="/DirecNewBorn" element={<DirecNewBorn />} />
          <Route path="/ProjectWiseAppli" element={<ProjectWiseAppli />} />
          <Route path="/DistrictWiseAppli" element={<DistrictWiseAppli />} />
+         <Route path="/PraroopFinal2022" element={<PraroopFinal2022 />} />
+         <Route path="/PraroopFinal2023" element={<PraroopFinal2023 />} />
+         <Route path="/PraroopFinal2024" element={<PraroopFinal2024 />} />
 
       </Routes>
 

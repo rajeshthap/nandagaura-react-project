@@ -154,13 +154,13 @@ const TechnicaldashBoard = () => {
                       </div>
                       <div className="d-flex align-items-center">
                         <div class="flex-grow-1">
-                          <p class=" mb-1 tech-nd-card-title">Step</p>
+                          <p class=" mb-1 tech-nd-card-title1">Step</p>
                           <h4 className="mb-0">Total Submitted</h4>
                           <h4 className="mb-0">Feedback by Supervisor</h4>
                           <h4 className="mb-0">Feedback by CDPO</h4>
                         </div>
                         <div class="flex-grow-1">
-                          <p class=" mb-1 tech-nd-card-title">Total Forms</p>
+                          <p class=" mb-1 tech-nd-card-title1">Total Forms</p>
                           <h4 className="mb-0">8578</h4>
                           <h4 className="mb-0">8081</h4>
                           <h4 className="mb-0">7466</h4>
