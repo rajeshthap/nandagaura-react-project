@@ -149,7 +149,7 @@ function DirectorateLeftnav() {
         <div>
           <div
             className={`navcontainer ${
-              isNavClosed ? "navclose direc-navclose" : ""
+              isNavClosed ? "navclose" : ""
             }`}
           >
             <nav className="nav-direc">

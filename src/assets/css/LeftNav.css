@@ -234,7 +234,7 @@ header {
 }
 
 .navclose {
-  width: 72px;
+  width: 68px;
 }
 .nav-option {
   width: 250px;
@@ -603,7 +603,7 @@ span.nav-label {
   }
 
   .navclose {
-    left: 00px;
+    left: 0px;
   }
 
   .searchbar {

@@ -34,7 +34,7 @@ body {
 .direc-header {
   height: 70px;
   width: 100vw;
-  padding: 0 30px;
+  padding: 0 30px 0px 16px;
   background: linear-gradient(to bottom, rgb(255 194 175), white);
   position: fixed;
   z-index: 100;
@@ -271,8 +271,7 @@ body {
 }
 
 .direc-navclose {
-  width: 65px !important;
-} 
+  width: 72px;} 
 
 .direc-item {
   margin-left: 12px !important;
