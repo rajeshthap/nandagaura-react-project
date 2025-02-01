@@ -1,0 +1,99 @@
+.girlsbox {
+z-index: 1;
+}
+.girlsbox::after {
+    background-image: url("../../../../assets/images/dash12thimg.png");
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: repeat;
+    z-index:-1;
+    opacity: .1;
+}
+.girlsbox::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right top, #ff9794, #fd8dac, #e58cc6, #bf7cdc, #6f78f4);
+    z-index: -1;
+}
+.bornbox{
+    z-index: 1;
+}
+.bornbox::after {
+    background-image: url("../../../../assets/images/dash12thimg.png");
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: repeat;
+    z-index:-1;
+    opacity: .1;
+}
+.bornbox::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #5c67f7;
+    z-index: -1;
+}
+.nd-tech-heading {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--nd-space-50);
+}
+.bg-praroop-feedback {
+    background-color: orange;
+}
+
+.bg-praroop-appo {
+    background-color: green;
+}
+
+.stats h1 {
+    color: var(--nd-white);
+    font-size: var(--nd-space-500);
+}
+
+.direc-icon img {
+    max-width: 100px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stats h6 {
+    color: var(--nd-white);
+}
+
+.nd-praroop-heading {
+    color: var(--nd-white);
+    font-size: var(--nd-space-500);
+}
+
+.direc-praroop-data {
+    color: var(--nd-white);
+    font-size: var(--nd-space-300);
+    padding: var(--nd-space-50);
+}
+
+@media (max-width: 568px) {
+    .direc-icon img {
+        display: none;
+    }
+
+    .nd-m-t {
+        margin-top: var(--nd-space-400);
+    }
+
+    .nd-tech-heading {
+
+        padding: var(--nd-space-300);
+    }
+}

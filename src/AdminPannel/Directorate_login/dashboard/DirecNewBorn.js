@@ -69,18 +69,38 @@ const DirecNewBorn = () => {
                     <tr>
                       <td>1</td>
                       <td>Almora</td>
-                       <td>
-                                              <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-Received "><BsDatabaseFillGear /> Received <span className="badge nd-data-Received text-center">20</span></span>
-                                              </td>
-                                            <td>
-                                              <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-approved"><FaCheckCircle /> Approved <span className="badge nd-data-approved text-center">100</span></span>
-                                              </td>
-                                              <td>
-                                              <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-rejected"><IoMdCloseCircle /> Rejected <span className="badge nd-data-rejected text-center">01</span></span>
-                                              </td>
-                                              <td>
-                                              <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-pending"><FaClockRotateLeft /> Pending <span className="badge nd-data-pending text-center">10</span></span>
-                                              </td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-Received ">
+                          <BsDatabaseFillGear /> Received{" "}
+                          <span className="badge nd-data-Received text-center">
+                            20
+                          </span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-approved">
+                          <FaCheckCircle /> Approved{" "}
+                          <span className="badge nd-data-approved text-center">
+                            100
+                          </span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-rejected">
+                          <IoMdCloseCircle /> Rejected{" "}
+                          <span className="badge nd-data-rejected text-center">
+                            01
+                          </span>
+                        </span>
+                      </td>
+                      <td>
+                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-pending">
+                          <FaClockRotateLeft /> Pending{" "}
+                          <span className="badge nd-data-pending text-center">
+                            10
+                          </span>
+                        </span>
+                      </td>
                     </tr>
                   </tbody>
                 </Table>
@@ -113,7 +133,6 @@ const DirecNewBorn = () => {
                 </Col>
               </Row>
             </div>
-           
 
             <div>
               <TechFooter />

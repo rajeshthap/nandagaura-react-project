@@ -4,10 +4,12 @@ import "../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col } from "react-bootstrap";
 import dashICon from "../../../assets/images/girls-dash-icon.png";
-import BornICon from "../../../assets/images/Born-Girl-icon.png";
+
 import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
+import "../../Directorate_login/direc_assets/css/DirectorateDashboard.css";
+import NewBorn from "../../../assets/images/Born-Girl-icon.png";
 
 const DirectorateDashboard = () => {
   return (
@@ -21,60 +23,309 @@ const DirectorateDashboard = () => {
           <div className="main">
             <NandaTech />
             <div className="box-container">
-              <div className="nd-tech-heading">
-                <h1>Dashboard-Technical Department Login login</h1>
-              </div>
               <Row className="">
                 <Col lg={6} md={6} sm={12} className="mb-2">
-                  <div className="card texh-nd-dashdata">
-                    <div className="card-body card-body tech-nd-data">
-                      <div className="d-flex flex-shrink-0 me-3 tech-nd-title mb-2">
-                        <div className="avatar ">
-                          <div className="avatar-title  "> <img src={dashICon} alt="search-icon" /><i className="bx bxs-pie-chart-alt text-white"></i></div>
-                        </div> <div className="tech-nd-sub">Total Submitted Form(12 girls)</div>
-                      </div>
-                      <div className="d-flex align-items-center">
-                        <div class="flex-grow-1">
-                          <p class="mb-1 tech-nd-card-title">Step</p>
-                          <h4 className="mb-0">Total Submitted</h4>
-                          <h4 className="mb-0">Feedback by Supervisor</h4>
-                          <h4 className="mb-0">Feedback by CDPO</h4>
-                        </div>
-                        <div class="flex-grow-1">
-                          <p class="mb-1 tech-nd-card-title">Total Forms</p>
-                          <h4 className="mb-0">31490</h4>
-                          <h4 className="mb-0">31491</h4>
-                          <h4 className="mb-0">31462</h4>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="nd-tech-heading">
+                    <h1>Total Submited Form (12th girls)</h1>
                   </div>
+                  <Row>
+                    <Col lg={12} md={12} sm={12}>
+                      <div class="card girlsbox ">
+                        <div class="card-body">
+                          <Row>
+                            <div className="col-md-9 col-lg-9 col-sm-9  ">
+                              {" "}
+                              <h1 class="text-dark-white nd-praroop-heading">
+                                Praroop
+                              </h1>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div>Steps</div>
+                                <div className="direc-dashboard">
+                                  N0. of Applications
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Praroop 2
+                                </div>
+                                <div className="direc-praroop-data">5000</div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Praroop 3
+                                </div>
+                                <div className="direc-praroop-data">5000</div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Total Submitted (Praroop 2 + Praroop 3)
+                                </div>
+                                <div className="direc-praroop-data">30310</div>
+                              </div>
+                            </div>
+                            <div className="col-md-3 col-lg-3 col-sm-3">
+                              <div class="ms-auto directorate ">
+                                <div className="direc-icon">
+                                  <i class=" display-5 op-3 text-dark">
+                                    {" "}
+                                    <img
+                                      src={dashICon}
+                                      alt="dashICon"
+                                      className="img-fluid"
+                                    />
+                                  </i>
+                                </div>
+                              </div>
+                            </div>
+                          </Row>
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row className="mt-3">
+                    <Col lg={6} md={6} sm={6}>
+                      <div class="bg-praroop-feedback card">
+                        <div class="card-body">
+                          <Row>
+                            <div className="col-md-12 col-lg-12 col-sm-12  ">
+                              {" "}
+                              <h1 class="text-dark-white nd-praroop-heading">
+                                Feedback
+                              </h1>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div>Steps</div>
+                                <div className="direc-dashboard">
+                                  N0. of Applications
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  supervisore
+                                </div>
+                                <div className="direc-praroop-data">30012</div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">CDPO</div>
+                                <div className="direc-praroop-data">27122</div>
+                              </div>
+                            </div>
+                            {/* <div className="col-md-3 col-lg-3 col-sm-3">
+                              <div class="ms-auto directorate ">
+                                <div className="direc-icon">
+                                  <i class=" display-5 op-3 text-dark">
+                                    {" "}
+                                    <img
+                                      src={dashICon}
+                                      alt="dashICon"
+                                      className="img-fluid"
+                                    />
+                                  </i>
+                                </div>
+                              </div>
+                            </div> */}
+                          </Row>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col lg={6} md={6} sm={6} className="nd-m-t">
+                      <div class="bg-praroop-appo card">
+                        <div class="card-body">
+                          <Row>
+                            <div className="col-md-12 col-lg-12 col-sm-12  ">
+                              {" "}
+                              <h1 class="text-dark-white nd-praroop-heading">
+                                CDPO
+                              </h1>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div>Steps</div>
+                                <div className="direc-dashboard">
+                                  N0. of Applications
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Approved
+                                </div>
+                                <div className="direc-praroop-data">27122</div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Rejected CDPO
+                                </div>
+                                <div className="direc-praroop-data">257</div>
+                              </div>
+                            </div>
+                            {/* <div className="col-md-3 col-lg-3 col-sm-3">
+                              <div class="ms-auto directorate ">
+                                <div className="direc-icon">
+                                  <i class=" display-5 op-3 text-dark">
+                                    {" "}
+                                    <img
+                                      src={dashICon}
+                                      alt="dashICon"
+                                      className="img-fluid"
+                                    />
+                                  </i>
+                                </div>
+                              </div>
+                            </div> */}
+                          </Row>
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
                 </Col>
-                <Col lg={6} md={6} sm={12} className="mb-2">
-                  <div className="card texh-nd-dashdata1">
-                    <div className="card-body card-body tech-nd-data">
-                      <div className="d-flex flex-shrink-0 me-3 tech-nd-title mb-3">
-                        <div className="avatar-title1 ">
-                          <div className="avatar-title  "> <img src={BornICon} alt="search-icon" /><i className="bx bxs-pie-chart-alt text-white"></i></div>
-                        </div> <div className="tech-nd-sub">Total Submitted Form(New Born Girl)</div>
-                      </div>
-                      <div className="d-flex align-items-center">
 
-                        <div class="flex-grow-1">
-                          <p class=" mb-1 tech-nd-card-title">Step</p>
-                          <h4 className="mb-0">Total Submitted</h4>
-                          <h4 className="mb-0">Feedback by Supervisor</h4>
-                          <h4 className="mb-0">Feedback by CDPO</h4>
-                        </div>
-                        <div class="flex-grow-1">
-                          <p class=" mb-1 tech-nd-card-title">Total Forms</p>
-                          <h4 className="mb-0">8578</h4>
-                          <h4 className="mb-0">8081</h4>
-                          <h4 className="mb-0">7466</h4>
+                <Col lg={6} md={6} sm={12} className="mb-2">
+                  <div className="nd-tech-heading">
+                    <h1>Total Submited Form (New Born girls)</h1>
+                  </div>
+                  <Row>
+                    <Col lg={12} md={12} sm={12}>
+                      <div class="bornbox card">
+                        <div class="card-body">
+                          <Row>
+                            <div className="col-md-9 col-lg-9 col-sm-9  ">
+                              {" "}
+                              <h1 class="text-dark-white nd-praroop-heading">
+                                Praroop
+                              </h1>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div>Steps</div>
+                                <div className="direc-dashboard">
+                                  N0. of Applications
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Feedback by supervisore
+                                </div>
+                                <div className="direc-praroop-data">8313</div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Feedback by CDPO
+                                </div>
+                                <div className="direc-praroop-data">7796</div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Total Submitted (Praroop 2 + Praroop 3)
+                                </div>
+                                <div className="direc-praroop-data">8796</div>
+                              </div>
+                            </div>
+                            <div className="col-md-3 col-lg-3 col-sm-3">
+                              <div class="ms-auto directorate ">
+                                <div className="direc-icon">
+                                  <i class=" display-5 op-3 text-dark">
+                                    {" "}
+                                    <img
+                                      src={NewBorn}
+                                      alt="dashICon"
+                                      className="img-fluid"
+                                    />
+                                  </i>
+                                </div>
+                              </div>
+                            </div>
+                          </Row>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </Col>
+                  </Row>
+                  <Row className="mt-3">
+                    <Col lg={6} md={6} sm={6}>
+                      <div class="bg-praroop-feedback card">
+                        <div class="card-body">
+                          <Row>
+                            <div className="col-md-12 col-lg-12 col-sm-12  ">
+                              {" "}
+                              <h1 class="text-dark-white nd-praroop-heading">
+                                Feedback
+                              </h1>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div>Steps</div>
+                                <div className="direc-dashboard">
+                                  N0. of Applications
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  supervisore
+                                </div>
+                                <div className="direc-praroop-data">30012</div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">CDPO</div>
+                                <div className="direc-praroop-data">27122</div>
+                              </div>
+                            </div>
+                            {/* <div className="col-md-3 col-lg-3 col-sm-3">
+                              <div class="ms-auto directorate ">
+                                <div className="direc-icon">
+                                  <i class=" display-5 op-3 text-dark">
+                                    {" "}
+                                    <img
+                                      src={dashICon}
+                                      alt="dashICon"
+                                      className="img-fluid"
+                                    />
+                                  </i>
+                                </div>
+                              </div>
+                            </div> */}
+                          </Row>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col lg={6} md={6} sm={6} className="nd-m-t">
+                      <div class="bg-praroop-appo card">
+                        <div class="card-body">
+                          <Row>
+                            <div className="col-md-12 col-lg-12 col-sm-12  ">
+                              {" "}
+                              <h1 class="text-dark-white nd-praroop-heading">
+                                CDPO
+                              </h1>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div>Steps</div>
+                                <div className="direc-dashboard">
+                                  N0. of Applications
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Approved{" "}
+                                </div>
+                                <div className="direc-praroop-data">27122</div>
+                              </div>
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-praroop-data">
+                                  Rejected
+                                </div>
+                                <div className="direc-praroop-data">62</div>
+                              </div>
+                            </div>
+                            {/* <div className="col-md-3 col-lg-3 col-sm-3">
+                              <div class="ms-auto directorate ">
+                                <div className="direc-icon">
+                                  <i class=" display-5 op-3 text-dark">
+                                    {" "}
+                                    <img
+                                      src={dashICon}
+                                      alt="dashICon"
+                                      className="img-fluid"
+                                    />
+                                  </i>
+                                </div>
+                              </div>
+                            </div> */}
+                          </Row>
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
                 </Col>
               </Row>
             </div>

@@ -24,14 +24,16 @@ const NandaStepOne = () => {
           <div className="main">
             <GirlsBornStep />
             <div className="box-container">
+              <Form>
               <Row>
+                
                 <Row>
                   <div className="nd-step1">
                     <h3>Step 1 : व्यक्तिगत जानकारी</h3>
                   </div>
                 </Row>
                 <Col lg={4} md={4} sm={12}>
-                  <Form>
+                 
                     <Form.Group
                       className="mb-3 nd-req-text"
                       controlId="exampleForm.ControlInput1"
@@ -40,7 +42,7 @@ const NandaStepOne = () => {
                         कन्या शिशु का नाम <span className="alert-txt">*</span>
                       </Form.Label>
                       <Form.Control
-                        type="email"
+                        type="text"
                         placeholder="कन्या शिशु का नाम "
                         className="shadow1 nd-required"
                         required
@@ -49,20 +51,20 @@ const NandaStepOne = () => {
                         कन्या का नाम परिवर्तित होने पर शपथ पत्र देना अनिवार्य है
                       </span>
                     </Form.Group>
-                  </Form>
+                 
                 </Col>
                 <Col lg={4} md={4} sm={12}>
                   <Form.Group
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
+                    <Form.Label for="mother">
                       माता का नाम <span className="alert-txt">*</span>
                     </Form.Label>
                     <Form.Control
                       type="text"
                       placeholder="माता का नाम"
-                      className="shadow1"
+                      className="shadow1"id="mother"
                     />
                   </Form.Group>
                 </Col>
@@ -71,13 +73,13 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
+                    <Form.Label for="m_aadhar">
                       माता का आधार नंबर <span className="alert-txt">*</span>
                     </Form.Label>
                     <Form.Control
                       type="number"
                       placeholder=" माता का आधार नंबर"
-                      className="shadow1"
+                      className="shadow1" id="m_aadhar"
                     />
                   </Form.Group>
                 </Col>
@@ -86,14 +88,14 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
+                    <Form.Label for="f_name">
                       {" "}
                       पिता का नाम <span className="alert-txt">*</span>
                     </Form.Label>
                     <Form.Control
                       type="text"
                       placeholder=" पिता का नाम"
-                      className="shadow1"
+                      className="shadow1" id="f_name"
                     />
                   </Form.Group>
                 </Col>
@@ -102,11 +104,11 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label> पिता का आधार नंबर</Form.Label>
+                    <Form.Label htmlFor="f_aadhar"> पिता का आधार नंबर</Form.Label>
                     <Form.Control
                       type="text"
                       placeholder="पिता  का आधार नंबर"
-                      className="shadow1"
+                      className="shadow1" id="f_aadhar"
                     />
                   </Form.Group>
                 </Col>
@@ -115,11 +117,11 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>अभिभावक का नाम </Form.Label>
+                    <Form.Label htmlFor="r_name">अभिभावक का नाम </Form.Label>
                     <Form.Control
                       type="text"
                       placeholder="अभिभावक का नाम "
-                      className="shadow1"
+                      className="shadow1"id="r_name"
                     />
                     <span>
                       माता पिता के जीवित न होने की स्थिति में अभिभावक का नाम
@@ -131,13 +133,13 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
+                    <Form.Label htmlFor="s_date">
                       कन्या की जन्म तिथि <span className="alert-txt">*</span>
                     </Form.Label>
                     <Form.Control
                       type="Date"
                       placeholder="DD/MM/YY"
-                      className="shadow1"
+                      className="shadow1" id="s_date"
                     />
                   </Form.Group>
                 </Col>
@@ -193,13 +195,13 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
+                    <Form.Label htmlFor="project">
                       परियोजना / ब्लॉक <span className="alert-txt">*</span>
                     </Form.Label>
                     <Form.Control
                       type="email"
                       placeholder=".परियोजना / ब्लॉक"
-                      className="shadow1"
+                      className="shadow1" id="project"
                     />
                   </Form.Group>
                 </Col>
@@ -208,14 +210,14 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
+                    <Form.Label htmlFor="a_name">
                       आंगनवाड़ी केंद्र का नाम{" "}
                       <span className="alert-txt">*</span>
                     </Form.Label>
                     <Form.Control
                       type="text"
                       placeholder="आंगनवाड़ी केंद्र का नाम"
-                      className="shadow1"
+                      className="shadow1" id="a_name"
                     />
                     <span>
                       यदि आप सूची में अपने आंगनवाड़ी केंद्र का नाम नहीं देख पा
@@ -229,13 +231,13 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
+                    <Form.Label htmlFor="s_number">
                       मोबाइल नंबर <span className="alert-txt">*</span>
                     </Form.Label>
                     <Form.Control
                       type="number"
                       placeholder="मोबाइल नंबर "
-                      className="shadow1"
+                      className="shadow1" id="s_number"
                     />
                   </Form.Group>
                 </Col>
@@ -244,13 +246,13 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
+                    <Form.Label htmlFor="email_id">
                       ईमेल आई.डी <span className="alert-txt">*</span>{" "}
                     </Form.Label>
                     <Form.Control
                       type="email"
                       placeholder="ईमेल आई.डी "
-                      className="shadow1"
+                      className="shadow1" id="email_id"
                     />
                   </Form.Group>
                 </Col>
@@ -260,13 +262,13 @@ const NandaStepOne = () => {
                     className="mb-3 nd-req-text"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label>
+                    <Form.Label htmlFor="f_totla">
                       सदस्यों की संख्या <span className="alert-txt">*</span>
                     </Form.Label>
                     <Form.Control
                       type="number"
                       placeholder="सदस्यों की संख्या"
-                      className="shadow1"
+                      className="shadow1" id="f_totla"
                     />
                     <span>परिवार के कुल सदस्यों की संख्या</span>
                   </Form.Group>
@@ -313,14 +315,14 @@ const NandaStepOne = () => {
                         className="mb-3 nd-req-text"
                         controlId="exampleForm.ControlInput1"
                       >
-                        <Form.Label>
+                        <Form.Label htmlFor="bank_name">
                           शाखा का नाम <span className="alert-txt">*</span>
                         </Form.Label>
 
                         <Form.Control
                           type="text"
                           placeholder="शाखा का नाम"
-                          className="shadow1"
+                          className="shadow1" id="bank_name"
                         />
                       </Form.Group>
                     </Col>
@@ -346,6 +348,7 @@ const NandaStepOne = () => {
                   </Link>
                 </div>
               </Row>
+              </Form>
             </div>
             <div>
               <Footer />
