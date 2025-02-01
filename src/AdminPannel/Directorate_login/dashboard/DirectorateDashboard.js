@@ -11,6 +11,10 @@ import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 import "../../Directorate_login/direc_assets/css/DirectorateDashboard.css";
 import NewBorn from "../../../assets/images/Born-Girl-icon.png";
 
+import Button from "react-bootstrap/Button";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
+
 const DirectorateDashboard = () => {
   return (
     <>
@@ -24,8 +28,8 @@ const DirectorateDashboard = () => {
             <NandaTech />
             <div className="box-container">
               <div className="nd-tech-heading">
-                    <h1>Dashboard Application Received on this Portal 2024</h1>
-                  </div>
+                <h1>Dashboard Application Received on this Portal 2024</h1>
+              </div>
               <Row className="">
                 <Col lg={6} md={6} sm={12} className="mb-2">
                   <div className="nd-tech-heading1">
@@ -41,10 +45,21 @@ const DirectorateDashboard = () => {
                               <h1 class="text-dark-white nd-praroop-heading">
                                 Praroop
                               </h1>
-                              <div class="d-flex justify-content-between align-content-center" >
-                                <div className="direc-dashboard">  Steps</div>            
+                              <div class="d-flex justify-content-between align-content-center">
+                                <div className="direc-dashboard"> Steps</div>
                                 <div className="direc-dashboard">
-                                  N0. of App...
+                                  {/* N0. of App... */}
+                                  <OverlayTrigger
+                                    overlay={
+                                      <Tooltip id="tooltip-disabled">
+                                        Number of Application
+                                      </Tooltip>
+                                    }
+                                  >
+                                    <span className="d-inline-block">
+                                      <span>N0. of App...</span>
+                                    </span>
+                                  </OverlayTrigger>
                                 </div>
                               </div>
                               <div class="d-flex justify-content-between align-content-center">
@@ -180,10 +195,12 @@ const DirectorateDashboard = () => {
                                 <div className="direc-praroop-data ">7796</div>
                               </div>
                               <div class="d-flex justify-content-between align-content-center">
-                                <div className="direc-praroop-data">
+                                <div className="direc-praroop-data direc-praroop-data1">
                                   Total Submitted (Praroop 2 + Praroop 3)
                                 </div>
-                                <div className="direc-praroop-data direc-praroop-data1">8796</div>
+                                <div className="direc-praroop-data direc-praroop-data1">
+                                  8796
+                                </div>
                               </div>
                             </div>
                             <div className="col-md-3 col-lg-3 col-sm-3">
