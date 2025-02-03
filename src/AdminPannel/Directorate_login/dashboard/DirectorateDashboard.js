@@ -10,8 +10,6 @@ import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
 import "../../Directorate_login/direc_assets/css/DirectorateDashboard.css";
 import NewBorn from "../../../assets/images/Born-Girl-icon.png";
-
-import Button from "react-bootstrap/Button";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 
@@ -51,7 +49,7 @@ const DirectorateDashboard = () => {
                                   {/* N0. of App... */}
                                   <OverlayTrigger
                                     overlay={
-                                      <Tooltip id="tooltip-disabled">
+                                      <Tooltip id="tooltip-disabled ">
                                         Number of Application
                                       </Tooltip>
                                     }
@@ -113,7 +111,18 @@ const DirectorateDashboard = () => {
                               <div class="d-flex justify-content-between align-content-center">
                                 <div className="direc-dashboard">Steps</div>
                                 <div className="direc-dashboard">
-                                  N0. of App...
+                                  {/* N0. of App... */}
+                                  <OverlayTrigger
+                                    overlay={
+                                      <Tooltip id="tooltip-disabled">
+                                        Number of Application
+                                      </Tooltip>
+                                    }
+                                  >
+                                    <span className="d-inline-block">
+                                      <span>N0. of App...</span>
+                                    </span>
+                                  </OverlayTrigger>
                                 </div>
                               </div>
                               <div class="d-flex justify-content-between align-content-center">
@@ -143,7 +152,18 @@ const DirectorateDashboard = () => {
                               <div class="d-flex justify-content-between align-content-center">
                                 <div className="direc-dashboard">Steps</div>
                                 <div className="direc-dashboard">
-                                  N0. of App...
+                                  {/* N0. of App... */}
+                                  <OverlayTrigger
+                                    overlay={
+                                      <Tooltip id="tooltip-disabled">
+                                        Number of Application
+                                      </Tooltip>
+                                    }
+                                  >
+                                    <span className="d-inline-block">
+                                      <span>N0. of App...</span>
+                                    </span>
+                                  </OverlayTrigger>
                                 </div>
                               </div>
                               <div class="d-flex justify-content-between align-content-center">
@@ -179,7 +199,18 @@ const DirectorateDashboard = () => {
                               <div class="d-flex justify-content-between align-content-center">
                                 <div className="direc-dashboard">Steps</div>
                                 <div className="direc-dashboard">
-                                  N0. of App...
+                                  {/* N0. of App... */}
+                                  <OverlayTrigger
+                                    overlay={
+                                      <Tooltip id="tooltip-disabled">
+                                        Number of Application
+                                      </Tooltip>
+                                    }
+                                  >
+                                    <span className="d-inline-block">
+                                      <span>N0. of App...</span>
+                                    </span>
+                                  </OverlayTrigger>
                                 </div>
                               </div>
                               <div class="d-flex justify-content-between align-content-center">
@@ -235,7 +266,18 @@ const DirectorateDashboard = () => {
                               <div class="d-flex justify-content-between align-content-center">
                                 <div className="direc-dashboard">Steps</div>
                                 <div className="direc-dashboard">
-                                  N0. of App...
+                                  {/* N0. of App... */}
+                                  <OverlayTrigger
+                                    overlay={
+                                      <Tooltip id="tooltip-disabled">
+                                        Number of Application
+                                      </Tooltip>
+                                    }
+                                  >
+                                    <span className="d-inline-block">
+                                      <span>N0. of App...</span>
+                                    </span>
+                                  </OverlayTrigger>
                                 </div>
                               </div>
                               <div class="d-flex justify-content-between align-content-center">
@@ -265,7 +307,18 @@ const DirectorateDashboard = () => {
                               <div class="d-flex justify-content-between align-content-center">
                                 <div className="direc-dashboard">Steps</div>
                                 <div className="direc-dashboard">
-                                  N0. of App...
+                                  {/* N0. of App... */}
+                                  <OverlayTrigger
+                                    overlay={
+                                      <Tooltip id="tooltip-disabled">
+                                        Number of Application
+                                      </Tooltip>
+                                    }
+                                  >
+                                    <span className="d-inline-block">
+                                      <span>N0. of App...</span>
+                                    </span>
+                                  </OverlayTrigger>
                                 </div>
                               </div>
                               <div class="d-flex justify-content-between align-content-center">

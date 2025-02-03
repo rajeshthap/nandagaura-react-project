@@ -685,6 +685,29 @@ body {
   color: #077e8c;
 }
 
+.tooltip {
+  background-color: #333 !important; /* Change tooltip background */
+  color: white !important; /* Change tooltip text color */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.tooltip.show {
+  opacity: 1 !important; /* Ensure tooltip remains visible */
+}
+
+.tooltip-inner {
+  background-color: var(--nd-white) !important; /* Change inner tooltip background */
+  color:var(--nd-black) !important; /* Change text color */
+  font-size: 10px; /* Optional: Adjust font size */
+  opacity: .9;
+  border-radius: 4px;
+}
+
+/* Change arrow color */
+.tooltip-arrow::before {
+  border-top-color: var(--nd-white) !important;
+  opacity: .9;
+}
 
 @media (max-width: 575.98px) {
 
