@@ -14,8 +14,9 @@ function UserRegistration() {
   return (
     <>
       <p onClick={handleShow}>पासवर्ड भूल गए है ?</p>
-      <Form>
+      
       <Modal show={show} onHide={handleClose} size="md">
+        <Form>
         <Modal.Header closeButton>
           <Modal.Title className="nd-modal-title">
             पासवर्ड भूल जाने की स्थिति में पासवर्ड रीसेट फॉर्म
@@ -36,8 +37,9 @@ function UserRegistration() {
             जानकारी दर्ज करे
           </Button></Link>
         </Modal.Footer>
+        </Form>
       </Modal>
-      </Form>
+      
     </>
   );
 }

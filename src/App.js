@@ -68,8 +68,15 @@ import DistrictWiseAppli from "./AdminPannel/Directorate_login/dashboard/Distric
 import PraroopFinal2022 from "./AdminPannel/Directorate_login/dashboard/praroopfinal/PraroopFinal2022";
 import PraroopFinal2023 from "./AdminPannel/Directorate_login/dashboard/praroopfinal/PraroopFinal2023";
 import PraroopFinal2024 from "./AdminPannel/Directorate_login/dashboard/praroopfinal/PraroopFinal2024";
+//-----------Directorate Data Table Start-----------//
+import DirecTwelthDataTable from "./AdminPannel/Directorate_login/dashboard/direct_data_table/DirecTwelthDataTable";
+//-----------Directorate Data Table End-----------//
 
-
+//-----------Project dashboard-----------//
+import ProjectDashboard from "./AdminPannel/Project_login/dashboard/ProjectDashboard";
+import ChangePassword from "./AdminPannel/Project_login/dashboard/ChangePassword";
+import ResetSectorpassword from "./AdminPannel/Project_login/dashboard/sector_information/ResetSectorpassword";
+import AWCinformation from "./AdminPannel/Project_login/dashboard/sector_information/AWCinformation";
 function App() {
   const location = useLocation();
   const hiddenPaths = new Set([
@@ -111,7 +118,11 @@ function App() {
     "/DistrictWiseAppli",
     "/PraroopFinal2022",
     "/PraroopFinal2023",
-    "/PraroopFinal2024"
+    "/PraroopFinal2024",
+    "/ProjectDashboard",
+    "/ChangePassword",
+    "/ResetSectorpassword",
+    "/AWCinformation"
   ]); // Correct absolute paths
   const hiddenFooter1 = new Set([
     "/UserDashboard",
@@ -153,6 +164,10 @@ function App() {
      "/PraroopFinal2022",
      "/PraroopFinal2023",
      "/PraroopFinal2024",
+     "/ProjectDashboard",
+     "/ChangePassword",
+     "/ResetSectorpassword",
+     "/AWCinformation" // Project
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
@@ -215,6 +230,12 @@ function App() {
         <Route path="/NandaRegistration" element={<NandaRegistration />} />
         <Route path="/FinalBorn" element={<FinalBorn />} />
         <Route path="/Final" element={<Final />} />
+
+        {/* Directorate Data Table Start */}
+        <Route path="/DirecTwelthDataTable" element={<DirecTwelthDataTable />} />
+
+ {/* Directorate Data Table End */}
+
            {/* Directorate dashboard*/}
 
          <Route path="/DirectorateDashboard" element={<DirectorateDashboard />} />
@@ -226,8 +247,14 @@ function App() {
          <Route path="/DistrictWiseAppli" element={<DistrictWiseAppli />} />
          <Route path="/PraroopFinal2022" element={<PraroopFinal2022 />} />
          <Route path="/PraroopFinal2023" element={<PraroopFinal2023 />} />
-         <Route path="/PraroopFinal2024" element={<PraroopFinal2024 />} />
+         <Route path="/ProjectDashboard" element={<ProjectDashboard />} />
 
+          {/* Project dashboard*/}
+
+ <Route path="/PraroopFinal2024" element={<PraroopFinal2024 />} />
+ <Route path="/ChangePassword" element={<ChangePassword />} />
+ <Route path="/ResetSectorpassword" element={<ResetSectorpassword />} />
+ <Route path="/AWCinformation" element={<AWCinformation />} />
       </Routes>
 
       {!shouldHideFooter1 && <LoginFooter />}

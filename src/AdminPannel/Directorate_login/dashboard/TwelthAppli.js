@@ -11,6 +11,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaClockRotateLeft } from "react-icons/fa6";
+import DirecTwelthDataTable from "./direct_data_table/DirecTwelthDataTable";
 
 const TwelthAppli = () => {
   return (
@@ -23,10 +24,12 @@ const TwelthAppli = () => {
           {/* Main Content */}
           <div className="main">
             <NandaTech />
+
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>12th pass Application Received on this Portal 2024</h1>
               </div>
+              <DirecTwelthDataTable />
               <Row>
                 <Col lg={6} md={6} sm={12}>
                   <div class="search-container">

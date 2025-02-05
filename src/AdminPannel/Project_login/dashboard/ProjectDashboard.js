@@ -7,20 +7,21 @@ import dashICon from "../../../assets/images/girls-dash-icon.png";
 
 import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
-import DirectorateLeftnav from "../leftnavigation/DirectorateLeftnav";
+import "../../Project_login/pro_assests/ProjectLeftnav.css";
 import "../../Directorate_login/direc_assets/css/DirectorateDashboard.css";
 import NewBorn from "../../../assets/images/Born-Girl-icon.png";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+import ProjectLeftNav from "../project_leftnav/ProjectLeftNav";
 
-const DirectorateDashboard = () => {
+const ProjectDashboard = () => {
   return (
     <>
       <div>
         {/* Main Container */}
         <div className="main-container">
           {/* Navigation */}
-          <DirectorateLeftnav />
+          <ProjectLeftNav />
           {/* Main Content */}
           <div className="main">
             <NandaTech />
@@ -348,4 +349,4 @@ const DirectorateDashboard = () => {
   );
 };
 
-export default DirectorateDashboard;
+export default ProjectDashboard;

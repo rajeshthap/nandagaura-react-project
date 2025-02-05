@@ -150,10 +150,12 @@
     font-size: var(--nd-space-500);
 }
 
+
 .direc-icon img {
-    max-width: 94px;
+
     align-items: center;
     margin-top: 20px;
+    text-align: center;
 }
 
 .stats h6 {
