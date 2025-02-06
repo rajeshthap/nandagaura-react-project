@@ -12,7 +12,6 @@ import { BsDatabaseFillGear } from "react-icons/bs";
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import DirecTwelthDataTable from "./direct_data_table/DirecTwelthDataTable";
-
 const TwelthAppli = () => {
   return (
     <>

@@ -77,6 +77,21 @@ import ProjectDashboard from "./AdminPannel/Project_login/dashboard/ProjectDashb
 import ChangePassword from "./AdminPannel/Project_login/dashboard/ChangePassword";
 import ResetSectorpassword from "./AdminPannel/Project_login/dashboard/sector_information/ResetSectorpassword";
 import AWCinformation from "./AdminPannel/Project_login/dashboard/sector_information/AWCinformation";
+import SectorWiseView from "./AdminPannel/Project_login/dashboard/Praroop2024/SectorWiseView";
+import ExcelFormetPFMS from "./AdminPannel/Project_login/dashboard/Praroop2024/ExcelFormetPFMS";
+import PraroopAllApp from "./AdminPannel/Project_login/dashboard/Praroop2024/PraroopAllApp";
+import ReturnedFeedback from "./AdminPannel/Project_login/dashboard/Praroop2024/ReturnedFeedback";
+import GirlChildSectorView from "./AdminPannel/Project_login/dashboard/girlchildapplications/GirlChildSectorView";
+import GirlChildAllApp from "./AdminPannel/Project_login/dashboard/girlchildapplications/GirlChildAllApp";
+import GirlExcelFormetView from "./AdminPannel/Project_login/dashboard/girlchildapplications/GirlExcelFormetView";
+import OfflineApplication from "./AdminPannel/Project_login/dashboard/girlchildapplications/OfflineApplication";
+import ChildReturnedFeedback from "./AdminPannel/Project_login/dashboard/girlchildapplications/ChildReturnedFeedback";
+import IncomeCertificateview from "./AdminPannel/Project_login/dashboard/IncomeCertificateview";
+import TwelthSectorWiseView from "./AdminPannel/Project_login/dashboard/twelthapplication/TwelthSectorWiseView";
+import TwelthAllAppl from "./AdminPannel/Project_login/dashboard/twelthapplication/TwelthAllAppl";
+import TwelthExcelPFMS from "./AdminPannel/Project_login/dashboard/twelthapplication/TwelthExcelPFMS";
+import TwelthReturnFeedBack from "./AdminPannel/Project_login/dashboard/twelthapplication/TwelthReturnFeedBack";
+
 function App() {
   const location = useLocation();
   const hiddenPaths = new Set([
@@ -122,7 +137,22 @@ function App() {
     "/ProjectDashboard",
     "/ChangePassword",
     "/ResetSectorpassword",
-    "/AWCinformation"
+    "/AWCinformation",
+    "/ReturnedFeedback", 
+    "/PraroopAllApp", 
+    "/ExcelFormetPFMS", 
+    "/SectorWiseView", 
+    "/ChildReturnedFeedback", 
+    "/GirlChildAllApp", 
+    "/GirlChildSectorView", 
+    "/GirlExcelFormetView", 
+    "/OfflineApplication",
+    "/IncomeCertificateview",
+    "/IncomeCertificateview",
+    "/TwelthSectorWiseView", 
+    "/TwelthExcelPFMS", 
+    "/TwelthSectorWiseView",
+    "/TwelthAllAppl"
   ]); // Correct absolute paths
   const hiddenFooter1 = new Set([
     "/UserDashboard",
@@ -164,10 +194,24 @@ function App() {
      "/PraroopFinal2022",
      "/PraroopFinal2023",
      "/PraroopFinal2024",
-     "/ProjectDashboard",
+     "/ProjectDashboard",// Project
      "/ChangePassword",
      "/ResetSectorpassword",
-     "/AWCinformation" // Project
+     "/AWCinformation", 
+     "/ReturnedFeedback", 
+     "/PraroopAllApp", 
+     "/ExcelFormetPFMS", 
+     "/SectorWiseView",
+     "/ChildReturnedFeedback", 
+     "/GirlChildAllApp", 
+     "/GirlChildSectorView", 
+     "/GirlExcelFormetView", 
+     "/OfflineApplication",
+     "/IncomeCertificateview",
+     "/TwelthSectorWiseView", 
+     "/TwelthExcelPFMS", 
+     "/TwelthSectorWiseView",
+     "/TwelthAllAppl"
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
@@ -255,6 +299,21 @@ function App() {
  <Route path="/ChangePassword" element={<ChangePassword />} />
  <Route path="/ResetSectorpassword" element={<ResetSectorpassword />} />
  <Route path="/AWCinformation" element={<AWCinformation />} />
+ <Route path="/ExcelFormetPFMS" element={<ExcelFormetPFMS />} />
+ <Route path="/SectorWiseView" element={<SectorWiseView />} />
+ <Route path="/PraroopAllApp" element={<PraroopAllApp />} />
+ <Route path="/ReturnedFeedback" element={<ReturnedFeedback />} />
+ <Route path="/ChildReturnedFeedback" element={<ChildReturnedFeedback />} />
+ <Route path="/GirlChildAllApp" element={<GirlChildAllApp />} />
+ <Route path="/GirlChildSectorView" element={<GirlChildSectorView />} />
+ <Route path="/GirlExcelFormetView" element={<GirlExcelFormetView />} />
+ <Route path="/OfflineApplication" element={<OfflineApplication />} />
+ <Route path="/IncomeCertificateview" element={<IncomeCertificateview />} />
+ <Route path="/TwelthAllAppl" element={<TwelthAllAppl />} />
+ <Route path="/TwelthExcelPFMS" element={<TwelthExcelPFMS />} />
+ <Route path="/TwelthReturnFeedBack" element={<TwelthReturnFeedBack />} />
+ <Route path="/TwelthSectorWiseView" element={<TwelthSectorWiseView />} />
+
       </Routes>
 
       {!shouldHideFooter1 && <LoginFooter />}

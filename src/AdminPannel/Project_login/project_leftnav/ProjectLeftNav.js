@@ -14,7 +14,6 @@ import "../../Directorate_login/direc_assets/css/DirecCDPO.css";
 import "../../Project_login/pro_assests/ProjectLeftnav.css";
 import { FaBuildingUser } from "react-icons/fa6";
 import { MdSupervisorAccount } from "react-icons/md";
-import { LuCalendarClock } from "react-icons/lu";
 
 function ProjectLeftNav() {
   const [isNavClosed, setIsNavClosed] = useState(false);
@@ -39,7 +38,6 @@ function ProjectLeftNav() {
     link.click();
     document.body.removeChild(link);
   };
-
   const navigationOptions = [
     {
       icon: <RiDashboard3Line />,
@@ -50,13 +48,12 @@ function ProjectLeftNav() {
       icon: <FaUsers />,
       label: "Change Password",
       path: "/ChangePassword",
-     
     },
 
     {
       icon: <FaUsers />,
       label: "Sector Information",
-      path: "/DirectorateDashboard",
+      path: "/ResetSectorpassword",
       subRoutes: [
         {
           icon: <FaBuildingUser />,
@@ -79,101 +76,96 @@ function ProjectLeftNav() {
         {
           icon: <FaBuildingUser />,
           label: "Sector Wise view",
-          path: "/DirecCDPO",
+          path: "/SectorWiseView",
         },
         {
           icon: <MdSupervisorAccount />,
           label: "All applications",
-          path: "/DirecSupervisore",
+          path: "/PraroopAllApp",
         },
         {
           icon: <MdSupervisorAccount />,
           label: "Excel Formet PFMS",
-          path: "/DirecSupervisore",
+          path: "/ExcelFormetPFMS",
         },
         {
           icon: <MdSupervisorAccount />,
           label: "Return Feedbacks",
-          path: "/DirecSupervisore",
+          path: "/ReturnedFeedback",
         },
       ],
     },
     {
       icon: <FaHandsHoldingChild />,
       label: "Girl Child Applications",
-      path: "/DirecNewBorn",
+      path: "/GirlChildSectorView",
 
       subRoutes: [
         {
           icon: <FaBuildingUser />,
           label: "Sector Wise view",
-          path: "/DirecCDPO",
+          path: "/GirlChildSectorView",
         },
         {
           icon: <MdSupervisorAccount />,
           label: "All applications",
-          path: "/DirecSupervisore",
+          path: "/GirlChildAllApp",
         },
         {
           icon: <MdSupervisorAccount />,
           label: "Offline Application",
-          path: "/DirecSupervisore",
+          path: "/OfflineApplication",
         },
         {
           icon: <MdSupervisorAccount />,
           label: "Excel Formets PFMS",
-          path: "/DirecSupervisore",
+          path: "/GirlExcelFormetView",
         },
         {
           icon: <MdSupervisorAccount />,
           label: "Returnd Feedbacks",
-          path: "/DirecSupervisore",
+          path: "/ChildReturnedFeedback",
         },
       ],
     },
     {
       icon: <MdLibraryBooks />,
       label: "Income Certificate view",
-      path: "/ProjectWiseAppli",
+      path: "/IncomeCertificateview",
     },
     {
       icon: <FaChalkboardTeacher />,
       label: "12th Application View",
-      path: "/DistrictWiseAppli",
+      path: "/TwelthSectorWiseView",
       subRoutes: [
         {
           icon: <FaBuildingUser />,
           label: "Sector Wise view",
-          path: "/DirecCDPO",
+          path: "/TwelthSectorWiseView",
         },
         {
           icon: <MdSupervisorAccount />,
           label: "All applications",
-          path: "/DirecSupervisore",
+          path: "/TwelthAllAppl",
         },
-        {
-          icon: <MdSupervisorAccount />,
-          label: "Offline Application",
-          path: "/DirecSupervisore",
-        },
+
         {
           icon: <MdSupervisorAccount />,
           label: "Excel Formets PFMS",
-          path: "/DirecSupervisore",
+          path: "/TwelthExcelPFMS",
         },
         {
           icon: <MdSupervisorAccount />,
           label: "Returnd Feedbacks",
-          path: "/DirecSupervisore",
+          path: "/TwelthReturnFeedBack",
         },
       ],
     },
-   
   ];
 
   return (
     <>
-      <header className="direc-header">
+      <header className="project-header">
         <div className="logosec">
           <img
             src={MenuIcon}
@@ -200,7 +192,7 @@ function ProjectLeftNav() {
           <div className="nd-msg">
             <span>Department:</span> Project Login
           </div>
-          <div className="direc-dp" alt="logout" title="Click to logout">
+          <div className="project-dp" alt="logout" title="Click to logout">
             <div className="nd-log-icon">
               <LuLogOut />
             </div>
@@ -210,13 +202,9 @@ function ProjectLeftNav() {
 
       <div>
         <div>
-          <div
-            className={`navcontainer ${
-              isNavClosed ? "navclose" : ""
-            }`}
-          >
-            <nav className="nav-direc">
-              <div className="nav-upper-options direc-options ">
+          <div className={`navcontainer ${isNavClosed ? "navclose" : ""}`}>
+            <nav className="nav-project">
+              <div className="nav-upper-options project-options ">
                 <div className="nd-menu">
                   <div>
                     <FaAlignLeft
@@ -227,7 +215,7 @@ function ProjectLeftNav() {
                     />
                   </div>
                   <div className="nd-user">User: Deepika Chauhan</div>
-                  <div className="tech-log-icon-mob">
+                  <div className="project-log-icon-mob">
                     <LuLogOut
                       className=" "
                       alt="logout"
@@ -256,7 +244,7 @@ function ProjectLeftNav() {
                     ) : option.subRoutes ? (
                       <>
                         <div
-                          className={`direc-option option${index + 1}`}
+                          className={`project-option option${index + 1}`}
                           onClick={() => toggleDropdown(index)}
                           style={{ cursor: "pointer" }}
                         >
@@ -276,14 +264,14 @@ function ProjectLeftNav() {
                         </div>
 
                         {expandedItems[index] && (
-                          <div className="direc-suboption">
+                          <div className="project-suboption">
                             {option.subRoutes.map((subRoute, subIndex) => (
                               <Link
                                 to={subRoute.path}
                                 key={subIndex}
-                                className="direc-suboption"
+                                className="project-suboption"
                               >
-                                <div className="nav-subitem-direc ">
+                                <div className="nav-subitem-project ">
                                   <div className="d-flex">
                                     <span className="nav-icon">
                                       {subRoute.icon}
@@ -301,7 +289,7 @@ function ProjectLeftNav() {
                     ) : (
                       <Link
                         to={option.path}
-                        className={`direc-option option${index + 1}`}
+                        className={`project-option option${index + 1}`}
                       >
                         <div className="direc-item">
                           <div className="d-flex">

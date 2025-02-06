@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import UserForm from "../../leftnav/UserForm";
 import "../../../assets/css/ModalOne.css";
 import TwelthdetailPopup from "./TwelthdetailPopup";
 
 function TwelthCheckbox() {
-  const [showModal, setShowModal] = useState({}); // Object to track which modal to show
+  const [showModal, setShowModal] = useState({}); 
 
   // Handle checkbox click to open corresponding modal
   const handleShow = (id) => {
     setShowModal((prev) => ({
       ...prev,
-      [id]: true, // Set the clicked modal's state to true for the clicked ID
+      [id]: true, 
     }));
   };
 
@@ -20,7 +19,7 @@ function TwelthCheckbox() {
   const handleClose = (id) => {
     setShowModal((prev) => ({
       ...prev,
-      [id]: false, // Set the clicked modal's state to false for the clicked ID
+      [id]: false, 
     }));
   };
 
