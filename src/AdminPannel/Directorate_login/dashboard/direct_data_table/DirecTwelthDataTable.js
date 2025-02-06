@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
+import "../../direc_assets/css/DirectTwelthDataTable.css";
+import { ReactSmartScroller } from 'react-smart-scroller'
 
 function DirecTwelthDataTable() {
   const [search, setSearch] = useState("");
@@ -59,7 +61,7 @@ function DirecTwelthDataTable() {
 
   return (
     <>
-      <div className="d-flex justify-content-center"></div>
+      
 
       <DataTable
         title="Country List"
@@ -71,18 +73,41 @@ function DirecTwelthDataTable() {
         selectableRows
         selectableRowsHighlight
         highlightOnHover
-        actions={<button className="btn btn-sm btn-primary">Export</button>}
+        // actions={<button className="btn btn-sm btn-primary">Export</button>}
         subHeader
         subHeaderComponent={
-          <input
-            type="text"
-            placeholder="Search"
-            className="form-control w-25"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+          // <input
+          //   type="text"
+          //   placeholder="Search"
+          //   className="form-control w-25"
+          //   value={search}
+          //   onChange={(e) => setSearch(e.target.value)}
+          // />
+
+          <div className="direct-twelth-table">
+          <div class="search-container">
+            <form>
+              <input
+                class="search"
+                id="searchleft"
+                type="search"
+                name="q"
+                placeholder="Search"
+                aria-label="Search"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+              />
+              <label class="button search-btn " for="searchleft">
+                <span class="mglass">&#9906;</span>
+              </label>
+            </form>
+    
+          </div>
+          <button className="btn btn-primary direc-cp-btn">Copy</button>
+      
+          </div>
         }
-        subHeaderAlign="center"
+        subHeaderAlign="left"
       />
     </>
   );

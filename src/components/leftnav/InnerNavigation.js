@@ -74,7 +74,7 @@ function InnerNavigation() {
 
   return (
     <>
-      <header>
+      <header className="user-nd-header">
         <div className="logosec">
           <img
            src={MenuIcon}

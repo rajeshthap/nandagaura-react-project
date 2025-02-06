@@ -27,7 +27,7 @@ body {
   overflow-x: hidden;
 }
 
-header {
+user-nd-header {
   height: 70px;
   width: 100vw;
   padding: 0 30px;
@@ -338,7 +338,7 @@ header {
   padding: 0px 20px 20px 20px;
 }
 
-.report-header {
+.report-user-nd-header {
   height: 80px;
   width: 100%;
   display: flex;
@@ -464,7 +464,7 @@ span.nav-label {
       display: show;
     }
 
-    .accordion-header {
+    .accordion-user-nd-header {
       border-radius: 8px;
     }
 
@@ -687,7 +687,7 @@ span.nav-label {
     display: show;
   }
 
-  .accordion-header {
+  .accordion-user-nd-header {
     border-radius: 8px;
   }
 
@@ -779,7 +779,7 @@ span.nav-label {
     display: none;
   }
 
-  header {
+  user-nd-header {
     padding: 0 12px !important;
   }
 
@@ -839,7 +839,7 @@ span.nav-label {
     height: 27px;
   }
 
-  .report-header {
+  .report-user-nd-header {
     height: 60px;
     padding: 10px 10px 5px 10px;
   }
@@ -860,7 +860,7 @@ span.nav-label {
     height: 27px;
   }
 
-  .report-header {
+  .report-user-nd-header {
     height: 60px;
     padding: 10px 5px 5px 5px;
   }

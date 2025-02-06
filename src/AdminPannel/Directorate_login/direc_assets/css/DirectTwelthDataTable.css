@@ -1,0 +1,13 @@
+.direct-twelth-table{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.direc-cp-btn{
+    width: 64px;
+    height: 40px;
+    font-size: var(--nd-space-300);
+}
+.bTQagf{
+
+}
