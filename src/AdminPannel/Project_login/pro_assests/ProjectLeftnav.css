@@ -35,7 +35,7 @@ body {
   height: 70px;
   width: 100vw;
   padding: 0 30px 0px 16px;
-  background: linear-gradient(to bottom, rgb(255 194 175), white);
+  background: linear-gradient(to bottom, rgb(199 232 185), white);
   position: fixed;
   z-index: 100;
   box-shadow: 0 0.46875rem 2.1875rem rgba(0, 0, 0, 0.03), 0 0.9375rem 1.40625rem rgba(0, 0, 0, 0.03), 0 0.25rem 0.53125rem rgba(0, 0, 0, 0.05), 0 0.125rem 0.1875rem rgba(0, 0, 0, 0.03);
@@ -206,7 +206,8 @@ body {
 .nav-project {
   min-height: 100vh;
   width: 250px;
-  background: #ef6236;
+  background-color: #1b2a47;
+  
   border-color: #343a40;
   position: absolute;
   top: 0px;
@@ -260,13 +261,13 @@ body {
   min-height: auto;
 } */
 .project-suboption {
-  background-color: #0fc1f2 !important;
+  background-color: #152036 !important;
 }
 
 .project-suboption:hover {
   border-left: 5px solid var(--nd-white);
   color: #fff;
-  background-color: #ff8863 !important;
+  background-color: #253452 !important;
 
 }
 
@@ -326,7 +327,7 @@ body {
 
 .project-options .option1 {
   border-left: 5px solid var(--nd-primary);
-  background: #049652;
+  background: #152036;
   border-color: #343a40;
   color: white;
   cursor: pointer;
@@ -349,7 +350,7 @@ body {
 
 .project-option:hover {
   border-left: 5px solid var(--nd-white);
-  background-color: #4a2aab;
+  background-color: #253452;
   cursor: pointer;
 }
 
