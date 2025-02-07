@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiDashboard3Line } from "react-icons/ri";
-import { MdOutlineFormatAlignRight, MdLibraryBooks } from "react-icons/md";
+import { MdOutlineFormatAlignRight } from "react-icons/md";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa"; // Add Chevron icons
 import { LuLogOut } from "react-icons/lu";
 import { FaHandsHoldingChild } from "react-icons/fa6";
 import { FaChalkboardTeacher, FaAlignLeft } from "react-icons/fa";
 import { MdOutlineLockReset } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
-import { FaUsers } from "react-icons/fa";
 import UKLogon from "../../../assets/images/UKLogo.png";
 import MenuIcon from "../../../assets/images/menu_icon.png";
 import { LuFileLock } from "react-icons/lu";
@@ -17,7 +16,6 @@ import { AiFillFileExclamation } from "react-icons/ai";
 import { VscFeedback } from "react-icons/vsc";
 import { TbAlertSquareRoundedOff } from "react-icons/tb";
 import "../../Directorate_login/direc_assets/css/DirecCDPO.css";
-// import "../../techassets/techcss/TechLeft.css";
 import "../../Project_login/pro_assests/ProjectLeftnav.css";
 import { FaBuildingUser } from "react-icons/fa6";
 import { MdSupervisorAccount } from "react-icons/md";

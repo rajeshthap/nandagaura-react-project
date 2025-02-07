@@ -4,8 +4,6 @@ import "../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col } from "react-bootstrap";
 import dashICon from "../../../assets/images/girls-dash-icon.png";
-
-import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import "../../Project_login/pro_assests/ProjectLeftnav.css";
 import "../../Directorate_login/direc_assets/css/DirectorateDashboard.css";

@@ -2,8 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import "../../direc_assets/css/DirectTwelthDataTable.css";
-import { Row } from "react-bootstrap";
-import { ReactSmartScroller } from 'react-smart-scroller'
 function DirecTwelthDataTable() {
   const [search, setSearch] = useState("");
   const [countries, setCountries] = useState([]);
