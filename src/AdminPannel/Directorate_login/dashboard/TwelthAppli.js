@@ -50,7 +50,7 @@ const TwelthAppli = () => {
               </Row>
               <div className="table-responsive-lg">
                 <Table className="nd-our-staff">
-                  <thead>
+                  <thead> 
                     <tr>
                       <th
                         colSpan="6"

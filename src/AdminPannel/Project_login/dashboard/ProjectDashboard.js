@@ -13,6 +13,7 @@ import NewBorn from "../../../assets/images/Born-Girl-icon.png";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import ProjectLeftNav from "../project_leftnav/ProjectLeftNav";
+import ProjectNandaGaura from "./ProjectNandaGaura";
 
 const ProjectDashboard = () => {
   return (
@@ -24,7 +25,7 @@ const ProjectDashboard = () => {
           <ProjectLeftNav />
           {/* Main Content */}
           <div className="main">
-            <NandaTech />
+            <ProjectNandaGaura />
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>Dashboard Application Received on this Portal 2024</h1>

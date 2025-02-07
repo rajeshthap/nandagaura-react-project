@@ -27,7 +27,7 @@ body {
   overflow-x: hidden;
 }
 
-header {
+.user-nd-header {
   height: 70px;
   width: 100vw;
   padding: 0 30px;
@@ -779,7 +779,7 @@ span.nav-label {
     display: none;
   }
 
-  header {
+  .user-nd-header {
     padding: 0 12px !important;
   }
 

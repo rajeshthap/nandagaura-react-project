@@ -13,3 +13,11 @@
     background: #ef6236 !important;
     color: var(--nd-white);
 }
+.fpOuPx{
+    font-size: var(--nd-space-400);
+}
+.rdt_Table {
+    max-height: 400px; 
+    overflow-y: auto;
+
+  }

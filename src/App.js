@@ -73,6 +73,7 @@ import DirecTwelthDataTable from "./AdminPannel/Directorate_login/dashboard/dire
 //-----------Directorate Data Table End-----------//
 
 //-----------Project dashboard-----------//
+import ProjectNandaGaura from "./AdminPannel/Project_login/dashboard/ProjectNandaGaura";
 import ProjectDashboard from "./AdminPannel/Project_login/dashboard/ProjectDashboard";
 import ChangePassword from "./AdminPannel/Project_login/dashboard/ChangePassword";
 import ResetSectorpassword from "./AdminPannel/Project_login/dashboard/sector_information/ResetSectorpassword";
@@ -291,7 +292,7 @@ function App() {
          <Route path="/DistrictWiseAppli" element={<DistrictWiseAppli />} />
          <Route path="/PraroopFinal2022" element={<PraroopFinal2022 />} />
          <Route path="/PraroopFinal2023" element={<PraroopFinal2023 />} />
-         <Route path="/ProjectDashboard" element={<ProjectDashboard />} />
+       
 
           {/* Project dashboard*/}
 
@@ -313,6 +314,8 @@ function App() {
  <Route path="/TwelthExcelPFMS" element={<TwelthExcelPFMS />} />
  <Route path="/TwelthReturnFeedBack" element={<TwelthReturnFeedBack />} />
  <Route path="/TwelthSectorWiseView" element={<TwelthSectorWiseView />} />
+ <Route path="/ProjectDashboard" element={<ProjectDashboard />} />
+ <Route path="/ProjectNandaGaura" element={<ProjectNandaGaura />} />
 
       </Routes>
 

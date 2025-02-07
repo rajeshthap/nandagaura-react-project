@@ -2,8 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import "../../direc_assets/css/DirectTwelthDataTable.css";
-// import { ReactSmartScroller } from 'react-smart-scroller'
-
+import { Row } from "react-bootstrap";
+import { ReactSmartScroller } from 'react-smart-scroller'
 function DirecTwelthDataTable() {
   const [search, setSearch] = useState("");
   const [countries, setCountries] = useState([]);
@@ -18,13 +18,16 @@ function DirecTwelthDataTable() {
       console.log(error);
     }
   };
-
+  // ]
   const columns = [
+   
     {
       name: "S.no",
       selector: (row) => row.name,
       sortable: true,
+      
     },
+
     {
       name: "District",
       selector: (row) => row.nativeName,
@@ -36,16 +39,23 @@ function DirecTwelthDataTable() {
     },
     {
       name: "Approved by CDPO",
-      selector: (row) => <img src={row.flags.png} alt="flag" width={20} height={12} />,
+      selector: (row) => (
+        <img src={row.flags.png} alt="flag" width={20} height={12} />
+      ),
     },
     {
       name: "Rejected by CDPO",
-      selector: (row) => <img src={row.flags.png} alt="flag" width={20} height={12} />,
+      selector: (row) => (
+        <img src={row.flags.png} alt="flag" width={20} height={12} />
+      ),
     },
     {
       name: "	Pending",
       cell: (row) => (
-        <button className="btn btn-primary" onClick={() => alert(row.alpha2Code)}>
+        <button
+          className="btn btn-primary"
+          onClick={() => alert(row.alpha2Code)}
+        >
           Edit
         </button>
       ),
@@ -65,18 +75,17 @@ function DirecTwelthDataTable() {
 
   return (
     <>
-      
-
       <DataTable
         title="Country List"
-        columns={columns} className="deepika"
+        columns={columns}
+        // columns1={columns1}
         data={filteredCountries}
         pagination
         fixedHeader
         // fixedHeaderScrollHeight="400px"
         ReactSmartScroller="400px"
-        selectableRows  
-        selectableRowsHighlight   
+        selectableRows
+        selectableRowsHighlight
         highlightOnHover
         // actions={<button className="btn btn-sm btn-primary">Export</button>}
         subHeader
@@ -90,27 +99,28 @@ function DirecTwelthDataTable() {
           // />
 
           <div className="direct-twelth-table">
-          <div class="search-container">
-            <form>
-              <input
-                class="search"
-                id="searchleft"
-                type="search"
-                name="q"
-                placeholder="Search"
-                aria-label="Search"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-              <label class="button search-btn " for="searchleft">
-                <span class="mglass">&#9906;</span>
-              </label>
-            </form>
-    
+            
+            <div class="search-container">
+              <form>
+                <input
+                  class="search"
+                  id="searchleft"
+                  type="search"
+                  name="q"
+                  placeholder="Search"
+                  aria-label="Search"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                />
+                <label class="button search-btn " for="searchleft">
+                  <span class="mglass">&#9906;</span>
+                </label>
+              </form>
+            </div>
+            <button className="btn btn-primary direc-cp-btn">Copy</button>
+           
           </div>
-          <button className="btn btn-primary direc-cp-btn">Copy</button>
-      
-          </div>
+          
         }
         subHeaderAlign="left"
       />

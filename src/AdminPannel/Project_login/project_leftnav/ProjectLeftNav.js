@@ -6,14 +6,22 @@ import { FaChevronDown, FaChevronRight } from "react-icons/fa"; // Add Chevron i
 import { LuLogOut } from "react-icons/lu";
 import { FaHandsHoldingChild } from "react-icons/fa6";
 import { FaChalkboardTeacher, FaAlignLeft } from "react-icons/fa";
+import { MdOutlineLockReset } from "react-icons/md";
+import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaUsers } from "react-icons/fa";
 import UKLogon from "../../../assets/images/UKLogo.png";
 import MenuIcon from "../../../assets/images/menu_icon.png";
+import { LuFileLock } from "react-icons/lu";
+import { PiMicrosoftExcelLogo } from "react-icons/pi";
+import { AiFillFileExclamation } from "react-icons/ai";
+import { VscFeedback } from "react-icons/vsc";
+import { TbAlertSquareRoundedOff } from "react-icons/tb";
 import "../../Directorate_login/direc_assets/css/DirecCDPO.css";
 // import "../../techassets/techcss/TechLeft.css";
 import "../../Project_login/pro_assests/ProjectLeftnav.css";
 import { FaBuildingUser } from "react-icons/fa6";
 import { MdSupervisorAccount } from "react-icons/md";
+import { GrCertificate } from "react-icons/gr";
 
 function ProjectLeftNav() {
   const [isNavClosed, setIsNavClosed] = useState(false);
@@ -42,26 +50,26 @@ function ProjectLeftNav() {
     {
       icon: <RiDashboard3Line />,
       label: "Dashboard",
-      path: "/DirectorateDashboard",
+      path: "/ProjectDashboard",
     },
     {
-      icon: <FaUsers />,
+      icon: <LuFileLock />,
       label: "Change Password",
       path: "/ChangePassword",
     },
 
     {
-      icon: <FaUsers />,
+      icon: <AiFillFileExclamation />,
       label: "Sector Information",
       path: "/ResetSectorpassword",
       subRoutes: [
         {
-          icon: <FaBuildingUser />,
+          icon: <MdOutlineLockReset />,
           label: "Reset Sector Password",
           path: "/ResetSectorpassword",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <IoIosInformationCircleOutline />,
           label: "AWC Information",
           path: "/AWCinformation",
         },
@@ -84,12 +92,12 @@ function ProjectLeftNav() {
           path: "/PraroopAllApp",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <PiMicrosoftExcelLogo />,
           label: "Excel Formet PFMS",
           path: "/ExcelFormetPFMS",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <VscFeedback />,
           label: "Return Feedbacks",
           path: "/ReturnedFeedback",
         },
@@ -112,24 +120,24 @@ function ProjectLeftNav() {
           path: "/GirlChildAllApp",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <TbAlertSquareRoundedOff />,
           label: "Offline Application",
           path: "/OfflineApplication",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <PiMicrosoftExcelLogo />,
           label: "Excel Formets PFMS",
           path: "/GirlExcelFormetView",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <VscFeedback />,
           label: "Returnd Feedbacks",
           path: "/ChildReturnedFeedback",
         },
       ],
     },
     {
-      icon: <MdLibraryBooks />,
+      icon: <GrCertificate />,
       label: "Income Certificate view",
       path: "/IncomeCertificateview",
     },
@@ -150,12 +158,12 @@ function ProjectLeftNav() {
         },
 
         {
-          icon: <MdSupervisorAccount />,
+          icon: <PiMicrosoftExcelLogo />,
           label: "Excel Formets PFMS",
           path: "/TwelthExcelPFMS",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <VscFeedback />,
           label: "Returnd Feedbacks",
           path: "/TwelthReturnFeedBack",
         },
