@@ -752,7 +752,7 @@ span.nav-project-label {
 
 @media screen and (max-width: 768px) {
   .project-log-icon-mob {
-    background-color: var(--nd-blue-hover);
+    background-color: #152036;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -829,7 +829,7 @@ span.nav-project-label {
 @media screen and (max-width: 490px) {
 
   .project-log-icon-mob {
-    background-color: var(--nd-orange);
+    background-color:#152036;
     width: 30px;
     height: 30px;
     border-radius: 50%;

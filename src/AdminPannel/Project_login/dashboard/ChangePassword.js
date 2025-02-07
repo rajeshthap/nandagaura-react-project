@@ -101,8 +101,8 @@ const ChangePassword = () => {
                       </Form.Group>
                     </Col>
                     <div className="project-btn">
-                    <Button variant="success" className="pro-edit-btn">Edit Password</Button>
-                    <Button variant="danger" className="pro-cancel-btn">Cancel</Button>
+                    <Button className="pro-edit-btn">Edit Password</Button>
+                    <Button className="pro-cancel-btn">Cancel</Button>
                     </div>
                   </Row>
                 </Form>
