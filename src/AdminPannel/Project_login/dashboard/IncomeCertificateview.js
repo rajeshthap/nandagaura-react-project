@@ -2,7 +2,6 @@ import React from "react";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-import { Row, Col, Form, Button } from "react-bootstrap";
 import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import "../../Project_login/pro_assests/ProjectLeftnav.css";

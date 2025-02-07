@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import "../../direc_assets/css/DirectTwelthDataTable.css";
-import { ReactSmartScroller } from 'react-smart-scroller'
+// import { ReactSmartScroller } from 'react-smart-scroller'
 
 function DirecTwelthDataTable() {
   const [search, setSearch] = useState("");
@@ -21,25 +21,29 @@ function DirecTwelthDataTable() {
 
   const columns = [
     {
-      name: "Country Name",
+      name: "S.no",
       selector: (row) => row.name,
       sortable: true,
     },
     {
-      name: "Country Native Name",
+      name: "District",
       selector: (row) => row.nativeName,
       sortable: true,
     },
     {
-      name: "Country Capital",
+      name: "Received",
       selector: (row) => row.capital || "N/A",
     },
     {
-      name: "Country Flag",
+      name: "Approved by CDPO",
       selector: (row) => <img src={row.flags.png} alt="flag" width={20} height={12} />,
     },
     {
-      name: "Action",
+      name: "Rejected by CDPO",
+      selector: (row) => <img src={row.flags.png} alt="flag" width={20} height={12} />,
+    },
+    {
+      name: "	Pending",
       cell: (row) => (
         <button className="btn btn-primary" onClick={() => alert(row.alpha2Code)}>
           Edit
@@ -65,13 +69,14 @@ function DirecTwelthDataTable() {
 
       <DataTable
         title="Country List"
-        columns={columns}
+        columns={columns} className="deepika"
         data={filteredCountries}
         pagination
         fixedHeader
-        fixedHeaderScrollHeight="400px"
-        selectableRows
-        selectableRowsHighlight
+        // fixedHeaderScrollHeight="400px"
+        ReactSmartScroller="400px"
+        selectableRows  
+        selectableRowsHighlight   
         highlightOnHover
         // actions={<button className="btn btn-sm btn-primary">Export</button>}
         subHeader
