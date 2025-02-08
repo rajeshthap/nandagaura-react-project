@@ -33,6 +33,9 @@
     align-items: center;
     margin-top: 61px;
 }
+.project-nanda-title{
+    padding-top: 8px;
+}
 
 @media (max-width: 575.98px) { 
     

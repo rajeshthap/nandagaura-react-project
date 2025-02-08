@@ -80,6 +80,7 @@ color: #000;
 .search:focus {
     width: 363px;
     padding: var(--nd-space-0) var(--nd-space-400);
+    margin-top: 2px;
 }
 
 .search:focus+.searchbutton {
@@ -185,7 +186,7 @@ color: #000;
     }
 
     .search:focus {
-        width: 332px;
+        width: 242px;
         padding: var(--nd-space-0) var(--nd-space-400);
     }
     .tech-request-mob {

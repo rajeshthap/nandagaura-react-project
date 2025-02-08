@@ -61,11 +61,13 @@
     justify-content: space-around;
     padding: var(--nd-space-50);
     margin-top: var(--nd-space-100);
-
+   
 }
 
 .nd-tech-heading1 h2 {
-    font-size: var(--nd-space-350);
+    font-size: var(--nd-space-400);
+    color: var(--nd-orange) !important;
+    padding: var(--nd-space-300);
     font-weight: 500;
 }
 
@@ -185,6 +187,15 @@
     padding: var(--nd-space-50);
 }
 
+
+
+.project-card-box{
+    border-radius: 10px;
+        padding-top: 12px;
+        border: 1px solid var(--nd-border);
+        box-shadow: 1px 1px 15px rgba(161, 182, 253, 0.825);
+    }
+    
 @media (max-width: 568px) {
     .direc-icon img {
         display: none;
@@ -194,8 +205,4 @@
         margin-top: var(--nd-space-400);
     }
 
-    .nd-tech-heading1 {
-
-        padding: var(--nd-space-300);
-    }
 }
