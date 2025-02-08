@@ -62,11 +62,11 @@ const PraroopAllApp = () => {
                       <th>Sector</th>
                       <th>Final Submit</th>
                       <th colSpan="3" className="merged-column">
-                        Supervisor 
+                        Supervisor Recommendation
                       </th>
                       <th colSpan="3"> CDPO Recommendation</th>
                       <th>View Details Form</th>
-                      <th>Action</th>
+                   
                     </tr>
                   </thead>
                   <tbody>
@@ -80,28 +80,28 @@ const PraroopAllApp = () => {
                       <td>2007-03-07</td>
                       <td>General</td>
                       <td>UDIYAR [07]</td>
-                      <td>2025-01-16 11:04:13</td>
-                      <td >2025-01-16 11:04:13</td>
+                      <td>Feedback Submitted</td>
+                      <td >Recommendation to Accept</td>
                       <td>
-                        deepika
+                      Form is complete.
                       </td>
                       <td>
-                        deepika
+                      Feedback Submitted
                       </td>
-                      <td>4</td>
-                      <td>4</td>
+                      <td>Recommendation to Accept</td>
+                    <td>Form is complete.</td>
                       
                      
 
                       <td>जांच सही पाई गई संस्तुति सहित अग्रसारित</td>
-                      <td>
+                      <td className="pr-p">
                         <div className="pro-rest-btn">
                           <Button className="reset-btn">
                             Update Project/Sector
                           </Button>
                         </div>
                       </td>
-                      <td>manya</td>
+                  
                     </tr>
                   </tbody>
                 </Table>
