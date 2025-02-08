@@ -709,7 +709,9 @@ body {
   border-top-color: var(--nd-white) !important;
   opacity: .9;
 }
-
+.kToRYh{
+  padding: 0px !important;
+}
 @media (max-width: 575.98px) {
 
   .nd-stepform-box {
