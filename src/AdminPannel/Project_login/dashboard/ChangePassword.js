@@ -3,12 +3,12 @@ import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col, Form, Button } from "react-bootstrap";
-import NandaTech from "../../technicalcomponents/dashboard/NandaTech";
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import "../../Project_login/pro_assests/ProjectLeftnav.css";
 import "../../Directorate_login/direc_assets/css/DirectorateDashboard.css";
 import ProjectLeftNav from "../project_leftnav/ProjectLeftNav";
 import "../../Project_login/pro_assests/ChangePassword.css";
+import ProjectNandaGaura from "./ProjectNandaGaura";
 
 const ChangePassword = () => {
   return (
@@ -20,7 +20,7 @@ const ChangePassword = () => {
           <ProjectLeftNav />
           {/* Main Content */}
           <div className="main">
-            <NandaTech />
+            <ProjectNandaGaura />
             <div className="box-container">
               <div className="nd-tech-heading">
                 <h1>Profile Details</h1>
@@ -47,8 +47,8 @@ const ChangePassword = () => {
                       >
                         <Form.Label>Old Password</Form.Label>
                         <Form.Control
-                          type="Password"
-                           disabled
+                             type="password" disabled value="........"
+                          
                         />
                       </Form.Group>
                     </Col>
@@ -60,7 +60,7 @@ const ChangePassword = () => {
                         <Form.Label>CDPO Incharge</Form.Label>
                         <Form.Control
                           type="text"
-                          placeholder="Asha chauhan"  disabled
+                          placeholder="Manju(INCHARGE)"  disabled
                         />
                       </Form.Group>
                     </Col>
@@ -81,10 +81,10 @@ const ChangePassword = () => {
                         className="mb-3"
                         controlId="exampleForm.ControlInput1"
                       >
-                        <Form.Label>New Password</Form.Label>
+                        <Form.Label>Type New Password</Form.Label>
                         <Form.Control
                           type="password"
-                          placeholder="type new password"
+                          placeholder="Type New Password"
                         />
                       </Form.Group>
                     </Col>
@@ -93,10 +93,10 @@ const ChangePassword = () => {
                         className="mb-3"
                         controlId="exampleForm.ControlInput1"
                       >
-                        <Form.Label>Confirm Password</Form.Label>
+                        <Form.Label>Confirm your Password</Form.Label>
                         <Form.Control
                           type="password"
-                          placeholder="Confirm Password"
+                          placeholder="Confirm your Password"
                         />
                       </Form.Group>
                     </Col>

@@ -1,16 +1,13 @@
 import React from "react";
 import "../../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-import { Row, Col, Pagination, Table } from "react-bootstrap";
-import { FaCheckCircle } from "react-icons/fa";
-import { BsDatabaseFillGear } from "react-icons/bs";
-import { IoMdCloseCircle } from "react-icons/io";
-import { FaClockRotateLeft } from "react-icons/fa6";
-import NandaTech from "../../../technicalcomponents/dashboard/NandaTech";
+import { Row, Col, Pagination, Table, Button } from "react-bootstrap";
+import "../../pro_assests/ResetSectorPassword.css"
 import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
-
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
+import ProjectNandaGaura from "../ProjectNandaGaura";
+
 
 const ResetSectorpassword = () => {
   return (
@@ -22,10 +19,10 @@ const ResetSectorpassword = () => {
           <ProjectLeftNav />
           {/* Main Content */}
           <div className="main">
-            <NandaTech />
+            <ProjectNandaGaura />
             <div className="box-container">
               <div className="nd-tech-heading">
-                <h1>Project -Garud | Sector Info</h1>
+                <h1>Project -Kapkot | Sector Info</h1>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
@@ -47,7 +44,7 @@ const ResetSectorpassword = () => {
                 </Col>
               </Row>
               <div className="table-responsive-lg">
-                <Table className="nd-our-staff">
+                <Table className="pro-thead">
                   <thead> 
                     
                     <tr>
@@ -63,20 +60,15 @@ const ResetSectorpassword = () => {
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>Almora</td>
-                      <td>
-                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-Received "><BsDatabaseFillGear /> Received <span className="badge nd-data-Received text-center">20</span></span>
-                        </td>
-                      <td>
-                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-approved"><FaCheckCircle /> Approved <span className="badge nd-data-approved text-center">100</span></span>
-                        </td>
-                        <td>
-                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-rejected"><IoMdCloseCircle /> Rejected <span className="badge nd-data-rejected text-center">01</span></span>
-                        </td>
-                        <td>
-                        <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-pending"><FaClockRotateLeft /> Pending <span className="badge nd-data-pending text-center">10</span></span>
-                        </td>
-                        <td>Reset password to default password</td>
+                      <td>Bageshwar</td>
+                      <td>Kapkot</td>
+                      <td>KAMERIDEVI [01]</td>
+                      <td>Deepa Rana</td>
+                      <td>8006128067</td>
+                     
+                      <td> <div className="pro-rest-btn"><Button className="reset-btn">Reset password to default to password</Button></div></td>
+                      
+                     
                     </tr>
                   </tbody>
                 </Table>
@@ -92,7 +84,7 @@ const ResetSectorpassword = () => {
                   {" "}
                   <div className="tech-staff-table">
                     {" "}
-                    <Pagination className="direct-paging">
+                    <Pagination className="pro-paging">
                       <Pagination.First />
                       <Pagination.Prev />
                       <Pagination.Item>{1}</Pagination.Item>
