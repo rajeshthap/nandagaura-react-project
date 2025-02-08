@@ -2,7 +2,7 @@ import React from "react";
 import "../../techassets/techcss/TechLeft.css";
 import "../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 
 import TechFooter from "../../technicalcomponents/footer/TechFooter";
 import "../../Project_login/pro_assests/ProjectLeftnav.css";
@@ -27,18 +27,25 @@ const ProjectDashboard = () => {
                 <h1>Dashboard CDPO </h1>
               </div>
               <Row className="">
-                <Col lg={6} md={6} sm={12} className="mb-2">
+                <Col lg={6} md={6} sm={12} className="mb-2 project-card-box">
+                <Card>
+      <Card.Body> <div className="project-div">
+                
+                <div className="col-md-12"><ProjectPraroopOne /></div></div></Card.Body>
+    </Card>
                 <div className="nd-tech-heading1">
                     <h2>Real Time Stats for Praroop 1</h2>
                   </div>
-                 <ProjectPraroopOne />
+               
                 </Col>
 
-                <Col lg={6} md={6} sm={12} className="mb-2">
-                  <div className="nd-tech-heading1">
+                <Col lg={6} md={6} sm={12} className="mb-2 project-card-box">
+                <div className="nd-tech-heading1">
                     <h2>Real Time Stats for Praroop 2 2024</h2>
                   </div>
-                  <ProjectPraroopOne />
+                <div className="project-div">
+                
+                  <div className="col-md-12"><ProjectPraroopOne /></div></div>
                 </Col>
               </Row>
             </div>
