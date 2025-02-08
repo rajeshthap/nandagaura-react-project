@@ -61,11 +61,13 @@
     justify-content: space-around;
     padding: var(--nd-space-50);
     margin-top: var(--nd-space-100);
-
+   
 }
 
 .nd-tech-heading1 h2 {
-    font-size: var(--nd-space-350);
+    font-size: var(--nd-space-400);
+    color: var(--nd-orange) !important;
+    padding: var(--nd-space-300);
     font-weight: 500;
 }
 
@@ -185,10 +187,7 @@
     padding: var(--nd-space-50);
 }
 
-.project-div{
-    width: 96%;
-    margin: 0 auto;
-}
+
 
 .project-card-box{
     border-radius: 10px;
@@ -206,8 +205,4 @@
         margin-top: var(--nd-space-400);
     }
 
-    .nd-tech-heading1 {
-
-        padding: var(--nd-space-300);
-    }
 }
