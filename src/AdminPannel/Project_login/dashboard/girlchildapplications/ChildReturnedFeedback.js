@@ -23,7 +23,7 @@ const ChildReturnedFeedback = () => {
               <div className="nd-tech-heading">
                 <h1>Project-wise Feedback Returned(Praroop 1)</h1>
               </div>
-             
+
               <Row>
                 <Col lg={6} md={6} sm={12}>
                   <div className="search-container">
@@ -56,17 +56,12 @@ const ChildReturnedFeedback = () => {
                       <th>Girl Name</th>
                       <th>Mother Name</th>
                       <th>Father Name </th>
-                      <th>D-O-B</th>
+                      <th>DOB</th>
                       <th>District</th>
                       <th>Project</th>
                       <th>AWC</th>
-                      <th>
-                      Feedback
-                      </th>
-                      <th>
-                      Return Time
-                      </th>
-                      
+                      <th>Feedback</th>
+                      <th>Return Time</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -82,10 +77,10 @@ const ChildReturnedFeedback = () => {
                       <td>Bageshwar</td>
                       <td>Kapkot [0506303]</td>
                       <td>GOLNA</td>
-                      <td >अभिभावक आधार स्पष्ट लगाना है, शपथ पत्र लगाना है</td>
-                     
+                      <td>अभिभावक आधार स्पष्ट लगाना है, शपथ पत्र लगाना है</td>
+
                       <td>2023-12-27 10:56:23</td>
-                                        </tr>
+                    </tr>
                   </tbody>
                 </Table>
               </div>

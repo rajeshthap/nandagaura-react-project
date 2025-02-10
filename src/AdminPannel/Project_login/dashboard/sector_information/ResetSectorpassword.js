@@ -52,8 +52,8 @@ const ResetSectorpassword = () => {
                       <th>District Name</th>
                       <th>Project Name</th>
                       <th>Sector Name</th>
-                      <th> Sector Incharge</th>
-                      <th>Inchage Mobile</th>
+                      <th>Sector Incharge</th>
+                      <th>Incharge Mobile</th>
                       <th>Password</th>
                     </tr>
                   </thead>

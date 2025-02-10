@@ -63,7 +63,7 @@ const ExcelFormetPFMS = () => {
                     <tr>
                       <th>Full Name in English</th>
                       <th>Full Name in Recognized Official Lang</th>
-                      <th>Girl Name</th>
+                      
                       <th>Gender</th>
                       <th>Address Line 1</th>
                       <th>Addrress Line 2</th>
@@ -76,11 +76,11 @@ const ExcelFormetPFMS = () => {
                       <th>
                         Account Number
                       </th>
+                      <th>Aadhar Number</th>
                       <th>Pin Code</th>
                       <th>scheme Specific ID </th>
-                      <th >Center share Payment Amout</th>
-                      <th>State share payment amout</th>
-                   
+                      <th>Center Share Payment Amout</th>
+                      <th>State Share payment Amout</th>
                     </tr>
                   </thead>
                   <tbody>

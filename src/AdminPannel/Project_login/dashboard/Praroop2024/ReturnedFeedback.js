@@ -50,17 +50,17 @@ const ReturnedFeedback = () => {
                   <thead>
                     <tr>
                       <th>S.no</th>
-                      <th>	Form ID</th>
-                      <th>Adhar No.</th>
-                      <th>Mobile No.</th>
+                      <th>Form ID</th>
+                      <th>Adhar Number</th>
+                      <th>Mobile Number.</th>
                       <th>Girl Name</th>
                       <th>Mother Name</th>
                       <th>Father Name</th>
-                      <th>D-O-B </th>
+                      <th>DOB</th>
                       <th>District</th>
                       <th>Project</th>
                       <th>Sector</th>
-                      <th>	AWC</th>
+                      <th>AWC</th>
                       <th>
                       Feedback
                       </th>
@@ -86,9 +86,8 @@ const ReturnedFeedback = () => {
                       PODINAPANI
                       </td>
                       <td>
-                      Incorrect
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                       </td>
-                    
                     <td>2024-10-02 15:57:10</td>
                     
                     </tr>

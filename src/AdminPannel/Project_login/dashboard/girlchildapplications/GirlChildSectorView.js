@@ -7,7 +7,6 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
-import { GrView } from "react-icons/gr";
 const GirlChildSectorView = () => {
   return (
     <>

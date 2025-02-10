@@ -83,29 +83,29 @@ const PraroopAllApp = () => {
                     <tr>
                       <td>1</td>
                       <td className="t-d-p">Nanda(Praroop2)-2025-00031703</td>
-                      <td className="t-d-p">Godavri Rathour</td>
+                      <td className="t-d-p">PRITI ARYA</td>
                       <td>207515688252</td>
-                      <td>Neema Devi</td>
+                      <td>CHAMPA DEVI</td>
                       <td>Rajendra Singh</td>
                       <td>2007-03-07</td>
                       <td>General</td>
                       <td>UDIYAR [07]</td>
-                      <td>Feedback Submitted</td>
-                      <td >Recommendation to Accept</td>
+                      <td>2024-08-16 13:45:02</td>
+                      <td >Feedback Submitted</td>
+                      <td>
+                      Recommendation to Accept
+                      </td>
                       <td>
                       Form is complete.
                       </td>
-                      <td>
-                      Feedback Submitted
-                      </td>
-                      <td>Recommendation to Accept</td>
-                    <td>Form is complete.</td>
+                      <td>Feedback Submitted</td>
+                    <td>Recommendation to Accept</td>
                       
-                      <td>जांच सही पाई गई संस्तुति सहित अग्रसारित</td>
+                      <td>Form is complete.</td>
                       <td className="pr-p">
                         <div className="pro-rest-btn">
                           <Button className="reset-btn">
-                            Update Project/Sector
+                            View Form
                           </Button>
                         </div>
                       </td>
