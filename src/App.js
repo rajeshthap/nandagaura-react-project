@@ -153,7 +153,8 @@ function App() {
     "/TwelthSectorWiseView", 
     "/TwelthExcelPFMS", 
     "/TwelthSectorWiseView",
-    "/TwelthAllAppl"
+    "/TwelthAllAppl",
+    "/TwelthReturnFeedBack"
   ]); // Correct absolute paths
   const hiddenFooter1 = new Set([
     "/UserDashboard",
@@ -212,7 +213,8 @@ function App() {
      "/TwelthSectorWiseView", 
      "/TwelthExcelPFMS", 
      "/TwelthSectorWiseView",
-     "/TwelthAllAppl"
+     "/TwelthAllAppl",
+     "/TwelthReturnFeedBack"
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);

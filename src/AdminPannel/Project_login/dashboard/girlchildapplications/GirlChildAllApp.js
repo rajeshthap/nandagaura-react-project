@@ -48,8 +48,8 @@ const GirlChildAllApp = () => {
 
               {/* Responsive Table */}
               <div className="table-responsive-lg table-container">
-                <Table className="pro-thead">
-                  <thead>
+                <Table>
+                  <thead className="pro-thead">
                     <tr>
                       <th>S.no</th>
                       <th>Form ID</th>

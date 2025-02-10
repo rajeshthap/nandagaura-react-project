@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-import { Row, Col, Pagination, Table, Button } from "react-bootstrap";
+import { Row, Col, Pagination, Table } from "react-bootstrap";
 import "../../pro_assests/ResetSectorPassword.css";
 import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
