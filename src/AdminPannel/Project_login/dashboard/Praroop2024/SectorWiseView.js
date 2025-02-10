@@ -7,6 +7,7 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
+import { GrView } from "react-icons/gr";
 
 const SectorWiseView = () => {
   return (
@@ -46,7 +47,7 @@ const SectorWiseView = () => {
                 </Col>
               </Row>
               <div className="table-responsive-lg">
-                <Table className="pro-thead">
+                <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
                       <th>S.no</th>
@@ -71,7 +72,16 @@ const SectorWiseView = () => {
                       <td className="pro-t-d-report">
                         <div className="pro-rest-btn">
                           <Button className="view-btn">
-                            <span className="pro-span-btn">45</span> View Sector Retport
+                            {/* <span className="pro-span-btn">45</span> View Sector Retport <GrView className="pro-report-view" /> */}
+
+                            <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-project ">
+                            <span className="badge nd-data-report text-center">
+                            20
+                          </span>
+                          View Sector Retport{" "}  <GrView className="pro-report-view"/>
+                          
+                        </span>
+  
                           </Button>
                         </div>
                       </td>

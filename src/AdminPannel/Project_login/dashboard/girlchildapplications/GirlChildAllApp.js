@@ -8,6 +8,7 @@ import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
 
+
 const GirlChildAllApp = () => {
   return (
     <>
@@ -44,6 +45,16 @@ const GirlChildAllApp = () => {
                     </form>
                   </div>
                 </Col>
+                <Col lg={6} md={6} sm={12} className="nd-staff-print">
+                  <div>
+                    <Button variant="secondary" className="nd-btn-prt">
+                      Print
+                    </Button>
+                    <Button variant="warning" className="mx-2 nd-btn-copy">
+                      Copy
+                    </Button>
+                  </div>
+                </Col>
               </Row>
 
               {/* Responsive Table */}
@@ -64,7 +75,6 @@ const GirlChildAllApp = () => {
                       </th>
                       <th colSpan="3"> CDPO Recommendation</th>
                       <th>View Details Form</th>
-                   
                     </tr>
                   </thead>
                   <tbody>
@@ -79,23 +89,16 @@ const GirlChildAllApp = () => {
                       <td>2024-02-12 15:13:49</td>
                       <td>Feedback Submitted</td>
                       <td>Recommendation to Accept</td>
-                      <td >Form Is Complete</td>
-                      <td>
-                      Feedback Submitted
-                      </td>
-                      <td>
-                      Recommendation to Accept
-                      </td>
+                      <td>Form Is Complete</td>
+                      <td>Feedback Submitted</td>
+                      <td>Recommendation to Accept</td>
                       <td>Form is complete</td>
-                  
+
                       <td className="pr-p">
                         <div className="pro-rest-btn">
-                          <Button className="reset-btn">
-                           View Form
-                          </Button>
+                          <Button className="reset-btn">View Form</Button>
                         </div>
                       </td>
-                  
                     </tr>
                   </tbody>
                 </Table>

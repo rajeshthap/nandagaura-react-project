@@ -12,7 +12,6 @@ function ProjectNandaGaura() {
             <h1> नंदा गौरा योजना</h1>
           </div>
         </Col>
-    
       </Row>
     </div>
   );

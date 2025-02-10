@@ -80,7 +80,7 @@ const ChildReturnedFeedback = () => {
                       <td>Ramesh Chandra Singh Shahi</td>
                       <td>2023-05-25</td>
                       <td>Bageshwar</td>
-                      <td>	Kapkot [0506303]</td>
+                      <td>Kapkot [0506303]</td>
                       <td>GOLNA</td>
                       <td >अभिभावक आधार स्पष्ट लगाना है, शपथ पत्र लगाना है</td>
                      

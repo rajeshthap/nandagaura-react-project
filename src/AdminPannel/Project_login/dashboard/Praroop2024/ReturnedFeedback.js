@@ -46,7 +46,7 @@ const ReturnedFeedback = () => {
 
               {/* Responsive Table */}
               <div className="table-responsive-lg table-container">
-                <Table className="pro-thead">
+                <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
                       <th>S.no</th>

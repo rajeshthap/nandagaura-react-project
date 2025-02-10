@@ -48,12 +48,11 @@ const TwelthExcelPFMS = () => {
 
               {/* Responsive Table */}
               <div className="table-responsive-lg table-container">
-                <Table className="pro-thead">
+                <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
                       <th>Full Name in English</th>
                       <th>Full Name in Recognized Official Lang</th>
-                      <th>Girl Name</th>
                       <th>Gender</th>
                       <th>Address Line 1</th>
                       <th>Addrress Line 2</th>
@@ -66,10 +65,11 @@ const TwelthExcelPFMS = () => {
                       <th>
                         Account Number
                       </th>
+                      <th>Aadhar Number</th>
                       <th>Pin Code</th>
                       <th>scheme Specific ID </th>
                       <th >Center share Payment Amout</th>
-                      <th>State share payment amout</th>
+                      <th>State share payment Amout</th>
                    
                     </tr>
                   </thead>
@@ -94,11 +94,8 @@ const TwelthExcelPFMS = () => {
                       </td>
                       <td></td>
                     <td>Nanda(Praroop2)-2024-0006118</td>
-                      
                       <td></td>
                       <td>51,000</td>
-                     
-                  
                     </tr>
                   </tbody>
                 </Table>

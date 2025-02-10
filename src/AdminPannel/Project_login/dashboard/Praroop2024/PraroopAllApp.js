@@ -44,11 +44,21 @@ const PraroopAllApp = () => {
                     </form>
                   </div>
                 </Col>
+                <Col lg={6} md={6} sm={12} className="nd-staff-print">
+                  <div>
+                    <Button variant="secondary" className="nd-btn-prt">
+                      Print
+                    </Button>
+                    <Button variant="warning" className="mx-2 nd-btn-copy">
+                      Copy
+                    </Button>
+                  </div>
+                </Col>
               </Row>
 
               {/* Responsive Table */}
               <div className="table-responsive-lg table-container">
-                <Table className="pro-thead">
+                <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
                       <th>S.no</th>
@@ -57,7 +67,7 @@ const PraroopAllApp = () => {
                       <th>Aadhar Number</th>
                       <th>Mother Name</th>
                       <th>Father Name</th>
-                      <th>Date of Birth</th>
+                      <th>DOB</th>
                       <th>Caset Category</th>
                       <th>Sector</th>
                       <th>Final Submit</th>
@@ -91,8 +101,6 @@ const PraroopAllApp = () => {
                       <td>Recommendation to Accept</td>
                     <td>Form is complete.</td>
                       
-                     
-
                       <td>जांच सही पाई गई संस्तुति सहित अग्रसारित</td>
                       <td className="pr-p">
                         <div className="pro-rest-btn">

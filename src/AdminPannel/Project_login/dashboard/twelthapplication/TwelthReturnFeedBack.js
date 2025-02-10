@@ -46,12 +46,12 @@ const TwelthReturnFeedBack = () => {
 
               {/* Responsive Table */}
               <div className="table-responsive-lg table-container">
-                <Table className="pro-thead">
+                <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
                       <th>S.no</th>
-                      <th>	Form ID</th>
-                      <th>Adhar No.</th>
+                      <th>Form ID</th>
+                      <th>Aadhar No.</th>
                       <th>Mobile No.</th>
                       <th>Girl Name</th>
                       <th>Mother Name</th>
@@ -60,7 +60,7 @@ const TwelthReturnFeedBack = () => {
                       <th>District</th>
                       <th>Project</th>
                       <th>Sector</th>
-                      <th>	AWC</th>
+                      <th>AWC</th>
                       <th>
                       Feedback
                       </th>
@@ -80,13 +80,13 @@ const TwelthReturnFeedBack = () => {
                       <td>KAMAL CHANDRA MISHRA</td>
                       <td>2007-08-21</td>
                       <td>Almora</td>
-                      <td>Tadikhet [0506410]</td>
-                      <td >RANIKHET [06]</td>
+                      <td>Garud [0506302]</td>
+                      <td >KANDHAR [05]</td>
                       <td>
-                      PODINAPANI
+                      LOHAGARHI
                       </td>
                       <td>
-                      Incorrect
+                      सभी परिवारके सदस्योके बैक स्टैटमेंन्टअपलोडकरे तथा आंगनबाडी कार्यकत्रीएव प्रधानाचार्यके प्रमाणपत्रपरही हस्ताक्षरएव मोहर लगा करेही प्रमाण् पत्रअपलोडकरें
                       </td>
                     
                     <td>2024-10-02 15:57:10</td>

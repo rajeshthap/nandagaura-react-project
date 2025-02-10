@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-import { Row, Col, Pagination, Table } from "react-bootstrap";
+import { Row, Col, Pagination, Table, Button } from "react-bootstrap";
 import "../../pro_assests/ResetSectorPassword.css";
 import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
@@ -44,11 +44,21 @@ const ExcelFormetPFMS = () => {
                     </form>
                   </div>
                 </Col>
+                <Col lg={6} md={6} sm={12} className="nd-staff-print">
+                  <div>
+                    <Button variant="secondary" className="nd-btn-prt">
+                      Print
+                    </Button>
+                    <Button variant="warning" className="mx-2 nd-btn-copy">
+                      Copy
+                    </Button>
+                  </div>
+                </Col>
               </Row>
 
               {/* Responsive Table */}
               <div className="table-responsive-lg table-container">
-                <Table className="pro-thead">
+                <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
                       <th>Full Name in English</th>

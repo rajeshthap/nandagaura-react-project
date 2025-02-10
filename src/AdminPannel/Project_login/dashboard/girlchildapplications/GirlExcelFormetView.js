@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
-import { Row, Col, Pagination, Table } from "react-bootstrap";
+import { Row, Col, Pagination, Table, Button } from "react-bootstrap";
 import "../../pro_assests/ResetSectorPassword.css";
 import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
@@ -21,7 +21,9 @@ const GirlExcelFormetView = () => {
             <ProjectNandaGaura />
             <div className="box-container">
               <div className="nd-tech-heading">
-                <h1>New Born Girl Child Application Approved by CDPO : Praroop 1</h1>
+                <h1>
+                  New Born Girl Child Application Approved by CDPO : Praroop 1
+                </h1>
               </div>
               <div className="pro-list-data">
                 <h2>Nanda Gaura PFMS Format list (All Approved by CDPO)</h2>
@@ -44,6 +46,16 @@ const GirlExcelFormetView = () => {
                     </form>
                   </div>
                 </Col>
+                <Col lg={6} md={6} sm={12} className="nd-staff-print">
+                  <div>
+                    <Button variant="secondary" className="nd-btn-prt">
+                      Print
+                    </Button>
+                    <Button variant="warning" className="mx-2 nd-btn-copy">
+                      Copy
+                    </Button>
+                  </div>
+                </Col>
               </Row>
 
               {/* Responsive Table */}
@@ -62,17 +74,12 @@ const GirlExcelFormetView = () => {
                       <th>Country</th>
                       <th>Bank Name</th>
                       <th>IFSCCode</th>
-                      <th>
-                        Account Number
-                      </th>
-                      <th>
-                        Aadhar Number
-                      </th>
+                      <th>Account Number</th>
+                      <th>Aadhar Number</th>
                       <th>Pin Code</th>
                       <th>scheme Specific ID </th>
-                      <th >Center share Payment Amout</th>
+                      <th>Center share Payment Amout</th>
                       <th>State share payment amout</th>
-                   
                     </tr>
                   </thead>
                   <tbody>
@@ -88,16 +95,14 @@ const GirlExcelFormetView = () => {
                       <td>India</td>
                       <td>Uttarakhand Gramin Bank</td>
                       <td>SBIN0RRUTGB</td>
-                      <td >76032374703</td>
-                     
+                      <td>76032374703</td>
+
                       <td>421773424508</td>
-                     <td></td>
-                    <td>Nanda(Praroop2)-2024-0006118</td>
-                      
-                    <td></td>
+                      <td></td>
+                      <td>Nanda(Praroop2)-2024-0006118</td>
+
+                      <td></td>
                       <td>11,000</td>
-                     
-                  
                     </tr>
                   </tbody>
                 </Table>

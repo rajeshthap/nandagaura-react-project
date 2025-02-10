@@ -26,33 +26,29 @@ const ProjectDashboard = () => {
               <div className="nd-tech-heading">
                 <h1>Dashboard CDPO </h1>
               </div>
-              <Row >
+              <Row>
                 <Col lg={6} md={6} sm={12}>
-                <div className="nd-tech-heading1">
+                  <div className="nd-tech-heading1">
                     <h2>Real Time Stats for Praroop 1</h2>
                   </div>
                   <Card className="project-card-box">
-      <Card.Body> 
-                
-                <ProjectPraroopOne /></Card.Body>
-    </Card>
-               
-               
+                    <Card.Body>
+                      <ProjectPraroopOne />
+                    </Card.Body>
+                  </Card>
                 </Col>
 
                 <Col lg={6} md={6} sm={12}>
-                <div className="nd-tech-heading1">
+                  <div className="nd-tech-heading1">
                     <h2>Real Time Stats for Praroop 2 2024</h2>
                   </div>
-                <Card className="project-card-box">
-      <Card.Body><ProjectPraroopOne /></Card.Body>
-    </Card>
-               
-               
+                  <Card className="project-card-box">
+                    <Card.Body>
+                      <ProjectPraroopOne />
+                    </Card.Body>
+                  </Card>
                 </Col>
               </Row>
-
-     
             </div>
             <div>
               <TechFooter />

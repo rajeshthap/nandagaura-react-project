@@ -137,7 +137,8 @@ function ProjectLeftNav() {
     {
       icon: <GrCertificate />,
       label: "Income Certificate view",
-      path: "/IncomeCertificateview",
+      path: "https://eservices.uk.gov.in/officer/public/application/verify/certificate/",
+      external: true,
     },
     {
       icon: <FaChalkboardTeacher />,
@@ -220,7 +221,7 @@ function ProjectLeftNav() {
                       onClick={toggleNav}
                     />
                   </div>
-                  <div className="nd-user">User: Deepika Chauhan</div>
+                  <div className="nd-user">Department: Project Login</div>
                   <div className="project-log-icon-mob">
                     <LuLogOut
                       className=" "
@@ -232,7 +233,21 @@ function ProjectLeftNav() {
 
                 {navigationOptions.map((option, index) => (
                   <React.Fragment key={index}>
-                    {option.download ? (
+                    {option.external ? (
+                      <a
+                        href={option.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`project-option option${index + 1}`}
+                      >
+                        <div className="direc-item">
+                          <div className="d-flex">
+                            <span className="nav-icon">{option.icon}</span>
+                            <span className="nav-label">{option.label}</span>
+                          </div>
+                        </div>
+                      </a>
+                    ) : option.download ? (
                       <div
                         className={`tech-nav-option option${index + 1}`}
                         onClick={() =>
@@ -268,7 +283,6 @@ function ProjectLeftNav() {
                             </span>
                           </div>
                         </div>
-
                         {expandedItems[index] && (
                           <div className="project-suboption">
                             {option.subRoutes.map((subRoute, subIndex) => (
@@ -277,7 +291,7 @@ function ProjectLeftNav() {
                                 key={subIndex}
                                 className="project-suboption"
                               >
-                                <div className="nav-subitem-project ">
+                                <div className="nav-subitem-project">
                                   <div className="d-flex">
                                     <span className="nav-icon">
                                       {subRoute.icon}

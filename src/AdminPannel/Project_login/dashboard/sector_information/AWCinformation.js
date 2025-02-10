@@ -43,7 +43,7 @@ const AWCinformation = () => {
                 </Col>
               </Row>
               <div className="table-responsive-lg">
-                <Table className="pro-thead">
+                <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
                       <th>S.no</th>
