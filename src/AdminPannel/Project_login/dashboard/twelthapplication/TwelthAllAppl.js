@@ -8,6 +8,7 @@ import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
 import { FaCheck } from "react-icons/fa";
+import { SiGoogleforms } from "react-icons/si";
 
 const TwelthAllAppl = () => {
   return (
@@ -58,7 +59,7 @@ const TwelthAllAppl = () => {
                       <th>Aadhar Number</th>
                       <th>Mother Name</th>
                       <th>Father Name</th>
-                      <th>Date of Birth</th>
+                      <th>DOB</th>
                       <th>Caste Category</th>
                       <th>Sector</th>
                       <th>Final Submit</th>
@@ -80,13 +81,13 @@ const TwelthAllAppl = () => {
                       <td>207515688252</td>
                       <td>Neema Devi</td>
                       <td>Rajendra Singh</td>
-                      <td>2007-03-07</td>
+                      <td><div className="t-td">2007-03-07</div></td>
                       <td>General</td>
                       <td>UDIYAR [07]</td>
                       <td>2023-11-27 17:02:53</td>
                       <td>
                         <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
-                          Feedback Submitted{" "}
+                          Feedback Submitted
                           <FaCheck className="pro-feed-view" />
                         </span>
                       </td>
@@ -100,11 +101,9 @@ const TwelthAllAppl = () => {
                       </td>
                       <td>Recommendation to Accept</td>
                       <td>Form is complete.</td>
-
-                     
                       <td className="pr-p">
                         <div className="pro-rest-btn">
-                          <Button className="reset-btn">View Form</Button>
+                          <Button className="reset-btn">View Form <SiGoogleforms className="v-form"/></Button>
                         </div>
                       </td>
                     </tr>

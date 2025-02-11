@@ -33,7 +33,7 @@ const OfflineApplication = () => {
                       of all applications recieved.(enter data in english only
                       as hindi is not supported)
                     </p>
-                    <p className="m-or-left">OR</p>
+                    <p className="m-or-left m-or-left1">OR</p>
                     <p className="pro-offline-text1">
                       इस एक्सेल प्रारूप को डाउनलोड करें और इस एक्सेल में प्राप्त
                       सभी आवेदनों का विवरण भरें। (डेटा केवल अंग्रेजी में दर्ज

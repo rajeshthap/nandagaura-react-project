@@ -78,7 +78,7 @@ const SectorWiseView = () => {
                             <span className="badge nd-data-report text-center">
                             20
                           </span>
-                          View Sector Retport{" "}  <RiFileChartLine className="pro-report-view"/>
+                          View Sector Report{" "}  <RiFileChartLine className="pro-report-view"/>
                           
                         </span>
   

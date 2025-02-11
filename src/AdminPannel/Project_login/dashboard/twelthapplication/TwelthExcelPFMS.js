@@ -24,7 +24,7 @@ const TwelthExcelPFMS = () => {
                 <h1>12th Passing Girl Application Approved by CDPO : Praroop 2 2024-25</h1>
               </div>
               <div className="pro-list-data">
-                <h2>Nanda Gaura pfms Format list (All Approved by CDPO)</h2>
+                <h2>Nanda Gaura PFMS Format list (All Approved by CDPO)</h2>
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>

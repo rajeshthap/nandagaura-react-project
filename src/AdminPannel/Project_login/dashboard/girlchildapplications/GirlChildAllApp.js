@@ -8,6 +8,7 @@ import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
 import { FaCheck } from "react-icons/fa6";
+import { SiGoogleforms } from "react-icons/si";
 
 const GirlChildAllApp = () => {
   return (
@@ -67,7 +68,7 @@ const GirlChildAllApp = () => {
                       <th>Kanya Name</th>
                       <th>Mother Name</th>
                       <th>Father Name</th>
-                      <th>Date of Birth</th>
+                      <th>DOB</th>
                       <th>Sector</th>
                       <th>Final Submit</th>
                       <th colSpan="3" className="merged-column">
@@ -109,7 +110,7 @@ const GirlChildAllApp = () => {
 
                       <td className="pr-p">
                         <div className="pro-rest-btn">
-                          <Button className="reset-btn">View Form</Button>
+                            <Button className="reset-btn">View Form <SiGoogleforms className="v-form"/></Button>
                         </div>
                       </td>
                     </tr>

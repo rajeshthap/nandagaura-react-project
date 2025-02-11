@@ -76,7 +76,7 @@ const AWCinformation = () => {
                       <td>
                         <div className="pro-rest-btn">
                           <Button className="reset-btn">
-                            Update Project/Sector
+                            Update
                           </Button>
                         </div>
                       </td>

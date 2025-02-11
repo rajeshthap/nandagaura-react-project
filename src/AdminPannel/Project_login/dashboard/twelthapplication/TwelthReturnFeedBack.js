@@ -80,10 +80,10 @@ const TwelthReturnFeedBack = () => {
                      
                       <td> <div className="t-td">KAMAL CHANDRA MISHRA   </div></td>
                     
-                      <td>2007-08-21</td>
+                      <td><div className="t-td">2007-08-21</div></td>
                       <td>Almora</td>
-                      <td>Garud [0506302]</td>
-                      <td>KANDHAR [05]</td>
+                      <td><div className="t-td">Garud [0506302]</div></td>
+                      <td><div className="t-td">KANDHAR [05]</div></td>
                       <td>
                       LOHAGARHI
                       </td>

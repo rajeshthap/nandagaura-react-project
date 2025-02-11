@@ -28,18 +28,18 @@ const DirecNewBorn = () => {
               </div>
               <Row>
                 <Col lg={6} md={6} sm={12}>
-                  <div class="search-container">
+                  <div className="search-container">
                     <form>
                       <input
-                        class="search"
+                        className="search"
                         id="searchleft"
                         type="search"
                         name="q"
                         placeholder="Search"
                         aria-label="Search"
                       />
-                      <label class="button search-btn " for="searchleft">
-                        <span class="mglass">&#9906;</span>
+                      <label className="button search-btn " for="searchleft">
+                        <span className="mglass">&#9906;</span>
                       </label>
                     </form>
                   </div>

@@ -739,8 +739,14 @@ body {
   .btn-close {
     width: 26px;
   }
+  .reset-btn{
+width: 95px;
+  }
+  .pro-offline-text{
+    line-height: var(--nd-space-500) !important;
+  }
+  .m-or-left1{
+    margin-left: 160px !important;
+  }
 }
 
-.rajesh {
-  background-color: red;
-}

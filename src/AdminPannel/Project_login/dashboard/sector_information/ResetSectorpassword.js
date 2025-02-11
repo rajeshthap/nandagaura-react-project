@@ -66,7 +66,7 @@ const ResetSectorpassword = () => {
                       <td>Deepa Rana</td>
                       <td>8006128067</td>
                      
-                      <td> <div className="pro-rest-btn"><Button className="reset-btn">Reset password to default to password</Button></div></td>
+                      <td> <div className="pro-rest-btn"><Button className="reset-btn">Reset password</Button></div></td>
                       
                      
                     </tr>
