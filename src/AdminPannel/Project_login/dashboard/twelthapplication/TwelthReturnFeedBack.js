@@ -56,7 +56,7 @@ const TwelthReturnFeedBack = () => {
                       <th>Girl Name</th>
                       <th>Mother Name</th>
                       <th>Father Name</th>
-                      <th>D-O-B </th>
+                      <th>DOB </th>
                       <th>District</th>
                       <th>Project</th>
                       <th>Sector</th>
@@ -85,7 +85,7 @@ const TwelthReturnFeedBack = () => {
                       <td>
                       LOHAGARHI
                       </td>
-                      <td>
+                      <td className="feedback-td">
                       सभी परिवारके सदस्योके बैक स्टैटमेंन्टअपलोडकरे तथा आंगनबाडी कार्यकत्रीएव प्रधानाचार्यके प्रमाणपत्रपरही हस्ताक्षरएव मोहर लगा करेही प्रमाण् पत्रअपलोडकरें
                       </td>
                     

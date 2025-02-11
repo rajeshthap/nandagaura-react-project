@@ -78,7 +78,7 @@ const ExcelFormetPFMS = () => {
                       </th>
                       <th>Aadhar Number</th>
                       <th>Pin Code</th>
-                      <th>scheme Specific ID </th>
+                      <th>Scheme Specific ID </th>
                       <th>Center Share Payment Amout</th>
                       <th>State Share payment Amout</th>
                     </tr>

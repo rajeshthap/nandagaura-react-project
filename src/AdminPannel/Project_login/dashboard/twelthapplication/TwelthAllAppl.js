@@ -7,6 +7,7 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
+import { FaCheck } from "react-icons/fa";
 
 const TwelthAllAppl = () => {
   return (
@@ -61,12 +62,14 @@ const TwelthAllAppl = () => {
                       <th>Caste Category</th>
                       <th>Sector</th>
                       <th>Final Submit</th>
-                      <th colSpan="3" className="merged-column">
+                      <th colSpan="3" className="merged-column text-center">
                         Supervisor Recommendation
                       </th>
-                      <th colSpan="3" className="text-center"> CDPO Recommendation</th>
+                      <th colSpan="3" className="text-center">
+                        {" "}
+                        CDPO Recommendation
+                      </th>
                       <th>View Details Form</th>
-                   
                     </tr>
                   </thead>
                   <tbody>
@@ -80,28 +83,30 @@ const TwelthAllAppl = () => {
                       <td>2007-03-07</td>
                       <td>General</td>
                       <td>UDIYAR [07]</td>
-                      <td>Feedback Submitted</td>
-                      <td >Recommendation to Accept</td>
+                      <td>2023-11-27 17:02:53</td>
                       <td>
-                      Form is complete.
-                      </td>
-                      <td>
-                      Feedback Submitted
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
+                          Feedback Submitted{" "}
+                          <FaCheck className="pro-feed-view" />
+                        </span>
                       </td>
                       <td>Recommendation to Accept</td>
-                    <td>Form is complete.</td>
-                      
-                     
+                      <td>Form is complete.</td>
+                      <td>
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
+                          Feedback Submitted{" "}
+                          <FaCheck className="pro-feed-view" />
+                        </span>
+                      </td>
+                      <td>Recommendation to Accept</td>
+                      <td>Form is complete.</td>
 
-                      <td>farm me 2 v 3 sitap bhara nhi h kintu sapt patr me ukt sitap ka vivran diya gya h any janch kr shi ya gya</td>
+                     
                       <td className="pr-p">
                         <div className="pro-rest-btn">
-                          <Button className="reset-btn">
-                          View Form
-                          </Button>
+                          <Button className="reset-btn">View Form</Button>
                         </div>
                       </td>
-                  
                     </tr>
                   </tbody>
                 </Table>

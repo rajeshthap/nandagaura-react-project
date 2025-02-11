@@ -7,6 +7,7 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
+import { FaCheck } from "react-icons/fa";
 
 const PraroopAllApp = () => {
   return (
@@ -74,9 +75,8 @@ const PraroopAllApp = () => {
                       <th colSpan="3" className="merged-column">
                         Supervisor Recommendation
                       </th>
-                      <th colSpan="3"> CDPO Recommendation</th>
+                      <th colSpan="3" className="text-center"> CDPO Recommendation</th>
                       <th>View Details Form</th>
-                   
                     </tr>
                   </thead>
                   <tbody>
@@ -91,25 +91,28 @@ const PraroopAllApp = () => {
                       <td>General</td>
                       <td>UDIYAR [07]</td>
                       <td>2024-08-16 13:45:02</td>
-                      <td >Feedback Submitted</td>
                       <td>
-                      Recommendation to Accept
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
+                          Feedback Submitted{" "}
+                          <FaCheck className="pro-feed-view" />
+                        </span>
                       </td>
+                      <td>Recommendation to Accept</td>
+                      <td>Form is complete.</td>
                       <td>
-                      Form is complete.
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
+                          Feedback Submitted{" "}
+                          <FaCheck className="pro-feed-view" />
+                        </span>
                       </td>
-                      <td>Feedback Submitted</td>
-                    <td>Recommendation to Accept</td>
-                      
+                      <td>Recommendation to Accept</td>
+
                       <td>Form is complete.</td>
                       <td className="pr-p">
                         <div className="pro-rest-btn">
-                          <Button className="reset-btn">
-                            View Form
-                          </Button>
+                          <Button className="reset-btn">View Form</Button>
                         </div>
                       </td>
-                  
                     </tr>
                   </tbody>
                 </Table>

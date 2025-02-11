@@ -7,7 +7,7 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
-
+import { FaCheck } from "react-icons/fa6";
 
 const GirlChildAllApp = () => {
   return (
@@ -59,7 +59,7 @@ const GirlChildAllApp = () => {
 
               {/* Responsive Table */}
               <div className="table-responsive-lg table-container">
-                <Table>
+                <Table className="" striped bordered hover>
                   <thead className="pro-thead">
                     <tr>
                       <th>S.no</th>
@@ -73,7 +73,10 @@ const GirlChildAllApp = () => {
                       <th colSpan="3" className="merged-column">
                         Supervisor Recommendation
                       </th>
-                      <th colSpan="3"> CDPO Recommendation</th>
+                      <th colSpan="3" className="text-center">
+                        {" "}
+                        CDPO Recommendation
+                      </th>
                       <th>View Details Form</th>
                     </tr>
                   </thead>
@@ -87,10 +90,20 @@ const GirlChildAllApp = () => {
                       <td>2023-08-28</td>
                       <td>RANIKHET [06]</td>
                       <td>2024-02-12 15:13:49</td>
-                      <td>Feedback Submitted</td>
+                      <td>
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
+                          Feedback Submitted{" "}
+                          <FaCheck className="pro-feed-view" />
+                        </span>
+                      </td>
                       <td>Recommendation to Accept</td>
                       <td>Form Is Complete</td>
-                      <td>Feedback Submitted</td>
+                      <td>
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
+                          Feedback Submitted{" "}
+                          <FaCheck className="pro-feed-view" />
+                        </span>
+                      </td>
                       <td>Recommendation to Accept</td>
                       <td>Form is complete</td>
 
