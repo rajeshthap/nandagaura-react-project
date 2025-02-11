@@ -8,6 +8,7 @@ import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
 import { FaCheck } from "react-icons/fa";
+import { RiFileChartLine } from "react-icons/ri";
 
 const PraroopAllApp = () => {
   return (
@@ -110,7 +111,7 @@ const PraroopAllApp = () => {
                       <td>Form is complete.</td>
                       <td className="pr-p">
                         <div className="pro-rest-btn">
-                          <Button className="reset-btn">View Form</Button>
+                          <Button className="reset-btn">View Form <RiFileChartLine /></Button>
                         </div>
                       </td>
                     </tr>

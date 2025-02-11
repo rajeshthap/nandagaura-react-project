@@ -7,7 +7,7 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
-import { GrView } from "react-icons/gr";
+import { RiFileChartLine } from "react-icons/ri";
 
 const SectorWiseView = () => {
   return (
@@ -78,7 +78,7 @@ const SectorWiseView = () => {
                             <span className="badge nd-data-report text-center">
                             20
                           </span>
-                          View Sector Retport{" "}  <GrView className="pro-report-view"/>
+                          View Sector Retport{" "}  <RiFileChartLine className="pro-report-view"/>
                           
                         </span>
   

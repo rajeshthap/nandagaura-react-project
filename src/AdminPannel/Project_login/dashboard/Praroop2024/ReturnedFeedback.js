@@ -45,7 +45,7 @@ const ReturnedFeedback = () => {
               </Row>
 
               {/* Responsive Table */}
-              <div className="table-responsive-lg table-container">
+              <div className="table-responsive-lg table-container-data">
                 <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
@@ -75,21 +75,22 @@ const ReturnedFeedback = () => {
                       <td className="t-d-p">Nanda(Praroop2)-2024-0001717</td>
                       <td className="t-d-p">709841782810</td>
                       <td>9927213315</td>
-                      <td>NANDINI MISHRA</td>
-                      <td>GEETA MISHRA</td>
-                      <td>KAMAL CHANDRA MISHRA</td>
+                      <td> <div className="t-td">NANDINI MISHRA</div></td>
+                      <td><div className="t-td">GEETA MISHRA</div></td>
+                      <td><div className="t-td">KAMAL CHANDRA MISHRA</div></td>
                       <td>2007-08-21</td>
                       <td>Almora</td>
-                      <td>Tadikhet [0506410]</td>
+                      <td><div className="t-td">Tadikhet [0506410]</div></td>
                       <td >RANIKHET [06]</td>
                       <td>
                       PODINAPANI
                       </td>
                       <td>
+                      <div className="pr-feed-data">
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      </div>
                       </td>
-                    <td>2024-10-02 15:57:10</td>
-                    
+                    <td> <div className="t-td">2024-10-02 15:57:10</div></td>
                     </tr>
                   </tbody>
                 </Table>

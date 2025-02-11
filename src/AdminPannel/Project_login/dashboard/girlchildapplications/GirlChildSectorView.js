@@ -7,6 +7,7 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
+import { RiFileChartLine } from "react-icons/ri";
 const GirlChildSectorView = () => {
   return (
     <>
@@ -43,7 +44,6 @@ const GirlChildSectorView = () => {
                     </form>
                   </div>
                 </Col>
-                
               </Row>
               <div className="table-responsive-lg">
                 <Table className="pro-thead">
@@ -60,18 +60,22 @@ const GirlChildSectorView = () => {
                     <tr>
                       <td>1</td>
                       {/* Corrected <select> inside the same <td> */}
-                      <td className="t-d-p">
-                      Bageshwar
-                      </td>
-                      <td className="t-d-p">
-                      Kapkot [0506303]
-                      </td>
+                      <td className="t-d-p">Bageshwar</td>
+                      <td className="t-d-p">Kapkot [0506303]</td>
                       <td>KAMERIDEVI [01]</td>
-                     
+
                       <td className="pro-t-d-report">
                         <div className="pro-rest-btn">
                           <Button className="view-btn">
-                            <span className="pro-span-btn">17</span> View Sector Retport
+                            {/* <span className="pro-span-btn">45</span> View Sector Retport <GrView className="pro-report-view" /> */}
+
+                            <span class="badge  rounded-pill text-dark-white d-inline-block nd-btn-project ">
+                              <span className="badge nd-data-report text-center">
+                                20
+                              </span>
+                              View Sector Retport{" "}
+                              <RiFileChartLine className="pro-report-view" />
+                            </span>
                           </Button>
                         </div>
                       </td>

@@ -45,7 +45,7 @@ const TwelthReturnFeedBack = () => {
               </Row>
 
               {/* Responsive Table */}
-              <div className="table-responsive-lg table-container">
+              <div className="table-responsive-lg table-container-data ">
                 <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
@@ -75,21 +75,25 @@ const TwelthReturnFeedBack = () => {
                       <td className="t-d-p">Nanda(Praroop2)-2024-0001717</td>
                       <td className="t-d-p">709841782810</td>
                       <td>9927213315</td>
-                      <td>NANDINI MISHRA</td>
-                      <td>GEETA MISHRA</td>
-                      <td>KAMAL CHANDRA MISHRA</td>
+                      <td><div className="t-td">NANDINI MISHRA </div></td>
+                      <td><div className="t-td">GEETA MISHRA</div></td>
+                     
+                      <td> <div className="t-td">KAMAL CHANDRA MISHRA   </div></td>
+                    
                       <td>2007-08-21</td>
                       <td>Almora</td>
                       <td>Garud [0506302]</td>
-                      <td >KANDHAR [05]</td>
+                      <td>KANDHAR [05]</td>
                       <td>
                       LOHAGARHI
                       </td>
-                      <td className="feedback-td">
+                      <td>
+                        <div className="feedback-td">
                       सभी परिवारके सदस्योके बैक स्टैटमेंन्टअपलोडकरे तथा आंगनबाडी कार्यकत्रीएव प्रधानाचार्यके प्रमाणपत्रपरही हस्ताक्षरएव मोहर लगा करेही प्रमाण् पत्रअपलोडकरें
+                      </div>
                       </td>
                     
-                    <td>2024-10-02 15:57:10</td>
+                    <td><div className="t-td">2024-10-02 15:57:10 </div></td>
                     
                     </tr>
                   </tbody>
