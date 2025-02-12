@@ -50,7 +50,7 @@ const SectorWiseView = () => {
                 <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>District Name</th>
                       <th>Project Name</th>
                       <th>Sector Name</th>

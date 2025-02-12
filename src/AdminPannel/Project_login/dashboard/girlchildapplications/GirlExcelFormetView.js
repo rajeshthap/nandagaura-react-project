@@ -73,13 +73,13 @@ const GirlExcelFormetView = () => {
                       <th>State</th>
                       <th>Country</th>
                       <th>Bank Name</th>
-                      <th>IFSCCode</th>
+                      <th>IFSC code</th>
                       <th>Account Number</th>
-                      <th>Aadhar Number</th>
-                      <th>Pin Code</th>
+                      <th>Aadhar No.</th>
+                      <th>Pincode</th>
                       <th>Scheme Specific ID </th>
-                      <th>Center share Payment Amout</th>
-                      <th>State share payment amout</th>
+                      <th>Center Share Payment Amount</th>
+                      <th>State Share Payment Amount</th>
                     </tr>
                   </thead>
                   <tbody>

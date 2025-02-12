@@ -7,7 +7,7 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
-import { FaCheck } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 import { RiFileChartLine } from "react-icons/ri";
 
 const PraroopAllApp = () => {
@@ -63,10 +63,10 @@ const PraroopAllApp = () => {
                 <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>Form ID</th>
                       <th>Girl Name</th>
-                      <th>Aadhar Number</th>
+                      <th>Aadhar No.</th>
                       <th>Mother Name</th>
                       <th>Father Name</th>
                       <th>DOB</th>
@@ -76,7 +76,10 @@ const PraroopAllApp = () => {
                       <th colSpan="3" className="merged-column">
                         Supervisor Recommendation
                       </th>
-                      <th colSpan="3" className="text-center"> CDPO Recommendation</th>
+                      <th colSpan="3" className="text-center merged-cdpo">
+                        {" "}
+                        CDPO Recommendation
+                      </th>
                       <th>View Details Form</th>
                     </tr>
                   </thead>
@@ -95,23 +98,36 @@ const PraroopAllApp = () => {
                       <td>
                         <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
                           Feedback Submitted{" "}
-                          <FaCheck className="pro-feed-view" />
+                          <FaCheckCircle className="pro-feed-view" />
                         </span>
                       </td>
                       <td>Recommendation to Accept</td>
-                      <td>Form is complete.</td>
+                      <td>
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-complete ">
+                          Form is Complete{" "}
+                          <FaCheckCircle className="pro-feed-view" />
+                        </span>
+                      </td>
                       <td>
                         <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
                           Feedback Submitted{" "}
-                          <FaCheck className="pro-feed-view" />
+                          <FaCheckCircle className="pro-feed-view" />
                         </span>
                       </td>
                       <td>Recommendation to Accept</td>
 
-                      <td>Form is complete.</td>
+                      <td>
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-complete ">
+                          Form is Complete{" "}
+                          <FaCheckCircle className="pro-feed-view" />
+                        </span>
+                      </td>
                       <td className="pr-p">
                         <div className="pro-rest-btn">
-                          <Button className="reset-btn">View Form <RiFileChartLine /></Button>
+                          <Button className="reset-btn">
+                            View Form{" "}
+                            <RiFileChartLine className="pro-feed-view" />
+                          </Button>
                         </div>
                       </td>
                     </tr>

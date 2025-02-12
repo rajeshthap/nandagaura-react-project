@@ -63,7 +63,7 @@ const PraroopFinal2022 = () => {
                       </th>
                     </tr>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>District Name</th>
                       <th>Project Name</th>
                       <th>Received</th>

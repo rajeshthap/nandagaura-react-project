@@ -49,10 +49,10 @@ const ReturnedFeedback = () => {
                 <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>Form ID</th>
                       <th>Adhar Number</th>
-                      <th>Mobile Number.</th>
+                      <th>Mobile No..</th>
                       <th>Girl Name</th>
                       <th>Mother Name</th>
                       <th>Father Name</th>

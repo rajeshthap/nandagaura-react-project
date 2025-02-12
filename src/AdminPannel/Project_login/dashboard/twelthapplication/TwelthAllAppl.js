@@ -7,7 +7,7 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaCheckCircle } from "react-icons/fa";
 import { SiGoogleforms } from "react-icons/si";
 
 const TwelthAllAppl = () => {
@@ -53,10 +53,10 @@ const TwelthAllAppl = () => {
                 <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>Form ID</th>
                       <th>Girl Name</th>
-                      <th>Aadhar Number</th>
+                      <th>Aadhar No.</th>
                       <th>Mother Name</th>
                       <th>Father Name</th>
                       <th>DOB</th>
@@ -66,7 +66,7 @@ const TwelthAllAppl = () => {
                       <th colSpan="3" className="merged-column text-center">
                         Supervisor Recommendation
                       </th>
-                      <th colSpan="3" className="text-center">
+                      <th colSpan="3" className="text-center merged-cdpo">
                         {" "}
                         CDPO Recommendation
                       </th>
@@ -81,29 +81,43 @@ const TwelthAllAppl = () => {
                       <td>207515688252</td>
                       <td>Neema Devi</td>
                       <td>Rajendra Singh</td>
-                      <td><div className="t-td">2007-03-07</div></td>
+                      <td>
+                        <div className="t-td">2007-03-07</div>
+                      </td>
                       <td>General</td>
                       <td>UDIYAR [07]</td>
                       <td>2023-11-27 17:02:53</td>
                       <td>
                         <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
-                          Feedback Submitted
-                          <FaCheck className="pro-feed-view" />
+                          Feedback Submitted{" "}
+                          <FaCheckCircle className="pro-feed-view" />
                         </span>
                       </td>
                       <td>Recommendation to Accept</td>
-                      <td>Form is complete.</td>
+                     <td>
+                                             <span class="badge  rounded-pill d-inline-block nd-feedback-complete ">
+                                             Form is Complete{" "}
+                                               <FaCheckCircle className="pro-feed-view" />
+                                             </span>
+                                           </td>
                       <td>
                         <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
                           Feedback Submitted{" "}
-                          <FaCheck className="pro-feed-view" />
+                          <FaCheckCircle className="pro-feed-view" />
                         </span>
                       </td>
                       <td>Recommendation to Accept</td>
-                      <td>Form is complete.</td>
+                     <td>
+                                             <span class="badge  rounded-pill d-inline-block nd-feedback-complete ">
+                                             Form is Complete{" "}
+                                               <FaCheckCircle className="pro-feed-view" />
+                                             </span>
+                                           </td>
                       <td className="pr-p">
                         <div className="pro-rest-btn">
-                          <Button className="reset-btn">View Form <SiGoogleforms className="v-form"/></Button>
+                          <Button className="reset-btn">
+                            View Form <SiGoogleforms className="v-form" />
+                          </Button>
                         </div>
                       </td>
                     </tr>

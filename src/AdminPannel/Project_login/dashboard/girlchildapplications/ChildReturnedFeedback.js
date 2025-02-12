@@ -49,7 +49,7 @@ const ChildReturnedFeedback = () => {
                 <Table className="pro-thead" striped bordered>
                   <thead>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>Form ID</th>
                       <th>Adhar No.</th>
                       <th>Mobile No.</th>

@@ -21,7 +21,10 @@ const TwelthExcelPFMS = () => {
             <ProjectNandaGaura />
             <div className="box-container">
               <div className="nd-tech-heading">
-                <h1>12th Passing Girl Application Approved by CDPO : Praroop 2 2024-25</h1>
+                <h1>
+                  12th Passing Girl Application Approved by CDPO : Praroop 2
+                  2024-25
+                </h1>
               </div>
               <div className="pro-list-data">
                 <h2>Nanda Gaura PFMS Format list (All Approved by CDPO)</h2>
@@ -61,16 +64,13 @@ const TwelthExcelPFMS = () => {
                       <th>State</th>
                       <th>Country</th>
                       <th>Bank Name</th>
-                      <th>IFSCCode</th>
-                      <th>
-                        Account Number
-                      </th>
-                      <th>Aadhar Number</th>
-                      <th>Pin Code</th>
+                      <th>IFSC code</th>
+                      <th>Account Number</th>
+                      <th>Aadhar No.</th>
+                      <th>Pincode</th>
                       <th>Scheme Specific ID </th>
-                      <th >Center share Payment Amout</th>
-                      <th>State share payment Amout</th>
-                   
+                      <th>Center Share Payment Amount</th>
+                      <th>State Share Payment Amount</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -85,15 +85,11 @@ const TwelthExcelPFMS = () => {
                       <td>Uttarakhand</td>
                       <td>India</td>
                       <td>Uttarakhand Gramin Bank</td>
-                      <td >SBIN0RRUTGB</td>
-                      <td>
-                      4443009635
-                      </td>
-                      <td>
-                      353314661199
-                      </td>
+                      <td>SBIN0RRUTGB</td>
+                      <td>4443009635</td>
+                      <td>353314661199</td>
                       <td></td>
-                    <td>Nanda(Praroop2)-2024-0006118</td>
+                      <td>Nanda(Praroop2)-2024-0006118</td>
                       <td></td>
                       <td>51,000</td>
                     </tr>

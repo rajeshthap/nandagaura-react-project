@@ -55,7 +55,7 @@ const ReparingstepTwo = () => {
                 <Table striped bordered hover size="sm" className="nd-our-staff">
                   <thead className="tech-thead">
                     <tr>
-                      <th className="tech-thead">S.no</th>
+                      <th className="tech-thead">S.No</th>
                       <th className="tech-thead">Candidate Name</th>
                       <th className="tech-thead">Mobile No</th>
                       <th className="tech-thead">Adhar No</th>

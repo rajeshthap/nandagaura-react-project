@@ -20,7 +20,7 @@ function DirecTwelthDataTable() {
   const columns = [
    
     {
-      name: "S.no",
+      name: "S.No",
       selector: (row) => row.name,
       sortable: true,
       

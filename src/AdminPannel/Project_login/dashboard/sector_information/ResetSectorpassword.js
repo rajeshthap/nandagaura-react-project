@@ -2,12 +2,11 @@ import React from "react";
 import "../../../techassets/techcss/TechDashboard.css";
 import "@fortawesome/fontawesome-free"; // Font Awesome library
 import { Row, Col, Pagination, Table, Button } from "react-bootstrap";
-import "../../pro_assests/ResetSectorPassword.css"
+import "../../pro_assests/ResetSectorPassword.css";
 import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
-
 
 const ResetSectorpassword = () => {
   return (
@@ -45,10 +44,9 @@ const ResetSectorpassword = () => {
               </Row>
               <div className="table-responsive-lg">
                 <Table className="pro-thead" striped bordered hover>
-                  <thead> 
-                    
+                  <thead>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>District Name</th>
                       <th>Project Name</th>
                       <th>Sector Name</th>
@@ -65,10 +63,13 @@ const ResetSectorpassword = () => {
                       <td>KAMERIDEVI [01]</td>
                       <td>Deepa Rana</td>
                       <td>8006128067</td>
-                     
-                      <td> <div className="pro-rest-btn"><Button className="reset-btn">Reset password</Button></div></td>
-                      
-                     
+
+                      <td>
+                        {" "}
+                        <div className="pro-rest-btn">
+                          <Button className="reset-btn">Reset Password</Button>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </Table>

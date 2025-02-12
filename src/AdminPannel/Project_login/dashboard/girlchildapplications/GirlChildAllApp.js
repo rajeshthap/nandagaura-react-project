@@ -7,9 +7,8 @@ import TechFooter from "../../../technicalcomponents/footer/TechFooter";
 import "../../../Project_login/pro_assests/ProjectLeftnav.css";
 import ProjectLeftNav from "../../project_leftnav/ProjectLeftNav";
 import ProjectNandaGaura from "../ProjectNandaGaura";
-import { FaCheck } from "react-icons/fa6";
 import { SiGoogleforms } from "react-icons/si";
-
+import { FaCheckCircle } from "react-icons/fa";
 const GirlChildAllApp = () => {
   return (
     <>
@@ -63,7 +62,7 @@ const GirlChildAllApp = () => {
                 <Table className="" striped bordered hover>
                   <thead className="pro-thead">
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>Form ID</th>
                       <th>Kanya Name</th>
                       <th>Mother Name</th>
@@ -74,7 +73,7 @@ const GirlChildAllApp = () => {
                       <th colSpan="3" className="merged-column">
                         Supervisor Recommendation
                       </th>
-                      <th colSpan="3" className="text-center">
+                      <th colSpan="3" className="text-center merged-cdpo">
                         {" "}
                         CDPO Recommendation
                       </th>
@@ -94,23 +93,45 @@ const GirlChildAllApp = () => {
                       <td>
                         <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
                           Feedback Submitted{" "}
-                          <FaCheck className="pro-feed-view" />
+                          <FaCheckCircle className="pro-feed-view" />
                         </span>
                       </td>
-                      <td>Recommendation to Accept</td>
-                      <td>Form Is Complete</td>
+                      <td>
+                      
+                        Recommendation to Accept{" "}
+                          
+                      
+                      </td>
+                      <td>
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-complete ">
+                        Form is Complete{" "}
+                          <FaCheckCircle className="pro-feed-view" />
+                        </span>
+                      </td>
                       <td>
                         <span class="badge  rounded-pill d-inline-block nd-feedback-submit ">
                           Feedback Submitted{" "}
-                          <FaCheck className="pro-feed-view" />
+                          <FaCheckCircle className="pro-feed-view" />
                         </span>
                       </td>
-                      <td>Recommendation to Accept</td>
-                      <td>Form is complete</td>
+                      <td>
+                       
+                        Recommendation to Accept{" "}
+                         
+                        
+                      </td>
+                     
+                      <td>
+                        <span class="badge  rounded-pill d-inline-block nd-feedback-complete ">
+                        Form is Complete{" "}
+                          <FaCheckCircle className="pro-feed-view" />
+                        </span>
+                      </td>
+                    
 
                       <td className="pr-p">
                         <div className="pro-rest-btn">
-                            <Button className="reset-btn">View Form <SiGoogleforms className="v-form"/></Button>
+                            <Button className="reset-btn">View Form <SiGoogleforms className="pro-feed-view"/></Button>
                         </div>
                       </td>
                     </tr>

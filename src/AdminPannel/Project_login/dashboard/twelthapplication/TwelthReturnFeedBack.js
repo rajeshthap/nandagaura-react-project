@@ -49,7 +49,7 @@ const TwelthReturnFeedBack = () => {
                 <Table className="pro-thead" striped bordered hover>
                   <thead>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>Form ID</th>
                       <th>Aadhar No.</th>
                       <th>Mobile No.</th>

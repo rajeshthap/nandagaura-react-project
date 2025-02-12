@@ -59,7 +59,7 @@ const FinalBorn = () => {
                 <Table className="nd-our-staff">
                   <thead className="tech-thead">
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>Mobile No</th>
                       <th>Candidate Name</th>
                     </tr>

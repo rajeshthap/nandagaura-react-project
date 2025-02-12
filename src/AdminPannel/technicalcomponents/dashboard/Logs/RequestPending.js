@@ -57,7 +57,7 @@ const RequestPending = () => {
                 <Table className="nd-our-staff ">
                   <thead className="tech-thead">
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>Candidate Name</th>
                       <th>Form Type</th>
                       <th>Dob</th>

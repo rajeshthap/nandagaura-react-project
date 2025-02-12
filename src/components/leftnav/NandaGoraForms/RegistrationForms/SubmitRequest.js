@@ -138,7 +138,7 @@ const SubmitRequest = () => {
                   <Table responsive="lg">
                     <thead>
                       <tr>
-                        <th>S.no</th>
+                        <th>S.No</th>
                         <th>Name</th>
                         <th>Mobile</th>
                         <th>Aadhar</th>

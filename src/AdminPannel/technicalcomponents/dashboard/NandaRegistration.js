@@ -55,7 +55,7 @@ const NandaRegistration = () => {
               <Table className="nd-our-staff">
               <thead className="tech-thead">
                   <tr>
-                    <th>S.no</th>
+                    <th>S.No</th>
                     <th>Candidate Name</th>
                     <th>Mobile No</th>
                     <th>Adhar No</th>

@@ -63,7 +63,7 @@ const DistrictWiseAppli = () => {
                       {/* <th rowSpan="2">Approved by CDPO</th> */}
                     </tr>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>District</th>
                       <th>Received</th>
                       <th>Approved by CDPO</th>

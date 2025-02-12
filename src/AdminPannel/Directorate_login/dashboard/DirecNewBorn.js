@@ -57,7 +57,7 @@ const DirecNewBorn = () => {
                       </th>
                     </tr>
                     <tr>
-                      <th>S.no</th>
+                      <th>S.No</th>
                       <th>District</th>
                       <th>Received</th>
                       <th>Approved by CDPO</th>
