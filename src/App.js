@@ -93,6 +93,33 @@ import TwelthAllAppl from "./AdminPannel/Project_login/dashboard/twelthapplicati
 import TwelthExcelPFMS from "./AdminPannel/Project_login/dashboard/twelthapplication/TwelthExcelPFMS";
 import TwelthReturnFeedBack from "./AdminPannel/Project_login/dashboard/twelthapplication/TwelthReturnFeedBack";
 
+//-----------District dashboard-----------//
+import DistrictDashboard from "./AdminPannel/District_login/dis_dashboard/DistrictDashboard";
+import DistrictLeftNav from "./AdminPannel/District_login/dis_leftnav/DistrictLeftNav";
+import DistrictChangePass from "./AdminPannel/District_login/dis_dashboard/DistrictChangePass";
+import ProjectPraroopTwo2023 from "./AdminPannel/District_login/dis_dashboard/project_wise_view/ProjectPraroopTwo2023";
+import ProjectPraroopTwo2024 from "./AdminPannel/District_login/dis_dashboard/project_wise_view/ProjectPraroopTwo2024";
+import ProjectPraroop1 from "./AdminPannel/District_login/dis_dashboard/project_wise_view/ProjectPraroop1";
+import ExcelPraroop from "./AdminPannel/District_login/dis_dashboard/praroop_one_offline/ExcelPraroop";
+import ApprovedCDPO from "./AdminPannel/District_login/dis_dashboard/praroop_two_List2024/ApprovedCDPO";
+import PraroopExcel from "./AdminPannel/District_login/dis_dashboard/praroop_two_List2024/PraroopExcel";
+import RejectedCDPO from "./AdminPannel/District_login/dis_dashboard/praroop_two_List2024/RejectedCDPO";
+import ApprovalApprovedCDPO from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ApprovalApprovedCDPO";
+import ApprovalRejectedCDPO from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ApprovalRejectedCDPO";
+import ExcelPraroopOne from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ExcelPraroopOne";
+import ExcelPraroopTwo from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ExcelPraroopTwo";
+import ExcelPraroopthree from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ExcelPraroopthree";
+import ExcelPraroopFourth from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ExcelPraroopFourth";
+import ExcelPraroopFifth from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ExcelPraroopFifth";
+import ExcelPraroopSixth from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ExcelPraroopSixth";
+import ExcelPraroopSeventh from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ExcelPraroopSeventh";
+import UploadFinalList from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/UploadFinalList";
+
+
+
+
+
+
 function App() {
   const location = useLocation();
   const hiddenPaths = new Set([
@@ -154,7 +181,29 @@ function App() {
     "/TwelthExcelPFMS", 
     "/TwelthSectorWiseView",
     "/TwelthAllAppl",
-    "/TwelthReturnFeedBack"
+    "/TwelthReturnFeedBack", //-----------District-----------//
+    "/DistrictDashboard",
+    "/DistrictChangePass",
+    "/ProjectPraroop1",
+    "/ProjectPraroopTwo2023",
+    "/ProjectPraroopTwo2024",
+    "/ExcelPraroop",
+    "/ProjectExcel",
+    "/ApprovedCDPO",
+    "/PraroopExcel",
+    "/RejectedCDPO",
+    "/ApprovalApprovedCDPO",
+      "/ApprovalRejectedCDPO",
+      "/ExcelPraroopFifth",
+      "/ExcelPraroopFourth",
+      "/ExcelPraroopOne",
+      "/ExcelPraroopSeventh",
+      "/ExcelPraroopSixth",
+      "/ExcelPraroopthree",
+      "/ExcelPraroopTwo",
+      "/UploadFinalList"
+
+
   ]); // Correct absolute paths
   const hiddenFooter1 = new Set([
     "/UserDashboard",
@@ -214,7 +263,27 @@ function App() {
      "/TwelthExcelPFMS", 
      "/TwelthSectorWiseView",
      "/TwelthAllAppl",
-     "/TwelthReturnFeedBack"
+     "/TwelthReturnFeedBack",  //-----------District-----------//
+      "/DistrictDashboard",
+      "/DistrictChangePass",
+      "/ProjectPraroop1",
+      "/ProjectPraroopTwo2023",
+      "/ProjectPraroopTwo2024",
+      "/ExcelPraroop",
+      "/ProjectExcel",
+      "/ApprovedCDPO",
+      "/PraroopExcel",
+      "/RejectedCDPO",
+      "/ApprovalApprovedCDPO",
+      "/ApprovalRejectedCDPO",
+      "/ExcelPraroopFifth",
+      "/ExcelPraroopFourth",
+      "/ExcelPraroopOne",
+      "/ExcelPraroopSeventh",
+      "/ExcelPraroopSixth",
+      "/ExcelPraroopthree",
+      "/ExcelPraroopTwo",
+      "/UploadFinalList"
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
@@ -280,6 +349,7 @@ function App() {
 
         {/* Directorate Data Table Start */}
         <Route path="/DirecTwelthDataTable" element={<DirecTwelthDataTable />} />
+        <Route path="/DistrictChangePass" element={<DistrictChangePass />} />
 
  {/* Directorate Data Table End */}
 
@@ -294,8 +364,7 @@ function App() {
          <Route path="/DistrictWiseAppli" element={<DistrictWiseAppli />} />
          <Route path="/PraroopFinal2022" element={<PraroopFinal2022 />} />
          <Route path="/PraroopFinal2023" element={<PraroopFinal2023 />} />
-       
-
+      
           {/* Project dashboard*/}
 
  <Route path="/PraroopFinal2024" element={<PraroopFinal2024 />} />
@@ -318,6 +387,29 @@ function App() {
  <Route path="/TwelthSectorWiseView" element={<TwelthSectorWiseView />} />
  <Route path="/ProjectDashboard" element={<ProjectDashboard />} />
  <Route path="/ProjectNandaGaura" element={<ProjectNandaGaura />} />
+
+   {/* District dashboard*/}
+   <Route path="/DistrictDashboard" element={<DistrictDashboard />} />
+   <Route path="/DistrictLeftNav" element={<DistrictLeftNav />} />
+   <Route path="/ProjectPraroop1" element={<ProjectPraroop1 />} />
+   <Route path="/ProjectPraroopTwo2023" element={<ProjectPraroopTwo2023 />} />
+   <Route path="/ProjectPraroopTwo2024" element={<ProjectPraroopTwo2024 />} />
+   <Route path="/ExcelPraroop" element={<ExcelPraroop />} />
+   <Route path="/ApprovedCDPO" element={<ApprovedCDPO />} />
+   <Route path="/PraroopExcel" element={<PraroopExcel />} />
+   <Route path="/RejectedCDPO" element={<RejectedCDPO />} />
+   <Route path="/ApprovalApprovedCDPO" element={<ApprovalApprovedCDPO />} />
+   <Route path="/ApprovalRejectedCDPO" element={<ApprovalRejectedCDPO />} />
+   <Route path="/ExcelPraroopFifth" element={<ExcelPraroopFifth />} />
+   <Route path="/ExcelPraroopFourth" element={<ExcelPraroopFourth />} />
+   <Route path="/ExcelPraroopOne" element={<ExcelPraroopOne />} />
+   <Route path="/ExcelPraroopSeventh" element={<ExcelPraroopSeventh />} />
+   <Route path="/ExcelPraroopSixth" element={<ExcelPraroopSixth />} />
+   <Route path="/ExcelPraroopTwo" element={<ExcelPraroopTwo />} />
+   <Route path="/UploadFinalList" element={<UploadFinalList />} />
+   <Route path="/ExcelPraroopthree" element={<ExcelPraroopthree />} />
+
+
 
       </Routes>
 

@@ -404,7 +404,7 @@ function AdminBanner() {
                   </Col>
                   <Col lg={4} md={6} sm={3} className="mt-3 m-t-0">
                     <div className="form-check">
-                      <input
+                    <Link to="/DistrictDashboard"> <input
                         className="form-check-input"
                         type="radio"
                         name="flexRadioDefault"
@@ -412,7 +412,7 @@ function AdminBanner() {
                         value={4}
                         onChange={handleChange}
                         checked={isRadio === 4}
-                      />
+                      /></Link>
                       <label className="form-check-label" htmlFor="radio4">
                         District Login (DPO)
                       </label>
