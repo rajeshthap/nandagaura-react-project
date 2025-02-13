@@ -33,10 +33,10 @@ const DistrictChangePass = () => {
                         className="mb-3"
                         controlId="exampleForm.ControlInput1"
                       >
-                        <Form.Label>Login Type</Form.Label>
+                        <Form.Label>District</Form.Label>
                         <Form.Control
                           type="text"
-                          placeholder="Garud" disabled
+                          placeholder="Rudraprayag" disabled
                         />
                       </Form.Group>
                     </Col>
@@ -57,10 +57,10 @@ const DistrictChangePass = () => {
                         className="mb-3"
                         controlId="exampleForm.ControlInput1"
                       >
-                        <Form.Label>CDPO Incharge</Form.Label>
+                        <Form.Label>DPO Incharge</Form.Label>
                         <Form.Control
                           type="text"
-                          placeholder="Manju(INCHARGE)"  disabled
+                          placeholder="Dr Akhilesh Mishra"  disabled
                         />
                       </Form.Group>
                     </Col>
@@ -69,10 +69,10 @@ const DistrictChangePass = () => {
                         className="mb-3"
                         controlId="exampleForm.ControlInput1"
                       >
-                        <Form.Label>CDPO Mobile No.</Form.Label>
+                        <Form.Label>DPO Mobile No.</Form.Label>
                         <Form.Control
                           type="number"
-                          placeholder="9876543210"  disabled
+                          placeholder="9411320889"  disabled
                         />
                       </Form.Group>
                     </Col>

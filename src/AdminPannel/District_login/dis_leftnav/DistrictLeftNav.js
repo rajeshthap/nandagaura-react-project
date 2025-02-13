@@ -1,23 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiDashboard3Line } from "react-icons/ri";
-import { MdOutlineFormatAlignRight } from "react-icons/md";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa"; // Add Chevron icons
 import { LuLogOut } from "react-icons/lu";
-import { FaHandsHoldingChild } from "react-icons/fa6";
-import { FaChalkboardTeacher, FaAlignLeft } from "react-icons/fa";
-import { MdOutlineLockReset } from "react-icons/md";
-import { IoIosInformationCircleOutline } from "react-icons/io";
+import { FaAlignLeft } from "react-icons/fa";
 import UKLogon from "../../../assets/images/UKLogo.png";
 import MenuIcon from "../../../assets/images/menu_icon.png";
-import { LuFileLock } from "react-icons/lu";
 import { PiMicrosoftExcelLogo } from "react-icons/pi";
-import { AiFillFileExclamation } from "react-icons/ai";
 import { TbAlertSquareRoundedOff } from "react-icons/tb";
 import "../../Directorate_login/direc_assets/css/DirecCDPO.css";
 import "../../District_login/dis_assets/CSS/DistrictLeftNav.css";
-import { FaBuildingUser } from "react-icons/fa6";
-import { MdSupervisorAccount } from "react-icons/md";
+import { FaStreetView } from "react-icons/fa";
+import { FiFileText } from "react-icons/fi";
+import { RiFileExcel2Line } from "react-icons/ri";
+import { GoListUnordered } from "react-icons/go";
+import { MdOutlineClose } from "react-icons/md";
+import { FaCheck } from "react-icons/fa";
+import { PiListChecks } from "react-icons/pi";
+import { RiUpload2Fill } from "react-icons/ri";
+import { ImFilePdf } from "react-icons/im";
+import { LuList } from "react-icons/lu";
+import { IoKeySharp } from "react-icons/io5";
 
 function DistrictLeftNav() {
   const [isNavClosed, setIsNavClosed] = useState(false);
@@ -49,69 +52,70 @@ function DistrictLeftNav() {
       path: "/DistrictDashboard",
     },
     {
-      icon: <LuFileLock />,
+      icon: <IoKeySharp />,
       label: "Change Password",
       path: "/DistrictChangePass",
     },
 
     {
-      icon: <AiFillFileExclamation />,
+      icon: <FaStreetView />,
       label: "Project Wise View",
       path: "/ProjectPraroop1",
       subRoutes: [
         {
-          icon: <MdOutlineLockReset />,
+          icon: <FiFileText />,
           label: "Praroop 1",
           path: "/ProjectPraroop1",
         },
         {
-          icon: <IoIosInformationCircleOutline />,
+          icon: <FiFileText />,
           label: "Praroop 2 2024",
-          path: "/ProjectPraroopTwo2023",
+          path: "/ProjectPraroopTwo2024",
         },
         {
-            icon: <IoIosInformationCircleOutline />,
+            icon: <FiFileText />,
             label: "Praroop 2 2023",
-            path: "/ProjectPraroopTwo2024",
+            path: "/ProjectPraroopTwo2023",
           },
       ],
     },
     {
-      icon: <MdOutlineFormatAlignRight />,
+      icon: <TbAlertSquareRoundedOff />,
       label: "Praroop 1 Offline",
-      path: "/TwelthAppli",
+      path: "/ExcelPraroop",
 
       subRoutes: [
         {
-          icon: <FaBuildingUser />,
+          icon: <RiFileExcel2Line />,
           label: "Excel Praroop",
           path: "/ExcelPraroop",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <RiFileExcel2Line />,
           label: "Project Excel",
           path: "/ProjectExcel",
         },
       ],
     },
     {
-      icon: <FaHandsHoldingChild />,
+      
+      icon: <GoListUnordered />,
       label: "Praroop 2 List 2024",
       path: "/GirlChildSectorView",
 
       subRoutes: [
         {
-          icon: <FaBuildingUser />,
+          icon: <MdOutlineClose />,
           label: "Rejected by CDPO",
           path: "/RejectedCDPO",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <FaCheck />,
           label: "Approved by CDPO",
           path: "/ApprovedCDPO",
         },
         {
-          icon: <TbAlertSquareRoundedOff />,
+          icon: <RiFileExcel2Line />,
           label: "Excel Praroop",
           path: "/PraroopExcel",
         },
@@ -120,17 +124,17 @@ function DistrictLeftNav() {
     },
    
     {
-      icon: <FaChalkboardTeacher />,
+      icon: <PiListChecks />,
       label: "Praroop 1 List Approval",
       path: "/ApprovalRejectedCDPO",
       subRoutes: [
         {
-          icon: <FaBuildingUser />,
+          icon: <MdOutlineClose />,
           label: "Rejected by CDPO",
           path: "/ApprovalRejectedCDPO",
         },
         {
-          icon: <MdSupervisorAccount />,
+          icon: <FaCheck />,
           label: "Approved by CDPO",
           path: "/ApprovalRejectedCDPO",
         },
@@ -171,55 +175,55 @@ function DistrictLeftNav() {
             path: "/ExcelPraroopSeventh",
           },
           {
-            icon: <PiMicrosoftExcelLogo />,
+            icon: <RiUpload2Fill />,
             label: "Upload Final List",
             path: "/UploadFinalList",
           },
       ],
     },
     {
-        icon: <FaChalkboardTeacher />,
+        icon: <LuList />,
         label: "Praroop 2 List 2023",
-        path: "/TwelthSectorWiseView",
+        path: "/ApprovedCDPO2023",
         subRoutes: [
           {
-            icon: <FaBuildingUser />,
+            icon: <MdOutlineClose />,
             label: "Rejected by CDPO",
-            path: "/TwelthSectorWiseView",
+            path: "/RejectedCDPO2023",
           },
           {
-            icon: <MdSupervisorAccount />,
+            icon: <FaCheck />,
             label: "Approved by CDPO",
-            path: "/TwelthAllAppl",
+            path: "/ApprovedCDPO2023",
           },
   
           {
             icon: <PiMicrosoftExcelLogo />,
             label: "Excel Praroop Part I",
-            path: "/TwelthExcelPFMS",
+            path: "/ExcelPraroopPartOne",
           },
           {
               icon: <PiMicrosoftExcelLogo />,
               label: "Excel Praroop Part II",
-              path: "/TwelthExcelPFMS",
+              path: "/ExcelPraroopPartTwo",
             },
             {
               icon: <PiMicrosoftExcelLogo />,
               label: "Excel Praroop Part III",
-              path: "/TwelthExcelPFMS",
+              path: "/ExcelPraroopPartThree",
             },
         
             {
-              icon: <PiMicrosoftExcelLogo />,
+              icon: <RiUpload2Fill />,
               label: "Upload Final List",
-              path: "/TwelthExcelPFMS",
+              path: "/UploadFinalList2023",
             },
         ],
       },
       {
-        icon: <PiMicrosoftExcelLogo />,
+        icon: <ImFilePdf />,
         label: "DPO Pannel Tutorial",
-        path: "/TwelthExcelPFMS",
+        path: "/UploadFinalList2023",
       },
    
   ];
@@ -227,7 +231,7 @@ function DistrictLeftNav() {
 
   return (
     <>
-      <header className="project-header">
+      <header className="district-header">
         <div className="logosec">
           <img
             src={MenuIcon}
@@ -254,7 +258,7 @@ function DistrictLeftNav() {
           <div className="nd-msg">
             <span>Department:</span> District Login
           </div>
-          <div className="project-dp" alt="logout" title="Click to logout">
+          <div className="district-dp" alt="logout" title="Click to logout">
             <div className="nd-log-icon">
               <LuLogOut />
             </div>
@@ -265,8 +269,8 @@ function DistrictLeftNav() {
       <div>
         <div>
           <div className={`navcontainer ${isNavClosed ? "navclose" : ""}`}>
-            <nav className="nav-project">
-              <div className="nav-upper-options project-options ">
+            <nav className="nav-district">
+              <div className="nav-upper-options district-options ">
                 <div className="nd-menu">
                   <div>
                     <FaAlignLeft
@@ -277,7 +281,7 @@ function DistrictLeftNav() {
                     />
                   </div>
                   <div className="nd-user">Department: District Login</div>
-                  <div className="project-log-icon-mob">
+                  <div className="district-log-icon-mob">
                     <LuLogOut
                       className=" "
                       alt="logout"
@@ -293,7 +297,7 @@ function DistrictLeftNav() {
                         href={option.path}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`project-option option${index + 1}`}
+                        className={`district-option option${index + 1}`}
                       >
                         <div className="direc-item">
                           <div className="d-flex">
@@ -320,7 +324,7 @@ function DistrictLeftNav() {
                     ) : option.subRoutes ? (
                       <>
                         <div
-                          className={`project-option option${index + 1}`}
+                          className={`district-option option${index + 1}`}
                           onClick={() => toggleDropdown(index)}
                           style={{ cursor: "pointer" }}
                         >
@@ -339,14 +343,14 @@ function DistrictLeftNav() {
                           </div>
                         </div>
                         {expandedItems[index] && (
-                          <div className="project-suboption">
+                          <div className="district-suboption">
                             {option.subRoutes.map((subRoute, subIndex) => (
                               <Link
                                 to={subRoute.path}
                                 key={subIndex}
-                                className="project-suboption"
+                                className="district-suboption"
                               >
-                                <div className="nav-subitem-project">
+                                <div className="nav-subitem-district">
                                   <div className="d-flex">
                                     <span className="nav-icon">
                                       {subRoute.icon}
@@ -364,7 +368,7 @@ function DistrictLeftNav() {
                     ) : (
                       <Link
                         to={option.path}
-                        className={`project-option option${index + 1}`}
+                        className={`district-option option${index + 1}`}
                       >
                         <div className="direc-item">
                           <div className="d-flex">

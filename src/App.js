@@ -114,6 +114,14 @@ import ExcelPraroopFifth from "./AdminPannel/District_login/dis_dashboard/Praroo
 import ExcelPraroopSixth from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ExcelPraroopSixth";
 import ExcelPraroopSeventh from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/ExcelPraroopSeventh";
 import UploadFinalList from "./AdminPannel/District_login/dis_dashboard/PraroopOneList_Approval/UploadFinalList";
+import ProjectExcel from "./AdminPannel/District_login/dis_dashboard/praroop_one_offline/ProjectExcel";
+import ApprovedCDPO2023 from "./AdminPannel/District_login/dis_dashboard/praroop_two_list2023/ApprovedCDPO2023";
+import ExcelPraroopPartTwo from "./AdminPannel/District_login/dis_dashboard/praroop_two_list2023/ExcelPraroopPartTwo";
+import ExcelPraroopPartOne from "./AdminPannel/District_login/dis_dashboard/praroop_two_list2023/ExcelPraroopPartOne";
+import ExcelPraroopPartThree from "./AdminPannel/District_login/dis_dashboard/praroop_two_list2023/ExcelPraroopPartThree";
+import RejectedCDPO2023 from "./AdminPannel/District_login/dis_dashboard/praroop_two_list2023/RejectedCDPO2023";
+import UploadFinalList2023 from "./AdminPannel/District_login/dis_dashboard/praroop_two_list2023/UploadFinalList2023";
+
 
 
 
@@ -201,7 +209,13 @@ function App() {
       "/ExcelPraroopSixth",
       "/ExcelPraroopthree",
       "/ExcelPraroopTwo",
-      "/UploadFinalList"
+      "/UploadFinalList",
+      "/ApprovedCDPO2023",
+      "/ExcelPraroopPartOne",
+      "/ExcelPraroopPartThree",
+      "/ExcelPraroopPartTwo",
+      "/RejectedCDPO2023",
+      "/UploadFinalList2023"
 
 
   ]); // Correct absolute paths
@@ -283,7 +297,13 @@ function App() {
       "/ExcelPraroopSixth",
       "/ExcelPraroopthree",
       "/ExcelPraroopTwo",
-      "/UploadFinalList"
+      "/UploadFinalList",
+      "/ApprovedCDPO2023",
+      "/ExcelPraroopPartOne",
+      "/ExcelPraroopPartThree",
+      "/ExcelPraroopPartTwo",
+      "/RejectedCDPO2023",
+      "/UploadFinalList2023"
   ]); // Correct absolute paths
   const shouldHideNavbar = hiddenPaths.has(location.pathname);
   const shouldHideFooter1 = hiddenFooter1.has(location.pathname);
@@ -408,8 +428,13 @@ function App() {
    <Route path="/ExcelPraroopTwo" element={<ExcelPraroopTwo />} />
    <Route path="/UploadFinalList" element={<UploadFinalList />} />
    <Route path="/ExcelPraroopthree" element={<ExcelPraroopthree />} />
-
-
+   <Route path="/ProjectExcel" element={<ProjectExcel />} />
+   <Route path="/ApprovedCDPO2023" element={<ApprovedCDPO2023 />} />
+   <Route path="/ExcelPraroopPartOne" element={<ExcelPraroopPartOne />} />
+   <Route path="/ExcelPraroopPartThree" element={<ExcelPraroopPartThree />} />
+   <Route path="/ExcelPraroopPartTwo" element={<ExcelPraroopPartTwo />} />
+   <Route path="/RejectedCDPO2023" element={<RejectedCDPO2023 />} />
+   <Route path="/UploadFinalList2023" element={<UploadFinalList2023 />} />
 
       </Routes>
 
